@@ -1,0 +1,136 @@
+2026-03-18 13:33:43.647 UTC INFO [rg3-rn1] Starting service process: rg3-rn1, Java command line arguments: [-XX:ThreadPriorityPolicy=1, -XX:+UnlockExperimentalVMOptions, -XX:+EnableJVMCIProduct, -XX:-UnlockExperimentalVMOptions, -XX:+UseLargePages, -Dje.rep.skipHelperHostResolution=true, -XX:CompileCommand=exclude,oracle/kv/impl/rep/table/TableManager.getSecondaryDB, -XX:CompileCommand=exclude,oracle/kv/impl/rep/table/TableManager.updateIndexKeyCreator, -XX:+UseG1GC, -XX:MaxGCPauseMillis=100, -XX:InitiatingHeapOccupancyPercent=85, -XX:G1HeapRegionSize=32m, -XX:G1MixedGCCountTarget=12, -XX:G1RSetRegionEntries=2560, -XX:G1HeapWastePercent=5, -XX:-ResizePLAB, -XX:+DisableExplicitGC, -Xlog:all=warning,gc*=info,safepoint=info:file=/kvroot/logs/rg3-rn1.gc:utctime:filecount=10,filesize=5242880, -XX:-OmitStackTraceInFastThrow, -Xms1392M, -Xmx1392M, -XX:ParallelGCThreads=2, -XX:ConcGCThreads=2, -Djava.security.properties=/kvroot/mystore/sn3/security-property/rg3-rn1-security.properties, -Djava.util.logging.config.file=/kvroot/mystore/log/config.rg3-rn1]
+2026-03-18 13:33:43.645 UTC INFO [rg3-rn1] Non-compressing file handler: Created with limit=5242880 count=20
+2026-03-18 13:33:43.652 UTC INFO [rg3-rn1] Setting java.net.InetAddress cache ttl to: networkaddress.cache.ttl=10, networkaddress.cache.negative.ttl=10
+2026-03-18 13:33:43.768 UTC INFO [rg3-rn1] Thread[ rg3-rn1 RepNodeStateUpdateThread,5,main] started
+2026-03-18 13:33:43.794 UTC INFO [rg3-rn1] Software versions: NoSQL version: 25.3.21 2025-12-19 19:10:14 UTC  Build id: 60eebbcaec4d Edition: Community, JE version: 25.3.17, Java version: 17.0.9
+2026-03-18 13:33:43.798 UTC INFO [rg3-rn1] Created new environment dir: /kvroot/data/rg3-rn1/env
+2026-03-18 13:33:43.799 UTC INFO [rg3-rn1] Storage type of: /kvroot/data/rg3-rn1/env is UNKNOWN
+2026-03-18 13:33:43.803 UTC INFO [rg3-rn1] SN memory allocation parameters: rnHeapPercent:68 jvmOverheadPercent:25 javaAllMemoryPercent:85 snMemorySizeMB:2048 snCapacity:1 rnMaxHeapMB:1392 allRNsMaxHeapMB:1392
+2026-03-18 13:33:43.804 UTC INFO [rg3-rn1] JVM Runtime maxMemory:1,441,792 kB JE cache size:0 kB
+2026-03-18 13:33:43.804 UTC INFO [rg3-rn1] Environment variable MALLOC_ARENA_MAX: 1
+2026-03-18 13:33:43.807 UTC INFO [rg3-rn1] Non-default JE properties for environment: {je.cleaner.threads=2, je.evictor.criticalPercentage=20, je.cleaner.minUtilization=40, je.log.numBuffers=16, je.rep.feederTimeout=10 s, je.lock.timeout=10 s, je.rep.preHeartbeatTimeoutMs=5000 ms, je.env.runVerifier=false, je.cleaner.readSize=1048576, je.log.writeQueueSize=2097152, je.rep.replicaAckTimeout=5 s, je.log.fileCacheSize=2000, je.log.iteratorReadSize=1048576, je.log.fileMax=1073741824, je.lock.nLockTables=97, je.env.runEvictor=true, je.rep.replicaTimeout=10 s, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.rep.ignoreSecondaryNodeId=true, je.cleaner.minFileUtilization=5, je.rep.envUnknownStateTimeout=10 s, je.txn.durability=write_no_sync,write_no_sync,simple_majority, je.log.faultReadSize=4096, je.rep.replayMaxOpenDbHandles=100, je.rep.vlsn.distance=1000000, je.rep.vlsn.logCacheSize=128, je.nodeMaxEntries=128}
+2026-03-18 13:33:43.808 UTC INFO [rg3-rn1] DataChannelFactory: basic
+2026-03-18 13:33:43.818 UTC INFO [rg3-rn1] Table manager created (max change history=1,000)
+2026-03-18 13:33:43.844 UTC INFO [rg3-rn1] Partition database cache mode: EVICT_LN
+2026-03-18 13:33:43.856 UTC INFO [rg3-rn1] Starting task: interval is 20 SECONDS, delay is 16147(ms)
+2026-03-18 13:33:43.884 UTC INFO [rg3-rn1] Request type ALL is enabled
+2026-03-18 13:33:43.891 UTC INFO [rg3-rn1] Thread[ rg3-rn1 MetadataUpdateThread,5,main] started
+2026-03-18 13:33:43.895 UTC INFO [rg3-rn1] Registering GC listener with G1 Young Generation
+2026-03-18 13:33:43.895 UTC INFO [rg3-rn1] Registering GC listener with G1 Old Generation
+2026-03-18 13:33:43.901 UTC INFO [rg3-rn1] Coordinating tasks:JEDataEviction, JEVerifyLog, JEDataErasure, KVStorageStats, JEBackupManagerCopyLogFile, JELogFlusherASync, JELogFlusherSync, JEINCompressor, JEINCheckpointer, JECleaner, JEVerifyBtree, JEOutputStats, KVIndexCreationMax real permits:22
+2026-03-18 13:33:43.906 UTC INFO [rg3-rn1] LIFECYCLE Service status change: from=INITIAL to=STARTING
+2026-03-18 13:33:43.906 UTC INFO [rg3-rn1] Starting RepNodeService
+2026-03-18 13:33:43.916 UTC INFO [rg3-rn1] Starting RN MonitorAgent.  Server socket factory:<ClearServerSocketFactory backlog=1024 portRange=5061,5089 acceptMaxActiveConns=8192 useAsync> Client socket connect factory: <ClientSocketFactory name=mystore|rn|monitor id=-2073034037 connectMs=10000 readMs=10000 clientId=none localAddr=none>
+2026-03-18 13:33:44.041 UTC INFO [rg3-rn1] mystore:rg3-rn1:MONITOR service port: 5063
+2026-03-18 13:33:44.077 UTC INFO [rg3-rn1] Starting MonitorAgent
+2026-03-18 13:33:44.093 UTC INFO [rg3-rn1] Successfully created secure proxy for the repnode admin
+2026-03-18 13:33:44.119 UTC INFO [rg3-rn1] mystore:rg3-rn1:ADMIN service port: 5063
+2026-03-18 13:33:44.128 UTC INFO [rg3-rn1] RepNodeAdmin registered
+2026-03-18 13:33:44.205 UTC INFO [rg3-rn1] JE: Coordinating tasks:JEBackupManagerCopyLogFile, JELogFlusherASync, JEDataEviction, JELogFlusherSync, JEINCompressor, JEINCheckpointer, JECleaner, JEVerifyBtree, JEOutputStats, JEVerifyLog, JEDataErasureMax real permits:20
+2026-03-18 13:33:44.368 UTC INFO [rg3-rn1] JE: Ack expiry timer period:1000000000 ns
+2026-03-18 13:33:44.398 UTC INFO [rg3-rn1] JE recovery: POPULATE_UTILIZATION_PROFILE
+2026-03-18 13:33:44.415 UTC INFO [rg3-rn1] JE recovery: POPULATE_EXPIRATION_PROFILE
+2026-03-18 13:33:44.422 UTC INFO [rg3-rn1] JE recovery: CKPT
+2026-03-18 13:33:44.423 UTC INFO [rg3-rn1] JE: Checkpoint Start.Checkpoint Id=1
+2026-03-18 13:33:44.487 UTC INFO [rg3-rn1] JE: ERASER transferred suspect obsolete offsets to global tracker. Total offsets transferred: 0
+2026-03-18 13:33:44.492 UTC INFO [rg3-rn1] JE: Checkpoint End. Checkpoint Id=1 success=true
+2026-03-18 13:33:44.503 UTC INFO [rg3-rn1] JE: ERASER initializing new cycle. Total files: 0
+2026-03-18 13:33:44.505 UTC INFO [rg3-rn1] JE recovery: RECOVERY_FINISHED
+2026-03-18 13:33:44.506 UTC INFO [rg3-rn1] JE: The following ConfigParam(s) in je.properties is/are deprecated and removed, hence the configuration(s) won't take any effect: je.rep.txnRollbackLimit, je.rep.preserveRecordVersion, je.rep.txnRollbackDisabled
+2026-03-18 13:33:44.510 UTC INFO [rg3-rn1] JE: ERASER new cycle started. Cycle start: 2026-03-18 13:33:44.501 UTC, end: 2026-03-24 13:33:44.501 UTC, filesCompleted: [], filesRemaining: [].
+2026-03-18 13:33:44.510 UTC INFO [rg3-rn1] JE: ERASER cycle completed. Cycle start: 2026-03-18 13:33:44.501 UTC, end: 2026-03-24 13:33:44.501 UTC, filesCompleted: [], filesRemaining: [].
+2026-03-18 13:33:44.523 UTC INFO [rg3-rn1] JE: No server auth method
+2026-03-18 13:33:44.523 UTC INFO [rg3-rn1] JE: Started ServiceDispatcher. HostPort=sn3:5050
+2026-03-18 13:33:44.523 UTC INFO [rg3-rn1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2026-03-18 13:33:44.576 UTC INFO [rg3-rn1] JE: DTVLSN at start:0
+2026-03-18 13:33:44.579 UTC INFO [rg3-rn1] JE: State change from DETACHED to UNKNOWN with masterId=NullNode(-1), masterTerm=0(NULL_TERM)
+2026-03-18 13:33:44.589 UTC INFO [rg3-rn1] JE: Learner started
+2026-03-18 13:33:44.591 UTC INFO [rg3-rn1] JE: Acceptor started
+2026-03-18 13:33:44.591 UTC INFO [rg3-rn1] JE: Current group size: 0
+2026-03-18 13:33:44.591 UTC INFO [rg3-rn1] JE: The very first group start up with node rg3-rn1(-1)
+2026-03-18 13:33:44.599 UTC INFO [rg3-rn1] JE: rg3-rn1 persisted to election state file: {"promisedProposal":"00000179cf2b6c00179cf2b6c00(MIN_TERM)"}
+2026-03-18 13:33:44.599 UTC INFO [rg3-rn1] JE: rg3-rn1 no barrier needed, initialized promised term to 179cf2b6c00(MIN_TERM)
+2026-03-18 13:33:44.603 UTC INFO [rg3-rn1] JE: Learner notified. Proposal:0000019d0126f917:05e9914a64a343126e1bc3c635f14ec5:00000001[19d0126f917(2026-03-18T13:33:44.599Z)] Value: Value:sn3$$$5050$$$rg3-rn1$$$1
+2026-03-18 13:33:44.603 UTC INFO [rg3-rn1] JE: Master changed to rg3-rn1 at term 19d0126f917(2026-03-18T13:33:44.599Z), group status: empty.
+2026-03-18 13:33:44.603 UTC INFO [rg3-rn1] JE: Nascent group. rg3-rn1 is master by virtue of being the first node.
+2026-03-18 13:33:44.603 UTC INFO [rg3-rn1] JE: State change from UNKNOWN to MASTER with masterId=rg3-rn1(1), masterTerm=19d0126f917(2026-03-18T13:33:44.599Z)
+2026-03-18 13:33:44.623 UTC INFO [rg3-rn1] JE: Successfully added node:rg3-rn1(1) HostPort = sn3: 5050 [ELECTABLE]
+2026-03-18 13:33:44.624 UTC INFO [rg3-rn1] JE recovery: BECOME_CONSISTENT
+2026-03-18 13:33:44.624 UTC INFO [rg3-rn1] JE: Node rg3-rn1 started
+2026-03-18 13:33:44.625 UTC INFO [rg3-rn1] JE: State change from MASTER to UNKNOWN with masterId=NullNode(-1), masterTerm=0(NULL_TERM)
+2026-03-18 13:33:44.626 UTC INFO [rg3-rn1] JE: State change from UNKNOWN to MASTER with masterId=rg3-rn1(1), masterTerm=19d0126f917(2026-03-18T13:33:44.599Z)
+2026-03-18 13:33:44.642 UTC INFO [rg3-rn1] JE: Feeder manager accepting requests.
+2026-03-18 13:33:44.643 UTC INFO [rg3-rn1] JE: Joining group as master
+2026-03-18 13:33:44.652 UTC INFO [rg3-rn1] Opened JE environment: 25.3.17 JVM max heap: 1,476,395,008 JE properties:  nodeName=null allowCreate=true recoveryProgressListener=true classLoader=false customStats=false cacheSize=1033476505 cacheMode=EVICT_LN exceptionListener=false map={je.log.numBuffers=16, je.maxMemory=0, je.rep.preHeartbeatTimeoutMs=5000 ms, je.rep.replicaAckTimeout=5 s, je.log.fileCacheSize=2000, je.log.iteratorReadSize=1048576, je.lock.nLockTables=97, je.rep.nodeName=rg3-rn1, je.file.logging.directory=/kvroot/logs, je.rep.ignoreSecondaryNodeId=true, je.env.runEraser=true, je.rep.envUnknownStateTimeout=10 s, je.rep.vlsn.logCacheSize=128, je.rep.groupName=rg3, je.evictor.criticalPercentage=20, je.maxDisk=10737418240, je.rep.feederTimeout=10 s, je.lock.timeout=10 s, je.checkpointer.bytesInterval=500000000, je.env.isTransactional=true, je.maxMemoryPercent=70, je.txn.durability=write_no_sync,write_no_sync,simple_majority, je.log.faultReadSize=4096, je.rep.node.priority=1, je.cleaner.minUtilization=40, je.rep.disableAuthoritativeMaster=false, je.rep.electableGroupSizeOverride=0, je.file.logging.prefix=rg3-rn1, je.erase.period=6 DAYS, je.log.fileMax=1073741824, je.env.runEvictor=true, je.cleaner.minFileUtilization=5, je.rep.replayMaxOpenDbHandles=100, je.rep.vlsn.distance=1000000, je.nodeMaxEntries=128, je.rep.nodeHostPort=sn3:5050, je.cleaner.threads=2, je.env.runVerifier=false, je.cleaner.readSize=1048576, je.log.writeQueueSize=2097152, je.rep.helperHosts=sn3:5050, je.rep.replicaTimeout=10 s, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.rep.nodeType=ELECTABLE}
+2026-03-18 13:33:44.666 UTC INFO [rg3-rn1] Local Environment version updated to: 25.3.21 2025-12-19 19:10:14 UTC  Build id: 60eebbcaec4d Edition: Community Previous version:  none
+2026-03-18 13:33:44.667 UTC INFO [rg3-rn1] LIFECYCLE Replication state change: state=MASTER type=ELECTABLE master=rg3-rn1 time=2026-03-18 13:33:44.625 UTC
+2026-03-18 13:33:44.667 UTC INFO [rg3-rn1] MigrationStateTracker-serviceId-rg3-rn1 queue added:MASTER
+2026-03-18 13:33:44.667 UTC INFO [rg3-rn1] TableManagerStateTracker-serviceId-rg3-rn1 queue added:MASTER
+2026-03-18 13:33:44.668 UTC INFO [rg3-rn1] MasterBalanceStateTracker-serviceId-rg3-rn1 queue added:MASTER
+2026-03-18 13:33:44.668 UTC INFO [rg3-rn1] TextIndexFeederStateTracker-serviceId-rg3-rn1 queue added:MASTER
+2026-03-18 13:33:44.670 UTC INFO [rg3-rn1] Replicated environment handle established. Cache size: 1033476505, State: MASTER
+2026-03-18 13:33:44.670 UTC INFO [rg3-rn1] Store did not contain a topology
+2026-03-18 13:33:44.671 UTC INFO [rg3-rn1] MigrationStateTracker-serviceId-rg3-rn1 thread start: rg3-rn1
+2026-03-18 13:33:44.671 UTC INFO [rg3-rn1] MasterBalanceStateTracker-serviceId-rg3-rn1 thread start: rg3-rn1
+2026-03-18 13:33:44.671 UTC INFO [rg3-rn1] Migration manager change state to MASTER.
+2026-03-18 13:33:44.672 UTC INFO [rg3-rn1] Topology needs to be pushed to this node.
+2026-03-18 13:33:44.672 UTC INFO [rg3-rn1] TextIndexFeederStateTracker-serviceId-rg3-rn1 thread start: rg3-rn1
+2026-03-18 13:33:44.672 UTC INFO [rg3-rn1] TableManagerStateTracker-serviceId-rg3-rn1 thread start: rg3-rn1
+2026-03-18 13:33:44.672 UTC INFO [rg3-rn1] Table manager change state to MASTER
+2026-03-18 13:33:44.672 UTC INFO [rg3-rn1] TIF received state change MASTER
+2026-03-18 13:33:44.673 UTC INFO [rg3-rn1] no text index found, skip starting TIF.
+2026-03-18 13:33:44.677 UTC INFO [rg3-rn1] Migration db opened: MigrationDB, generation db opened: PartitionGenMD
+2026-03-18 13:33:44.679 UTC INFO [rg3-rn1] Migration service accepting requests.
+2026-03-18 13:33:44.681 UTC INFO [rg3-rn1] Starting Thread[KV table maintenance,5,main]
+2026-03-18 13:33:44.682 UTC INFO [rg3-rn1] Retrying to update migration services and generation table on state change, last failure: Partition generation table is unavailable
+2026-03-18 13:33:44.700 UTC INFO [rg3-rn1] mystore:rg3-rn1:MAIN service port: 5063
+2026-03-18 13:33:44.704 UTC INFO [rg3-rn1] No RN Login configured. 
+2026-03-18 13:33:44.708 UTC INFO [rg3-rn1] Start statistics gathering: Thread[Key Stats Gather Thread,5,main]
+2026-03-18 13:33:44.709 UTC INFO [rg3-rn1] LIFECYCLE Service status change: from=STARTING to=RUNNING
+2026-03-18 13:33:44.709 UTC INFO [rg3-rn1] Topology not immediately available - waiting
+2026-03-18 13:33:44.711 UTC INFO [rg3-rn1] Started RepNodeService
+2026-03-18 13:33:45.531 UTC INFO [rg3-rn1] Localized topology (10, 0)
+2026-03-18 13:33:45.531 UTC INFO [rg3-rn1] Topology updated from seq#: 0 to 10
+2026-03-18 13:33:45.533 UTC INFO [rg3-rn1] Cached topology with sequence number 10
+2026-03-18 13:33:45.535 UTC INFO [rg3-rn1] Open SecurityMetadata DB
+2026-03-18 13:33:45.538 UTC INFO [rg3-rn1] [PGT-rg3-rn1] Initialize partition generation table from db
+2026-03-18 13:33:45.540 UTC INFO [rg3-rn1] [PGDB-rg3-rn1] Finish scan db=PartitionGenMDrecords #scanned=0, #returned=0
+2026-03-18 13:33:45.542 UTC INFO [rg3-rn1] Open TableMetadata DB
+2026-03-18 13:33:45.543 UTC INFO [rg3-rn1] Establishing secondary database handles, table seq#: 0
+2026-03-18 13:33:45.543 UTC INFO [rg3-rn1] Partition update succeeded. Established 0 partition database handles, topology (10, 0). 
+2026-03-18 13:33:45.548 UTC INFO [rg3-rn1] Topology stored seq# 10
+2026-03-18 13:33:45.550 UTC INFO [rg3-rn1] Established 0 secondary database handles
+2026-03-18 13:33:45.550 UTC INFO [rg3-rn1] Establishing secondary database handles, table seq#: 0
+2026-03-18 13:33:45.552 UTC INFO [rg3-rn1] Updating table metadata with TableMetadata[13, n:-, t:12, 13]
+2026-03-18 13:33:45.568 UTC INFO [rg3-rn1] Metadata stored: TableMetadata[13, n:-, t:12, 13]
+2026-03-18 13:33:45.571 UTC INFO [rg3-rn1] Starting Thread[KV table maintenance,5,main]
+2026-03-18 13:33:45.571 UTC INFO [rg3-rn1] Establishing secondary database handles, table seq#: 13
+2026-03-18 13:33:45.592 UTC INFO [rg3-rn1] Established 1 secondary database handles
+2026-03-18 13:33:45.593 UTC INFO [rg3-rn1] Running secondary population
+2026-03-18 13:33:45.600 UTC INFO [rg3-rn1] Completed populating secondary database(s)
+2026-03-18 13:33:45.667 UTC INFO [rg3-rn1] newParameters are identical to old parameters
+2026-03-18 13:33:45.682 UTC INFO [rg3-rn1] [PGDB-rg3-rn1] Finish scan db=PartitionGenMDrecords #scanned=0, #returned=0
+2026-03-18 13:33:45.834 UTC INFO [rg3-rn1] Localized topology (16, 1)
+2026-03-18 13:33:45.835 UTC INFO [rg3-rn1] Cached topology with sequence number 16
+2026-03-18 13:33:45.835 UTC INFO [rg3-rn1] Topology incrementally updated from seq#: 10 to 16
+2026-03-18 13:33:45.840 UTC INFO [rg3-rn1] Starting Thread[KV table maintenance,5,main]
+2026-03-18 13:33:45.841 UTC INFO [rg3-rn1] Establishing secondary database handles, table seq#: 13
+2026-03-18 13:33:45.842 UTC INFO [rg3-rn1] Partition update succeeded. Established 2 partition database handles, topology (16, 1). Updated partition database handles: [PARTITION-5,PARTITION-6]. 
+2026-03-18 13:33:45.844 UTC INFO [rg3-rn1] Established 1 secondary database handles
+2026-03-18 13:33:45.846 UTC INFO [rg3-rn1] Topology stored seq# 16
+2026-03-18 13:33:46.732 UTC INFO [rg3-rn1] Establishing RMI connection for admin DDL
+2026-03-18 13:33:46.768 UTC INFO [rg3-rn1] Establishing RMI connection for admin DDL
+2026-03-18 13:33:46.781 UTC INFO [rg3-rn1] Establishing RMI connection for admin DDL
+2026-03-18 13:33:48.378 UTC INFO [rg3-rn1] Metadata stored: TableMetadata[14, n:-, t:12, 14]
+2026-03-18 13:33:48.379 UTC INFO [rg3-rn1] Starting Thread[KV table maintenance,5,main]
+2026-03-18 13:33:48.379 UTC INFO [rg3-rn1] Establishing secondary database handles, table seq#: 14
+2026-03-18 13:33:48.380 UTC INFO [rg3-rn1] Established 1 secondary database handles
+2026-03-18 13:34:00.077 UTC INFO [rg3-rn1] Obtained DialogEndpointGroupPerf with 11 endpoints and estimated 55000 bytes; next obtain after 317 seconds
+2026-03-18 13:34:00.105 UTC INFO [rg3-rn1] Obtained NioChannelThreadPoolPerf with 4 executors, 17 handlers and estimated 35200 bytes; next obtain after 203 seconds
+2026-03-18 13:39:31.973 UTC INFO [rg3-rn1] Metadata stored: TableMetadata[15, n:-, t:13, 15]
+2026-03-18 13:39:31.976 UTC INFO [rg3-rn1] Starting Thread[KV table maintenance,5,main]
+2026-03-18 13:39:31.976 UTC INFO [rg3-rn1] Establishing secondary database handles, table seq#: 15
+2026-03-18 13:39:31.978 UTC INFO [rg3-rn1] Established 1 secondary database handles
+2026-03-18 13:39:37.397 UTC INFO [rg3-rn1] The next key stats scan interval begins at 2026-03-19 00:00:00.000 UTC
+2026-03-18 13:40:35.179 UTC INFO [rg3-rn1] JE: Updated minimum JE group version to 6.5.0
+2026-03-18 13:40:37.513 UTC INFO [rg3-rn1] Key stats scan took 116ms to scan 58 records

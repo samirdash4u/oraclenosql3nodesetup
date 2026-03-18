@@ -1,0 +1,34 @@
+2026-03-18 13:33:19.396 UTC INFO [snaService] Starting, configuration file: /kvroot/config.xml
+2026-03-18 13:33:19.450 UTC INFO [snaService] Setting java.net.InetAddress cache ttl to: networkaddress.cache.ttl=10, networkaddress.cache.negative.ttl=10
+2026-03-18 13:33:19.451 UTC INFO [snaService] RMI registry serial filter is configured as: sun.rmi.registry.registryFilter=oracle.kv.**;java.lang.Enum
+2026-03-18 13:33:19.478 UTC INFO [snaService] Software versions: NoSQL version: 25.3.21 2025-12-19 19:10:14 UTC  Build id: 60eebbcaec4d Edition: Community, JE version: 25.3.17, Java version: 17.0.9
+2026-03-18 13:33:19.483 UTC INFO [snaService] SNA process command line: /usr/lib64/graalvm/graalvm-community-java17/bin/java -Xmx256m -Xms128m -jar lib/kvstore.jar start -root /kvroot
+2026-03-18 13:33:19.599 UTC INFO [snaService] Creating a Registry on sn2:5000 server socket factory:<ClearServerSocketFactory backlog=100 portRange=0,0 acceptMaxActiveConns=0 useAsync>
+2026-03-18 13:33:19.723 UTC INFO [snaService] Successfully created secure proxy for the storage node agent
+2026-03-18 13:33:19.880 UTC INFO [snaService] snaService service port: 5041
+2026-03-18 13:33:19.951 UTC INFO [snaService] Bound to registry port 5000 using name snaService with SSF:<ClearServerSocketFactory backlog=1024 portRange=5041,5069 acceptMaxActiveConns=0 useAsync>
+2026-03-18 13:33:19.953 UTC INFO [snaService] Using mgmt class oracle.kv.impl.mgmt.jmx.JmxAgent
+2026-03-18 13:33:20.057 UTC INFO [snaService] jmxrmi service port: 5042
+2026-03-18 13:33:20.336 UTC INFO [snaService] BootstrapAdmin: Starting AdminService
+2026-03-18 13:33:20.445 UTC INFO [snaService] Using java program: /usr/lib64/graalvm/graalvm-community-java17/bin/java to execute managed processes
+2026-03-18 13:33:20.451 UTC INFO [snaService] Executing process with arguments: [/usr/lib64/graalvm/graalvm-community-java17/bin/java, -cp, lib/kvstore.jar, -XX:+DisableExplicitGC, -Xms96M, -Xmx128M, -server, -Dje.rep.skipHelperHostResolution=true, -XX:-OmitStackTraceInFastThrow, -Djava.security.properties=/kvroot/BootstrapAdmin.5000-security.properties, oracle.kv.impl.sna.ManagedService, -root, /kvroot, -class, Admin, -service, BootstrapAdmin.5000, -config, config.xml] with environment: {MALLOC_ARENA_MAX=1}
+2026-03-18 13:33:20.455 UTC INFO [snaService] BootstrapAdmin.5000: ProcessMonitor: startProcess
+2026-03-18 13:33:20.459 UTC INFO [snaService] BootstrapAdmin: Started AdminService
+2026-03-18 13:33:21.419 UTC INFO [snaService] BootstrapAdmin.5000: ProcessMonitor: ManagedServiceStarted: BootstrapAdmin.5000
+2026-03-18 13:33:36.493 UTC INFO [snaService] Register: root: /kvroot, store: mystore, hostingAdmin: false
+2026-03-18 13:33:36.493 UTC INFO [snaService] System architecture is amd64
+2026-03-18 13:33:36.544 UTC INFO [snaService] BootstrapAdmin.5000: Stopping AdminService
+2026-03-18 13:33:36.544 UTC INFO [snaService] BootstrapAdmin.5000: ProcessMonitor: stopProcess
+2026-03-18 13:33:36.874 UTC INFO [snaService] BootstrapAdmin.5000: ProcessMonitor: IOThread exiting
+2026-03-18 13:33:36.875 UTC INFO [snaService] BootstrapAdmin.5000: ProcessMonitor: exited, exit code: 143
+2026-03-18 13:33:36.878 UTC INFO [snaService] BootstrapAdmin.5000: ProcessMonitor: Process restart requested for exit code: 143
+2026-03-18 13:33:36.878 UTC INFO [snaService] BootstrapAdmin.5000: ProcessMonitor: Process will not be restarted because restarts have been disabled
+2026-03-18 13:33:36.878 UTC INFO [snaService] BootstrapAdmin.5000: ProcessMonitor: not restarting
+2026-03-18 13:33:36.879 UTC INFO [snaService] BootstrapAdmin.5000: Stopped AdminService
+2026-03-18 13:33:36.894 UTC INFO [snaService] Created a new store directory: /kvroot/mystore/sn2
+2026-03-18 13:33:36.903 UTC INFO [snaService] Starting, configuration file: /kvroot/config.xml
+2026-03-18 13:33:36.915 UTC INFO [snaService] Setting java.net.InetAddress cache ttl to: networkaddress.cache.ttl=10, networkaddress.cache.negative.ttl=10
+2026-03-18 13:33:36.918 UTC INFO [snaService] RMI registry serial filter is configured as: sun.rmi.registry.registryFilter=oracle.kv.**;java.lang.Enum
+2026-03-18 13:33:36.922 UTC INFO [snaService] Registered startup, config file: /kvroot/mystore/sn2/config.xml
+2026-03-18 13:33:36.930 UTC INFO [snaService] Starting task: interval is 20 SECONDS, delay is 3070(ms)
+2026-03-18 13:33:36.932 UTC INFO [snaService] Changing log files to directory: /kvroot/mystore/log

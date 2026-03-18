@@ -1,0 +1,37 @@
+2026-03-18 13:33:36.933 UTC INFO [sn2] LIFECYCLE Service status change: from=WAITING_FOR_DEPLOY to=STARTING
+2026-03-18 13:33:36.901 UTC INFO [sn2] Non-compressing file handler: Created with limit=5242880 count=20
+2026-03-18 13:33:36.934 UTC INFO [sn2] Starting StorageNodeAgent for mystore
+2026-03-18 13:33:36.934 UTC INFO [sn2] Software versions: NoSQL version: 25.3.21 2025-12-19 19:10:14 UTC  Build id: 60eebbcaec4d Edition: Community, JE version: 25.3.17, Java version: 17.0.9
+2026-03-18 13:33:36.934 UTC INFO [sn2] SNA process command line: /usr/lib64/graalvm/graalvm-community-java17/bin/java -Xmx256m -Xms128m -jar lib/kvstore.jar start -root /kvroot
+2026-03-18 13:33:37.089 UTC INFO [sn2] Create collector service and register parameter listeners successfully.
+2026-03-18 13:33:37.094 UTC INFO [sn2] Started MasterRebalanceThread
+2026-03-18 13:33:37.101 UTC INFO [sn2] Starting MonitorAgent.  Server socket factory:<ClearServerSocketFactory backlog=1024 portRange=5041,5069 acceptMaxActiveConns=0 useAsync> Client socket factory:<ClientSocketFactory name=mystore|sn|monitor id=460265661 connectMs=10000 readMs=5000 clientId=none localAddr=none>
+2026-03-18 13:33:37.108 UTC INFO [sn2] mystore:sn2:MONITOR service port: 5041
+2026-03-18 13:33:37.116 UTC INFO [sn2] Successfully created secure proxy for the storage node agent
+2026-03-18 13:33:37.123 UTC INFO [sn2] mystore:sn2:MAIN service port: 5041
+2026-03-18 13:33:37.127 UTC INFO [sn2] Rebound to registry port 5000 using name sn2 with SSF:<ClearServerSocketFactory backlog=1024 portRange=5041,5069 acceptMaxActiveConns=0 useAsync>
+2026-03-18 13:33:37.127 UTC INFO [sn2] LIFECYCLE Service status change: from=STARTING to=RUNNING
+2026-03-18 13:33:37.128 UTC INFO [sn2] Started StorageNodeAgent for mystore
+2026-03-18 13:33:40.711 UTC INFO [sn2] rg2-rn1: Creating RepNode
+2026-03-18 13:33:40.718 UTC INFO [sn2] LIFECYCLE Service monitor event: service=rg2-rn1 event=CREATE
+2026-03-18 13:33:40.722 UTC INFO [sn2] rg2-rn1: Starting RepNode
+2026-03-18 13:33:40.735 UTC INFO [sn2] Executing process with arguments: [/usr/lib64/graalvm/graalvm-community-java17/bin/java, -cp, lib/kvstore.jar, -XX:+UseLargePages, -Dje.rep.skipHelperHostResolution=true, -XX:CompileCommand=exclude,oracle/kv/impl/rep/table/TableManager.getSecondaryDB, -XX:CompileCommand=exclude,oracle/kv/impl/rep/table/TableManager.updateIndexKeyCreator, -XX:+UseG1GC, -XX:MaxGCPauseMillis=100, -XX:InitiatingHeapOccupancyPercent=85, -XX:G1HeapRegionSize=32m, -XX:G1MixedGCCountTarget=12, -XX:G1RSetRegionEntries=2560, -XX:G1HeapWastePercent=5, -XX:-ResizePLAB, -XX:+DisableExplicitGC, -Xlog:all=warning,gc*=info,safepoint=info:file=/kvroot/logs/rg2-rn1.gc:utctime:filecount=10,filesize=5242880, -XX:-OmitStackTraceInFastThrow, -Xms1392M, -Xmx1392M, -XX:ParallelGCThreads=2, -XX:ConcGCThreads=2, -Djava.security.properties=/kvroot/mystore/sn2/security-property/rg2-rn1-security.properties, -Djava.util.logging.config.file=/kvroot/mystore/log/config.rg2-rn1, oracle.kv.impl.sna.ManagedService, -root, /kvroot/mystore/sn2, -store, mystore, -class, RepNode, -service, rg2-rn1] with environment: {MALLOC_ARENA_MAX=1}
+2026-03-18 13:33:40.736 UTC INFO [sn2] rg2-rn1: ProcessMonitor: startProcess
+2026-03-18 13:33:40.737 UTC INFO [sn2] LIFECYCLE Service monitor event: service=rg2-rn1 event=START
+2026-03-18 13:33:40.737 UTC INFO [sn2] rg2-rn1: Started RepNode
+2026-03-18 13:33:40.737 UTC INFO [sn2] rg2-rn1: Configuring RepNode
+2026-03-18 13:33:41.237 UTC INFO [sn2] rg2-rn1: ProcessMonitor: [0.002s][warning][pagesize] UseLargePages disabled, no large pages configured and available on the system.
+2026-03-18 13:33:41.238 UTC INFO [sn2] rg2-rn1: ProcessMonitor: CompileCommand: exclude oracle/kv/impl/rep/table/TableManager.getSecondaryDB bool exclude = true
+2026-03-18 13:33:41.238 UTC INFO [sn2] rg2-rn1: ProcessMonitor: CompileCommand: exclude oracle/kv/impl/rep/table/TableManager.updateIndexKeyCreator bool exclude = true
+2026-03-18 13:33:41.609 UTC INFO [sn2] Updating service status, node: rg2-rn1, service status: STARTING
+2026-03-18 13:33:42.106 UTC INFO [sn2] Updating replication state, node: rg2-rn1, replication state: MASTER
+2026-03-18 13:33:42.130 UTC INFO [sn2] Updating service status, node: rg2-rn1, service status: RUNNING
+2026-03-18 13:33:42.133 UTC INFO [sn2] rg2-rn1: ProcessMonitor: ManagedServiceStarted: rg2-rn1
+2026-03-18 13:33:43.006 UTC INFO [sn2] rg2-rn1: Created RepNode
+2026-03-18 13:33:43.044 UTC INFO [sn2] rg2-rn1: newRepNodeParameters called
+2026-03-18 13:33:43.111 UTC INFO [sn2] noteState called
+2026-03-18 13:33:43.111 UTC INFO [sn2] added:State RN:rg2-rn1 state: MASTER top seq num: 8
+2026-03-18 13:33:43.116 UTC INFO [sn2] sn: sn2 state transition: State RN:rg2-rn1 state: MASTER top seq num: 8 active masters:[rg2-rn1] active replicas:0 replica leases:0
+2026-03-18 13:33:43.116 UTC INFO [sn2] Acquiring initial topology from RNs
+2026-03-18 13:33:43.133 UTC INFO [sn2] Topology acquired from RN: rg2-rn1 Topo seq#: 8
+2026-03-18 13:34:43.156 UTC INFO [sn2] Topology acquired from RN: rg2-rn1 Topo seq#: 16

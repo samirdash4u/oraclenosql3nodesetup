@@ -1,0 +1,51 @@
+services:
+
+  sn1:
+    build: .
+    image: oracle/nosql:latest
+    container_name: nosql-sn1
+    hostname: sn1
+    volumes:
+      - ./sn1:/kvroot
+    environment:
+      SN_NAME: sn1
+      SN_PORT: 5000
+      SN_ADMIN_PORT: 6000
+      SN_HA_RANGE: 5010-5020
+      SN_SERVICE_RANGE: 5021-5049
+    networks:
+      - nosql-net
+
+  sn2:
+    image: oracle/nosql:latest
+    container_name: nosql-sn2
+    hostname: sn2
+    volumes:
+      - ./sn2:/kvroot
+    environment:
+      SN_NAME: sn2
+      SN_PORT: 5000
+      SN_ADMIN_PORT: 6000
+      SN_HA_RANGE: 5030-5040
+      SN_SERVICE_RANGE: 5041-5069
+    networks:
+      - nosql-net
+
+  sn3:
+    image: oracle/nosql:latest
+    container_name: nosql-sn3
+    hostname: sn3
+    volumes:
+      - ./sn3:/kvroot
+    environment:
+      SN_NAME: sn3
+      SN_PORT: 5000
+      SN_ADMIN_PORT: 6000
+      SN_HA_RANGE: 5050-5060
+      SN_SERVICE_RANGE: 5061-5089
+    networks:
+      - nosql-net
+
+networks:
+  nosql-net:
+    name: nosql-net

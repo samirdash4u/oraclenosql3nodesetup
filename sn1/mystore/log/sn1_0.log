@@ -1,0 +1,41 @@
+2026-03-18 13:33:36.113 UTC INFO [sn1] LIFECYCLE Service status change: from=WAITING_FOR_DEPLOY to=STARTING
+2026-03-18 13:33:36.066 UTC INFO [sn1] Non-compressing file handler: Created with limit=5242880 count=20
+2026-03-18 13:33:36.114 UTC INFO [sn1] Starting StorageNodeAgent for mystore
+2026-03-18 13:33:36.114 UTC INFO [sn1] Software versions: NoSQL version: 25.3.21 2025-12-19 19:10:14 UTC  Build id: 60eebbcaec4d Edition: Community, JE version: 25.3.17, Java version: 17.0.9
+2026-03-18 13:33:36.114 UTC INFO [sn1] SNA process command line: /usr/lib64/graalvm/graalvm-community-java17/bin/java -Xmx256m -Xms128m -jar lib/kvstore.jar start -root /kvroot
+2026-03-18 13:33:36.169 UTC INFO [sn1] Create collector service and register parameter listeners successfully.
+2026-03-18 13:33:36.177 UTC INFO [sn1] Started MasterRebalanceThread
+2026-03-18 13:33:36.180 UTC INFO [sn1] Starting MonitorAgent.  Server socket factory:<ClearServerSocketFactory backlog=1024 portRange=5021,5049 acceptMaxActiveConns=0 useAsync> Client socket factory:<ClientSocketFactory name=mystore|sn|monitor id=705008367 connectMs=10000 readMs=5000 clientId=none localAddr=none>
+2026-03-18 13:33:36.189 UTC INFO [sn1] mystore:sn1:MONITOR service port: 5021
+2026-03-18 13:33:36.199 UTC INFO [sn1] Successfully created secure proxy for the storage node agent
+2026-03-18 13:33:36.204 UTC INFO [sn1] mystore:sn1:MAIN service port: 5021
+2026-03-18 13:33:36.210 UTC INFO [sn1] Rebound to registry port 5000 using name sn1 with SSF:<ClearServerSocketFactory backlog=1024 portRange=5021,5049 acceptMaxActiveConns=0 useAsync>
+2026-03-18 13:33:36.210 UTC INFO [sn1] LIFECYCLE Service status change: from=STARTING to=RUNNING
+2026-03-18 13:33:36.210 UTC INFO [sn1] Started StorageNodeAgent for mystore
+2026-03-18 13:33:36.277 UTC INFO [sn1] admin1: Creating AdminService
+2026-03-18 13:33:36.282 UTC INFO [sn1] LIFECYCLE Service monitor event: service=admin1 event=CREATE
+2026-03-18 13:33:36.312 UTC INFO [sn1] admin1: Created AdminService
+2026-03-18 13:33:36.353 UTC INFO [sn1] admin1: newAdminParameters called
+2026-03-18 13:33:38.123 UTC INFO [sn1] rg1-rn1: Creating RepNode
+2026-03-18 13:33:38.133 UTC INFO [sn1] LIFECYCLE Service monitor event: service=rg1-rn1 event=CREATE
+2026-03-18 13:33:38.137 UTC INFO [sn1] rg1-rn1: Starting RepNode
+2026-03-18 13:33:38.149 UTC INFO [sn1] Executing process with arguments: [/usr/lib64/graalvm/graalvm-community-java17/bin/java, -cp, lib/kvstore.jar, -XX:+UseLargePages, -Dje.rep.skipHelperHostResolution=true, -XX:CompileCommand=exclude,oracle/kv/impl/rep/table/TableManager.getSecondaryDB, -XX:CompileCommand=exclude,oracle/kv/impl/rep/table/TableManager.updateIndexKeyCreator, -XX:+UseG1GC, -XX:MaxGCPauseMillis=100, -XX:InitiatingHeapOccupancyPercent=85, -XX:G1HeapRegionSize=32m, -XX:G1MixedGCCountTarget=12, -XX:G1RSetRegionEntries=2560, -XX:G1HeapWastePercent=5, -XX:-ResizePLAB, -XX:+DisableExplicitGC, -Xlog:all=warning,gc*=info,safepoint=info:file=/kvroot/logs/rg1-rn1.gc:utctime:filecount=10,filesize=5242880, -XX:-OmitStackTraceInFastThrow, -Xms1392M, -Xmx1392M, -XX:ParallelGCThreads=2, -XX:ConcGCThreads=2, -Djava.security.properties=/kvroot/mystore/sn1/security-property/rg1-rn1-security.properties, -Djava.util.logging.config.file=/kvroot/mystore/log/config.rg1-rn1, oracle.kv.impl.sna.ManagedService, -root, /kvroot/mystore/sn1, -store, mystore, -class, RepNode, -service, rg1-rn1] with environment: {MALLOC_ARENA_MAX=1}
+2026-03-18 13:33:38.152 UTC INFO [sn1] rg1-rn1: ProcessMonitor: startProcess
+2026-03-18 13:33:38.152 UTC INFO [sn1] LIFECYCLE Service monitor event: service=rg1-rn1 event=START
+2026-03-18 13:33:38.152 UTC INFO [sn1] rg1-rn1: Started RepNode
+2026-03-18 13:33:38.152 UTC INFO [sn1] rg1-rn1: Configuring RepNode
+2026-03-18 13:33:38.652 UTC INFO [sn1] rg1-rn1: ProcessMonitor: [0.002s][warning][pagesize] UseLargePages disabled, no large pages configured and available on the system.
+2026-03-18 13:33:38.653 UTC INFO [sn1] rg1-rn1: ProcessMonitor: CompileCommand: exclude oracle/kv/impl/rep/table/TableManager.getSecondaryDB bool exclude = true
+2026-03-18 13:33:38.654 UTC INFO [sn1] rg1-rn1: ProcessMonitor: CompileCommand: exclude oracle/kv/impl/rep/table/TableManager.updateIndexKeyCreator bool exclude = true
+2026-03-18 13:33:38.961 UTC INFO [sn1] Updating service status, node: rg1-rn1, service status: STARTING
+2026-03-18 13:33:39.434 UTC INFO [sn1] Updating replication state, node: rg1-rn1, replication state: MASTER
+2026-03-18 13:33:39.451 UTC INFO [sn1] Updating service status, node: rg1-rn1, service status: RUNNING
+2026-03-18 13:33:39.455 UTC INFO [sn1] rg1-rn1: ProcessMonitor: ManagedServiceStarted: rg1-rn1
+2026-03-18 13:33:40.388 UTC INFO [sn1] rg1-rn1: Created RepNode
+2026-03-18 13:33:40.441 UTC INFO [sn1] noteState called
+2026-03-18 13:33:40.442 UTC INFO [sn1] added:State RN:rg1-rn1 state: MASTER top seq num: 6
+2026-03-18 13:33:40.447 UTC INFO [sn1] sn: sn1 state transition: State RN:rg1-rn1 state: MASTER top seq num: 6 active masters:[rg1-rn1] active replicas:0 replica leases:0
+2026-03-18 13:33:40.447 UTC INFO [sn1] Acquiring initial topology from RNs
+2026-03-18 13:33:40.467 UTC INFO [sn1] Topology acquired from RN: rg1-rn1 Topo seq#: 6
+2026-03-18 13:33:40.486 UTC INFO [sn1] rg1-rn1: newRepNodeParameters called
+2026-03-18 13:34:40.488 UTC INFO [sn1] Topology acquired from RN: rg1-rn1 Topo seq#: 16

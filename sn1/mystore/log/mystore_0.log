@@ -1,0 +1,957 @@
+2026-03-18 13:33:35.063 UTC INFO - [admin1] Initializing PRIMARY Admin for store: mystore
+2026-03-18 13:33:35.055 UTC INFO - Non-compressing file handler: Created with limit=5242880 count=20
+2026-03-18 13:33:35.069 UTC INFO - [admin1] Created new admin environment dir: /kvroot/admin/admin1/env
+2026-03-18 13:33:35.071 UTC INFO - [admin1] JVM Runtime maxMemory (bytes): 134217728
+2026-03-18 13:33:35.071 UTC INFO - [admin1] Non-default JE properties for environment: {je.cleaner.threads=2, je.evictor.criticalPercentage=20, je.maxDisk=1073741824, je.cleaner.minUtilization=40, je.log.numBuffers=16, je.lock.timeout=10 s, je.env.runVerifier=false, je.cleaner.readSize=1048576, je.log.writeQueueSize=2097152, je.log.fileCacheSize=2000, je.log.iteratorReadSize=1048576, je.log.fileMax=52428800, je.lock.nLockTables=97, je.env.runEvictor=true, je.cleaner.minFileUtilization=5, je.txn.durability=write_no_sync,write_no_sync,simple_majority, je.log.faultReadSize=4096, je.nodeMaxEntries=128}
+2026-03-18 13:33:35.078 UTC INFO - [admin1] DataChannelFactory: basic
+2026-03-18 13:33:35.079 UTC INFO - [admin1] AdminStateTracker-serviceId-admin1 thread start: admin1
+2026-03-18 13:33:35.117 UTC INFO - [admin1] JE: Coordinating tasks:JEBackupManagerCopyLogFile, JELogFlusherASync, JEDataEviction, JELogFlusherSync, JEINCompressor, JEINCheckpointer, JECleaner, JEVerifyBtree, JEOutputStats, JEVerifyLog, JEDataErasureMax real permits:20
+2026-03-18 13:33:35.286 UTC INFO - [admin1] JE: Ack expiry timer period:1000000000 ns
+2026-03-18 13:33:35.316 UTC INFO - [admin1] JE recovery: POPULATE_UTILIZATION_PROFILE
+2026-03-18 13:33:35.334 UTC INFO - [admin1] JE recovery: POPULATE_EXPIRATION_PROFILE
+2026-03-18 13:33:35.343 UTC INFO - [admin1] JE recovery: CKPT
+2026-03-18 13:33:35.344 UTC INFO - [admin1] JE: Checkpoint Start.Checkpoint Id=1
+2026-03-18 13:33:35.355 UTC INFO - [admin1] JE: Checkpoint End. Checkpoint Id=1 success=true
+2026-03-18 13:33:35.360 UTC INFO - [admin1] JE recovery: RECOVERY_FINISHED
+2026-03-18 13:33:35.361 UTC INFO - [admin1] JE: The following ConfigParam(s) in je.properties is/are deprecated and removed, hence the configuration(s) won't take any effect: je.rep.txnRollbackLimit, je.rep.preserveRecordVersion, je.rep.txnRollbackDisabled
+2026-03-18 13:33:35.373 UTC INFO - [admin1] JE: No server auth method
+2026-03-18 13:33:35.376 UTC INFO - [admin1] JE: Started ServiceDispatcher. HostPort=sn1:5010
+2026-03-18 13:33:35.377 UTC INFO - [admin1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2026-03-18 13:33:35.401 UTC INFO - [admin1] JE: DTVLSN at start:0
+2026-03-18 13:33:35.404 UTC INFO - [admin1] JE: State change from DETACHED to UNKNOWN with masterId=NullNode(-1), masterTerm=0(NULL_TERM)
+2026-03-18 13:33:35.415 UTC INFO - [admin1] JE: Learner started
+2026-03-18 13:33:35.417 UTC INFO - [admin1] JE: Acceptor started
+2026-03-18 13:33:35.417 UTC INFO - [admin1] JE: Current group size: 0
+2026-03-18 13:33:35.417 UTC INFO - [admin1] JE: The very first group start up with node 1(-1)
+2026-03-18 13:33:35.424 UTC INFO - [admin1] JE: 1 persisted to election state file: {"promisedProposal":"00000179cf2b6c00179cf2b6c00(MIN_TERM)"}
+2026-03-18 13:33:35.425 UTC INFO - [admin1] JE: 1 no barrier needed, initialized promised term to 179cf2b6c00(MIN_TERM)
+2026-03-18 13:33:35.429 UTC INFO - [admin1] JE: Learner notified. Proposal:0000019d0126d541:e8a1a226b5dd5b00728d36c3f6e24a90:00000001[19d0126d541(2026-03-18T13:33:35.425Z)] Value: Value:sn1$$$5010$$$1$$$1
+2026-03-18 13:33:35.429 UTC INFO - [admin1] JE: Master changed to 1 at term 19d0126d541(2026-03-18T13:33:35.425Z), group status: empty.
+2026-03-18 13:33:35.429 UTC INFO - [admin1] JE: Nascent group. 1 is master by virtue of being the first node.
+2026-03-18 13:33:35.430 UTC INFO - [admin1] JE: State change from UNKNOWN to MASTER with masterId=1(1), masterTerm=19d0126d541(2026-03-18T13:33:35.425Z)
+2026-03-18 13:33:35.447 UTC INFO - [admin1] JE: Successfully added node:1(1) HostPort = sn1: 5010 [ELECTABLE]
+2026-03-18 13:33:35.449 UTC INFO - [admin1] JE recovery: BECOME_CONSISTENT
+2026-03-18 13:33:35.449 UTC INFO - [admin1] JE: Node 1 started
+2026-03-18 13:33:35.450 UTC INFO - [admin1] JE: State change from MASTER to UNKNOWN with masterId=NullNode(-1), masterTerm=0(NULL_TERM)
+2026-03-18 13:33:35.451 UTC INFO - [admin1] JE: State change from UNKNOWN to MASTER with masterId=1(1), masterTerm=19d0126d541(2026-03-18T13:33:35.425Z)
+2026-03-18 13:33:35.473 UTC INFO - [admin1] JE: Feeder manager accepting requests.
+2026-03-18 13:33:35.474 UTC INFO - [admin1] JE: Joining group as master
+2026-03-18 13:33:35.478 UTC INFO - [admin1] LIFECYCLE Replication state change: state=MASTER type=PRIMARY master=1 time=2026-03-18 13:33:35.451 UTC
+2026-03-18 13:33:35.479 UTC INFO - [admin1] AdminStateTracker-serviceId-admin1 queue added:MASTER
+2026-03-18 13:33:35.479 UTC FINE - Closing StorewideLoggingView
+2026-03-18 13:33:35.520 UTC INFO - [admin1] Initializing Admin database
+2026-03-18 13:33:35.542 UTC INFO - [admin1] Admin database initialized
+2026-03-18 13:33:35.554 UTC INFO - [admin1] Starting Thread[System table monitor,5,main]
+2026-03-18 13:33:35.554 UTC INFO - [admin1] Checking status of system tables
+2026-03-18 13:33:35.562 UTC INFO - [admin1] Replicated environment handle established. Cache size: 80530636, State: MASTER
+2026-03-18 13:33:35.698 UTC INFO - [admin1] Starting task: interval is 20 SECONDS, delay is 4303(ms)
+2026-03-18 13:33:35.701 UTC INFO - [admin1] Software versions: NoSQL version: 25.3.21 2025-12-19 19:10:14 UTC  Build id: 60eebbcaec4d Edition: Community, JE version: 25.3.17, Java version: 17.0.9
+2026-03-18 13:33:35.701 UTC INFO - [admin1] Configured Admin for store: mystore
+2026-03-18 13:33:35.703 UTC INFO - [admin1] Admin web service is not starting up, web port: -1
+2026-03-18 13:33:35.773 UTC INFO - [admin1] PlanStateChange [id=1 name=SYS$Create system table SYS$PartitionStatsLease state=APPROVED at 2026-03-18 13:33:35 UTC numAttempts=0 : approval requested]
+2026-03-18 13:33:35.792 UTC INFO - [admin1] Plan 1 [SYS$Create system table SYS$PartitionStatsLease] approved
+2026-03-18 13:33:35.795 UTC INFO - [admin1] PlanStateChange [id=1 name=SYS$Create system table SYS$PartitionStatsLease state=RUNNING at 2026-03-18 13:33:35 UTC numAttempts=1 : Plan is starting]
+2026-03-18 13:33:35.795 UTC INFO - [admin1] Plan 1 [SYS$Create system table SYS$PartitionStatsLease] started, 1 tasks
+2026-03-18 13:33:35.805 UTC INFO - [admin1] Plan 1 [SYS$Create system table SYS$PartitionStatsLease] task [AddTable SYS$PartitionStatsLease] [1] started
+2026-03-18 13:33:35.821 UTC INFO - [admin1] PlanStateChange [id=2 name=Deploy Zone state=APPROVED at 2026-03-18 13:33:35 UTC numAttempts=0 : approval requested]
+2026-03-18 13:33:35.829 UTC INFO - [admin1] Plan 2 [Deploy Zone] approved
+2026-03-18 13:33:35.838 UTC INFO - [admin1] PlanStateChange [id=2 name=Deploy Zone state=RUNNING at 2026-03-18 13:33:35 UTC numAttempts=1 : Plan is starting]
+2026-03-18 13:33:35.838 UTC INFO - [admin1] Plan 2 [Deploy Zone] started, 1 tasks
+2026-03-18 13:33:35.852 UTC INFO - [admin1] Plan 2 [Deploy Zone] task [DeployDatacenter zone=Bangalore] [1] started
+2026-03-18 13:33:35.857 UTC INFO - [admin1] PlanProgress [id=2 name=Deploy Zone state=RUNNING reportTime=2026-03-18 13:33:35 UTC numAttempts=1 generalTask_Total=1 generalTask_Successful=1]
+2026-03-18 13:33:35.862 UTC INFO - [admin1] Plan 2 [Deploy Zone] task [DeployDatacenter zone=Bangalore] [1] ended, state=SUCCEEDED
+2026-03-18 13:33:35.864 UTC INFO - [admin1] PlanStateChange [id=2 name=Deploy Zone state=SUCCEEDED at 2026-03-18 13:33:35 UTC numAttempts=1 : Plan finished.]
+2026-03-18 13:33:35.869 UTC INFO - [admin1] Plan 2 [Deploy Zone] ended, state=SUCCEEDED
+2026-03-18 13:33:35.917 UTC INFO - [admin1] PlanProgress [id=1 name=SYS$Create system table SYS$PartitionStatsLease state=RUNNING reportTime=2026-03-18 13:33:35 UTC numAttempts=1 generalTask_Total=1 generalTask_Successful=1]
+2026-03-18 13:33:35.922 UTC INFO - [admin1] Plan 1 [SYS$Create system table SYS$PartitionStatsLease] task [AddTable SYS$PartitionStatsLease] [1] ended, state=SUCCEEDED
+2026-03-18 13:33:35.923 UTC INFO - [admin1] PlanStateChange [id=1 name=SYS$Create system table SYS$PartitionStatsLease state=SUCCEEDED at 2026-03-18 13:33:35 UTC numAttempts=1 : Plan finished.]
+2026-03-18 13:33:35.926 UTC INFO - [admin1] Plan 1 [SYS$Create system table SYS$PartitionStatsLease] ended, state=SUCCEEDED
+2026-03-18 13:33:35.938 UTC INFO - [admin1] PlanStateChange [id=3 name=SYS$Create system table SYS$MRTableInfo state=APPROVED at 2026-03-18 13:33:35 UTC numAttempts=0 : approval requested]
+2026-03-18 13:33:35.942 UTC INFO - [admin1] Plan 3 [SYS$Create system table SYS$MRTableInfo] approved
+2026-03-18 13:33:35.942 UTC INFO - [admin1] PlanStateChange [id=3 name=SYS$Create system table SYS$MRTableInfo state=RUNNING at 2026-03-18 13:33:35 UTC numAttempts=1 : Plan is starting]
+2026-03-18 13:33:35.942 UTC INFO - [admin1] Plan 3 [SYS$Create system table SYS$MRTableInfo] started, 1 tasks
+2026-03-18 13:33:35.946 UTC INFO - [admin1] Plan 3 [SYS$Create system table SYS$MRTableInfo] task [AddTable SYS$MRTableInfo] [1] started
+2026-03-18 13:33:35.955 UTC INFO - [admin1] PlanStateChange [id=4 name=Deploy Storage Node state=APPROVED at 2026-03-18 13:33:35 UTC numAttempts=0 : approval requested]
+2026-03-18 13:33:35.959 UTC INFO - [admin1] PlanProgress [id=3 name=SYS$Create system table SYS$MRTableInfo state=RUNNING reportTime=2026-03-18 13:33:35 UTC numAttempts=1 generalTask_Total=1 generalTask_Successful=1]
+2026-03-18 13:33:35.961 UTC INFO - [admin1] Plan 4 [Deploy Storage Node] approved
+2026-03-18 13:33:35.963 UTC INFO - [admin1] Plan 3 [SYS$Create system table SYS$MRTableInfo] task [AddTable SYS$MRTableInfo] [1] ended, state=SUCCEEDED
+2026-03-18 13:33:35.964 UTC INFO - [admin1] PlanStateChange [id=3 name=SYS$Create system table SYS$MRTableInfo state=SUCCEEDED at 2026-03-18 13:33:35 UTC numAttempts=1 : Plan finished.]
+2026-03-18 13:33:35.967 UTC INFO - [admin1] PlanStateChange [id=4 name=Deploy Storage Node state=RUNNING at 2026-03-18 13:33:35 UTC numAttempts=1 : Plan is starting]
+2026-03-18 13:33:35.967 UTC INFO - [admin1] Plan 4 [Deploy Storage Node] started, 1 tasks
+2026-03-18 13:33:35.969 UTC INFO - [admin1] PlanStateChange [id=5 name=SYS$Create system table SYS$MRTableInitCheckpoint state=APPROVED at 2026-03-18 13:33:35 UTC numAttempts=0 : approval requested]
+2026-03-18 13:33:35.971 UTC INFO - [admin1] Plan 4 [Deploy Storage Node] task [DeploySN sn1(sn1:5000) zone=zn1] [1] started
+2026-03-18 13:33:35.970 UTC INFO - [admin1] Plan 3 [SYS$Create system table SYS$MRTableInfo] ended, state=SUCCEEDED
+2026-03-18 13:33:35.975 UTC INFO - [admin1] Plan 5 [SYS$Create system table SYS$MRTableInitCheckpoint] approved
+2026-03-18 13:33:35.976 UTC INFO - [admin1] PlanStateChange [id=5 name=SYS$Create system table SYS$MRTableInitCheckpoint state=RUNNING at 2026-03-18 13:33:35 UTC numAttempts=1 : Plan is starting]
+2026-03-18 13:33:35.976 UTC INFO - [admin1] Plan 5 [SYS$Create system table SYS$MRTableInitCheckpoint] started, 1 tasks
+2026-03-18 13:33:35.982 UTC INFO - [admin1] Plan 5 [SYS$Create system table SYS$MRTableInitCheckpoint] task [AddTable SYS$MRTableInitCheckpoint] [1] started
+2026-03-18 13:33:35.986 UTC INFO - [admin1] PlanStateChange [id=6 name=SYS$Create system table SYS$SGAttributesTable state=APPROVED at 2026-03-18 13:33:35 UTC numAttempts=0 : approval requested]
+2026-03-18 13:33:35.992 UTC INFO - [admin1] Plan 6 [SYS$Create system table SYS$SGAttributesTable] approved
+2026-03-18 13:33:35.992 UTC INFO - [admin1] PlanStateChange [id=6 name=SYS$Create system table SYS$SGAttributesTable state=RUNNING at 2026-03-18 13:33:35 UTC numAttempts=1 : Plan is starting]
+2026-03-18 13:33:35.992 UTC INFO - [admin1] Plan 6 [SYS$Create system table SYS$SGAttributesTable] started, 1 tasks
+2026-03-18 13:33:35.995 UTC INFO - [admin1] Plan 6 [SYS$Create system table SYS$SGAttributesTable] task [AddTable SYS$SGAttributesTable] [1] started
+2026-03-18 13:33:35.995 UTC INFO - [admin1] PlanProgress [id=5 name=SYS$Create system table SYS$MRTableInitCheckpoint state=RUNNING reportTime=2026-03-18 13:33:35 UTC numAttempts=1 generalTask_Total=1 generalTask_Successful=1]
+2026-03-18 13:33:36.005 UTC INFO - [admin1] Plan 5 [SYS$Create system table SYS$MRTableInitCheckpoint] task [AddTable SYS$MRTableInitCheckpoint] [1] ended, state=SUCCEEDED
+2026-03-18 13:33:36.006 UTC INFO - [admin1] PlanStateChange [id=5 name=SYS$Create system table SYS$MRTableInitCheckpoint state=SUCCEEDED at 2026-03-18 13:33:36 UTC numAttempts=1 : Plan finished.]
+2026-03-18 13:33:36.012 UTC INFO - [admin1] Plan 5 [SYS$Create system table SYS$MRTableInitCheckpoint] ended, state=SUCCEEDED
+2026-03-18 13:33:36.015 UTC INFO - [admin1] PlanStateChange [id=7 name=SYS$Create system table SYS$MRTableAgentStat state=APPROVED at 2026-03-18 13:33:36 UTC numAttempts=0 : approval requested]
+2026-03-18 13:33:36.016 UTC INFO - [admin1] PlanProgress [id=6 name=SYS$Create system table SYS$SGAttributesTable state=RUNNING reportTime=2026-03-18 13:33:36 UTC numAttempts=1 generalTask_Total=1 generalTask_Successful=1]
+2026-03-18 13:33:36.019 UTC INFO - [admin1] Plan 7 [SYS$Create system table SYS$MRTableAgentStat] approved
+2026-03-18 13:33:36.020 UTC INFO - [admin1] PlanStateChange [id=7 name=SYS$Create system table SYS$MRTableAgentStat state=RUNNING at 2026-03-18 13:33:36 UTC numAttempts=1 : Plan is starting]
+2026-03-18 13:33:36.020 UTC INFO - [admin1] Plan 7 [SYS$Create system table SYS$MRTableAgentStat] started, 1 tasks
+2026-03-18 13:33:36.021 UTC INFO - [admin1] Plan 6 [SYS$Create system table SYS$SGAttributesTable] task [AddTable SYS$SGAttributesTable] [1] ended, state=SUCCEEDED
+2026-03-18 13:33:36.022 UTC INFO - [admin1] PlanStateChange [id=6 name=SYS$Create system table SYS$SGAttributesTable state=SUCCEEDED at 2026-03-18 13:33:36 UTC numAttempts=1 : Plan finished.]
+2026-03-18 13:33:36.028 UTC INFO - [admin1] Plan 7 [SYS$Create system table SYS$MRTableAgentStat] task [AddTable SYS$MRTableAgentStat] [1] started
+2026-03-18 13:33:36.029 UTC INFO - [admin1] Plan 6 [SYS$Create system table SYS$SGAttributesTable] ended, state=SUCCEEDED
+2026-03-18 13:33:36.032 UTC INFO - [admin1] PlanStateChange [id=8 name=SYS$Create system table SYS$TableMetadata state=APPROVED at 2026-03-18 13:33:36 UTC numAttempts=0 : approval requested]
+2026-03-18 13:33:36.037 UTC INFO - [admin1] Plan 8 [SYS$Create system table SYS$TableMetadata] approved
+2026-03-18 13:33:36.037 UTC INFO - [admin1] PlanStateChange [id=8 name=SYS$Create system table SYS$TableMetadata state=RUNNING at 2026-03-18 13:33:36 UTC numAttempts=1 : Plan is starting]
+2026-03-18 13:33:36.037 UTC INFO - [admin1] Plan 8 [SYS$Create system table SYS$TableMetadata] started, 1 tasks
+2026-03-18 13:33:36.042 UTC INFO - [admin1] PlanProgress [id=7 name=SYS$Create system table SYS$MRTableAgentStat state=RUNNING reportTime=2026-03-18 13:33:36 UTC numAttempts=1 generalTask_Total=1 generalTask_Successful=1]
+2026-03-18 13:33:36.046 UTC INFO - [admin1] Plan 8 [SYS$Create system table SYS$TableMetadata] task [AddTable SYS$TableMetadata] [1] started
+2026-03-18 13:33:36.049 UTC INFO - [admin1] Plan 7 [SYS$Create system table SYS$MRTableAgentStat] task [AddTable SYS$MRTableAgentStat] [1] ended, state=SUCCEEDED
+2026-03-18 13:33:36.049 UTC INFO - [admin1] PlanStateChange [id=7 name=SYS$Create system table SYS$MRTableAgentStat state=SUCCEEDED at 2026-03-18 13:33:36 UTC numAttempts=1 : Plan finished.]
+2026-03-18 13:33:36.057 UTC INFO - [admin1] PlanStateChange [id=9 name=SYS$Create system table SYS$TableStatsIndex state=APPROVED at 2026-03-18 13:33:36 UTC numAttempts=0 : approval requested]
+2026-03-18 13:33:36.057 UTC INFO - [admin1] Plan 7 [SYS$Create system table SYS$MRTableAgentStat] ended, state=SUCCEEDED
+2026-03-18 13:33:36.060 UTC INFO - [admin1] PlanProgress [id=8 name=SYS$Create system table SYS$TableMetadata state=RUNNING reportTime=2026-03-18 13:33:36 UTC numAttempts=1 generalTask_Total=1 generalTask_Successful=1]
+2026-03-18 13:33:36.063 UTC INFO - [admin1] Plan 9 [SYS$Create system table SYS$TableStatsIndex] approved
+2026-03-18 13:33:36.063 UTC INFO - [admin1] PlanStateChange [id=9 name=SYS$Create system table SYS$TableStatsIndex state=RUNNING at 2026-03-18 13:33:36 UTC numAttempts=1 : Plan is starting]
+2026-03-18 13:33:36.063 UTC INFO - [admin1] Plan 9 [SYS$Create system table SYS$TableStatsIndex] started, 1 tasks
+2026-03-18 13:33:36.067 UTC INFO - [admin1] Plan 8 [SYS$Create system table SYS$TableMetadata] task [AddTable SYS$TableMetadata] [1] ended, state=SUCCEEDED
+2026-03-18 13:33:36.068 UTC INFO - [admin1] PlanStateChange [id=8 name=SYS$Create system table SYS$TableMetadata state=SUCCEEDED at 2026-03-18 13:33:36 UTC numAttempts=1 : Plan finished.]
+2026-03-18 13:33:36.071 UTC INFO - [admin1] Plan 9 [SYS$Create system table SYS$TableStatsIndex] task [AddTable SYS$TableStatsIndex] [1] started
+2026-03-18 13:33:36.075 UTC INFO - [admin1] PlanStateChange [id=10 name=SYS$Create system table SYS$StreamRequest state=APPROVED at 2026-03-18 13:33:36 UTC numAttempts=0 : approval requested]
+2026-03-18 13:33:36.076 UTC INFO - [admin1] Plan 8 [SYS$Create system table SYS$TableMetadata] ended, state=SUCCEEDED
+2026-03-18 13:33:36.077 UTC INFO - [admin1] Plan 10 [SYS$Create system table SYS$StreamRequest] approved
+2026-03-18 13:33:36.079 UTC INFO - [admin1] PlanStateChange [id=10 name=SYS$Create system table SYS$StreamRequest state=RUNNING at 2026-03-18 13:33:36 UTC numAttempts=1 : Plan is starting]
+2026-03-18 13:33:36.079 UTC INFO - [admin1] Plan 10 [SYS$Create system table SYS$StreamRequest] started, 1 tasks
+2026-03-18 13:33:36.082 UTC INFO - [admin1] Plan 10 [SYS$Create system table SYS$StreamRequest] task [AddTable SYS$StreamRequest] [1] started
+2026-03-18 13:33:36.082 UTC INFO - [admin1] PlanProgress [id=9 name=SYS$Create system table SYS$TableStatsIndex state=RUNNING reportTime=2026-03-18 13:33:36 UTC numAttempts=1 generalTask_Total=1 generalTask_Successful=1]
+2026-03-18 13:33:36.084 UTC INFO - [admin1] PlanStateChange [id=11 name=SYS$Create system table SYS$TableStatsPartition state=APPROVED at 2026-03-18 13:33:36 UTC numAttempts=0 : approval requested]
+2026-03-18 13:33:36.086 UTC INFO - [admin1] Plan 9 [SYS$Create system table SYS$TableStatsIndex] task [AddTable SYS$TableStatsIndex] [1] ended, state=SUCCEEDED
+2026-03-18 13:33:36.086 UTC INFO - [admin1] PlanStateChange [id=9 name=SYS$Create system table SYS$TableStatsIndex state=SUCCEEDED at 2026-03-18 13:33:36 UTC numAttempts=1 : Plan finished.]
+2026-03-18 13:33:36.088 UTC INFO - [admin1] Plan 11 [SYS$Create system table SYS$TableStatsPartition] approved
+2026-03-18 13:33:36.089 UTC INFO - [admin1] PlanStateChange [id=11 name=SYS$Create system table SYS$TableStatsPartition state=RUNNING at 2026-03-18 13:33:36 UTC numAttempts=1 : Plan is starting]
+2026-03-18 13:33:36.089 UTC INFO - [admin1] Plan 11 [SYS$Create system table SYS$TableStatsPartition] started, 1 tasks
+2026-03-18 13:33:36.090 UTC INFO - [admin1] Plan 9 [SYS$Create system table SYS$TableStatsIndex] ended, state=SUCCEEDED
+2026-03-18 13:33:36.092 UTC INFO - [admin1] PlanProgress [id=10 name=SYS$Create system table SYS$StreamRequest state=RUNNING reportTime=2026-03-18 13:33:36 UTC numAttempts=1 generalTask_Total=1 generalTask_Successful=1]
+2026-03-18 13:33:36.092 UTC INFO - [admin1] Plan 11 [SYS$Create system table SYS$TableStatsPartition] task [AddTable SYS$TableStatsPartition] [1] started
+2026-03-18 13:33:36.096 UTC INFO - [admin1] Plan 10 [SYS$Create system table SYS$StreamRequest] task [AddTable SYS$StreamRequest] [1] ended, state=SUCCEEDED
+2026-03-18 13:33:36.096 UTC INFO - [admin1] PlanStateChange [id=10 name=SYS$Create system table SYS$StreamRequest state=SUCCEEDED at 2026-03-18 13:33:36 UTC numAttempts=1 : Plan finished.]
+2026-03-18 13:33:36.107 UTC INFO - [admin1] Plan 10 [SYS$Create system table SYS$StreamRequest] ended, state=SUCCEEDED
+2026-03-18 13:33:36.114 UTC INFO - [admin1] PlanProgress [id=11 name=SYS$Create system table SYS$TableStatsPartition state=RUNNING reportTime=2026-03-18 13:33:36 UTC numAttempts=1 generalTask_Total=1 generalTask_Successful=1]
+2026-03-18 13:33:36.119 UTC INFO - [admin1] PlanStateChange [id=12 name=SYS$Create system table SYS$StreamResponse state=APPROVED at 2026-03-18 13:33:36 UTC numAttempts=0 : approval requested]
+2026-03-18 13:33:36.136 UTC INFO - [admin1] Plan 12 [SYS$Create system table SYS$StreamResponse] approved
+2026-03-18 13:33:36.136 UTC INFO - [admin1] Plan 11 [SYS$Create system table SYS$TableStatsPartition] task [AddTable SYS$TableStatsPartition] [1] ended, state=SUCCEEDED
+2026-03-18 13:33:36.136 UTC INFO - [admin1] PlanStateChange [id=11 name=SYS$Create system table SYS$TableStatsPartition state=SUCCEEDED at 2026-03-18 13:33:36 UTC numAttempts=1 : Plan finished.]
+2026-03-18 13:33:36.141 UTC INFO - [admin1] PlanStateChange [id=12 name=SYS$Create system table SYS$StreamResponse state=RUNNING at 2026-03-18 13:33:36 UTC numAttempts=1 : Plan is starting]
+2026-03-18 13:33:36.141 UTC INFO - [admin1] Plan 12 [SYS$Create system table SYS$StreamResponse] started, 1 tasks
+2026-03-18 13:33:36.148 UTC INFO - [admin1] Plan 12 [SYS$Create system table SYS$StreamResponse] task [AddTable SYS$StreamResponse] [1] started
+2026-03-18 13:33:36.148 UTC INFO - [admin1] Plan 11 [SYS$Create system table SYS$TableStatsPartition] ended, state=SUCCEEDED
+2026-03-18 13:33:36.150 UTC INFO - [admin1] PlanStateChange [id=13 name=SYS$Create system table SYS$IndexStatsLease state=APPROVED at 2026-03-18 13:33:36 UTC numAttempts=0 : approval requested]
+2026-03-18 13:33:36.152 UTC INFO - [admin1] Plan 13 [SYS$Create system table SYS$IndexStatsLease] approved
+2026-03-18 13:33:36.153 UTC INFO - [admin1] PlanStateChange [id=13 name=SYS$Create system table SYS$IndexStatsLease state=RUNNING at 2026-03-18 13:33:36 UTC numAttempts=1 : Plan is starting]
+2026-03-18 13:33:36.153 UTC INFO - [admin1] Plan 13 [SYS$Create system table SYS$IndexStatsLease] started, 1 tasks
+2026-03-18 13:33:36.156 UTC INFO - [admin1] Plan 13 [SYS$Create system table SYS$IndexStatsLease] task [AddTable SYS$IndexStatsLease] [1] started
+2026-03-18 13:33:36.158 UTC INFO - [admin1] PlanProgress [id=12 name=SYS$Create system table SYS$StreamResponse state=RUNNING reportTime=2026-03-18 13:33:36 UTC numAttempts=1 generalTask_Total=1 generalTask_Successful=1]
+2026-03-18 13:33:36.160 UTC INFO - [admin1] Plan 12 [SYS$Create system table SYS$StreamResponse] task [AddTable SYS$StreamResponse] [1] ended, state=SUCCEEDED
+2026-03-18 13:33:36.161 UTC INFO - [admin1] PlanStateChange [id=12 name=SYS$Create system table SYS$StreamResponse state=SUCCEEDED at 2026-03-18 13:33:36 UTC numAttempts=1 : Plan finished.]
+2026-03-18 13:33:36.164 UTC INFO - [admin1] Plan 12 [SYS$Create system table SYS$StreamResponse] ended, state=SUCCEEDED
+2026-03-18 13:33:36.167 UTC INFO - [admin1] PlanProgress [id=13 name=SYS$Create system table SYS$IndexStatsLease state=RUNNING reportTime=2026-03-18 13:33:36 UTC numAttempts=1 generalTask_Total=1 generalTask_Successful=1]
+2026-03-18 13:33:36.170 UTC INFO - [admin1] PlanStateChange [id=14 name=SYS$Create system table SYS$TopologyHistory state=APPROVED at 2026-03-18 13:33:36 UTC numAttempts=0 : approval requested]
+2026-03-18 13:33:36.180 UTC INFO - [admin1] Plan 14 [SYS$Create system table SYS$TopologyHistory] approved
+2026-03-18 13:33:36.181 UTC INFO - [admin1] PlanStateChange [id=14 name=SYS$Create system table SYS$TopologyHistory state=RUNNING at 2026-03-18 13:33:36 UTC numAttempts=1 : Plan is starting]
+2026-03-18 13:33:36.181 UTC INFO - [admin1] Plan 13 [SYS$Create system table SYS$IndexStatsLease] task [AddTable SYS$IndexStatsLease] [1] ended, state=SUCCEEDED
+2026-03-18 13:33:36.181 UTC INFO - [admin1] PlanStateChange [id=13 name=SYS$Create system table SYS$IndexStatsLease state=SUCCEEDED at 2026-03-18 13:33:36 UTC numAttempts=1 : Plan finished.]
+2026-03-18 13:33:36.181 UTC INFO - [admin1] Plan 14 [SYS$Create system table SYS$TopologyHistory] started, 1 tasks
+2026-03-18 13:33:36.184 UTC INFO - [admin1] Plan 13 [SYS$Create system table SYS$IndexStatsLease] ended, state=SUCCEEDED
+2026-03-18 13:33:36.187 UTC INFO - [admin1] Plan 14 [SYS$Create system table SYS$TopologyHistory] task [AddTable SYS$TopologyHistory] [1] started
+2026-03-18 13:33:36.201 UTC INFO - [admin1] PlanProgress [id=14 name=SYS$Create system table SYS$TopologyHistory state=RUNNING reportTime=2026-03-18 13:33:36 UTC numAttempts=1 generalTask_Total=1 generalTask_Successful=1]
+2026-03-18 13:33:36.205 UTC INFO - [admin1] Plan 14 [SYS$Create system table SYS$TopologyHistory] task [AddTable SYS$TopologyHistory] [1] ended, state=SUCCEEDED
+2026-03-18 13:33:36.206 UTC INFO - [admin1] PlanStateChange [id=14 name=SYS$Create system table SYS$TopologyHistory state=SUCCEEDED at 2026-03-18 13:33:36 UTC numAttempts=1 : Plan finished.]
+2026-03-18 13:33:36.208 UTC INFO - [admin1] Plan 14 [SYS$Create system table SYS$TopologyHistory] ended, state=SUCCEEDED
+2026-03-18 13:33:36.210 UTC WARNING - [admin1] Failed to find SNA: java.rmi.NotBoundException: Service not found: hostName=sn1 registryPort=5000 bindingName=mystore:sn1:MAIN
+2026-03-18 13:33:36.210 UTC WARNING - [admin1] Failed to deliver plan progress to MgmtAgent
+java.rmi.NoSuchObjectException: java.io.IOException: Attempt to access inactive service with dialog type 9, active type numbers:[1006]
+	at oracle.kv.impl.util.registry.AsyncRegistryUtils.convertToRemoteException(AsyncRegistryUtils.java:998)
+	at oracle.kv.impl.async.JavaSerialInitiatorProxy.invokeNonObject(JavaSerialInitiatorProxy.java:176)
+	at oracle.kv.impl.util.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:107)
+	at jdk.proxy1/jdk.proxy1.$Proxy0.updatePlanStatus(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor11.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at oracle.kv.impl.util.AbstractInvocationHandler.invokeMethod(AbstractInvocationHandler.java:60)
+	at oracle.kv.impl.security.ContextProxy$RemoteProxy.invokeAuth(ContextProxy.java:289)
+	at oracle.kv.impl.security.ContextProxy.invokeNonObject(ContextProxy.java:132)
+	at oracle.kv.impl.util.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:107)
+	at jdk.proxy1/jdk.proxy1.$Proxy0.updatePlanStatus(Unknown Source)
+	at oracle.kv.impl.sna.StorageNodeAgentAPI.updatePlanStatus(StorageNodeAgentAPI.java:801)
+	at oracle.kv.impl.admin.AdminService$MgmtAgentPlanProgressTracker.lambda$newInfo$0(AdminService.java:1000)
+	at oracle.kv.impl.admin.AdminService.doSnaCallback(AdminService.java:872)
+	at oracle.kv.impl.admin.AdminService.lambda$withAsyncSnaCallback$1(AdminService.java:865)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-03-18 13:33:36.221 UTC INFO - [admin1] Monitor collector: adding sn1 to monitoring
+2026-03-18 13:33:36.224 UTC INFO - [admin1] PlanProgress [id=4 name=Deploy Storage Node state=RUNNING reportTime=2026-03-18 13:33:36 UTC numAttempts=1 generalTask_Total=1 generalTask_Successful=1]
+2026-03-18 13:33:36.228 UTC INFO - [admin1] Plan 4 [Deploy Storage Node] task [DeploySN sn1(sn1:5000) zone=zn1] [1] ended, state=SUCCEEDED
+2026-03-18 13:33:36.229 UTC INFO - [admin1] PlanStateChange [id=4 name=Deploy Storage Node state=SUCCEEDED at 2026-03-18 13:33:36 UTC numAttempts=1 : Plan finished.]
+2026-03-18 13:33:36.234 UTC INFO - [admin1] Plan 4 [Deploy Storage Node] ended, state=SUCCEEDED
+2026-03-18 13:33:36.113 UTC INFO - [sn1] LIFECYCLE Service status change: from=WAITING_FOR_DEPLOY to=STARTING
+2026-03-18 13:33:36.244 UTC INFO - [admin1] [sn1] Service status: STARTING 2026-03-18 13:33:36 UTC
+2026-03-18 13:33:36.114 UTC INFO - [sn1] Starting StorageNodeAgent for mystore
+2026-03-18 13:33:36.114 UTC INFO - [sn1] Software versions: NoSQL version: 25.3.21 2025-12-19 19:10:14 UTC  Build id: 60eebbcaec4d Edition: Community, JE version: 25.3.17, Java version: 17.0.9
+2026-03-18 13:33:36.114 UTC INFO - [sn1] SNA process command line: /usr/lib64/graalvm/graalvm-community-java17/bin/java -Xmx256m -Xms128m -jar lib/kvstore.jar start -root /kvroot
+2026-03-18 13:33:36.169 UTC INFO - [sn1] Create collector service and register parameter listeners successfully.
+2026-03-18 13:33:36.177 UTC INFO - [sn1] Started MasterRebalanceThread
+2026-03-18 13:33:36.180 UTC INFO - [sn1] Starting MonitorAgent.  Server socket factory:<ClearServerSocketFactory backlog=1024 portRange=5021,5049 acceptMaxActiveConns=0 useAsync> Client socket factory:<ClientSocketFactory name=mystore|sn|monitor id=705008367 connectMs=10000 readMs=5000 clientId=none localAddr=none>
+2026-03-18 13:33:36.189 UTC INFO - [sn1] mystore:sn1:MONITOR service port: 5021
+2026-03-18 13:33:36.199 UTC INFO - [sn1] Successfully created secure proxy for the storage node agent
+2026-03-18 13:33:36.204 UTC INFO - [sn1] mystore:sn1:MAIN service port: 5021
+2026-03-18 13:33:36.210 UTC INFO - [sn1] Rebound to registry port 5000 using name sn1 with SSF:<ClearServerSocketFactory backlog=1024 portRange=5021,5049 acceptMaxActiveConns=0 useAsync>
+2026-03-18 13:33:36.210 UTC INFO - [sn1] LIFECYCLE Service status change: from=STARTING to=RUNNING
+2026-03-18 13:33:36.244 UTC INFO - [admin1] [sn1] Service status: RUNNING 2026-03-18 13:33:36 UTC
+2026-03-18 13:33:36.210 UTC INFO - [sn1] Started StorageNodeAgent for mystore
+2026-03-18 13:33:36.252 UTC INFO - [admin1] PlanStateChange [id=15 name=Deploy Admin Service state=APPROVED at 2026-03-18 13:33:36 UTC numAttempts=0 : approval requested]
+2026-03-18 13:33:36.253 UTC INFO - [admin1] Plan 15 [Deploy Admin Service] approved
+2026-03-18 13:33:36.259 UTC INFO - [admin1] PlanStateChange [id=15 name=Deploy Admin Service state=RUNNING at 2026-03-18 13:33:36 UTC numAttempts=1 : Plan is starting]
+2026-03-18 13:33:36.259 UTC INFO - [admin1] Plan 15 [Deploy Admin Service] started, 3 tasks
+2026-03-18 13:33:36.266 UTC INFO - [admin1] Plan 15 [Deploy Admin Service] task [DeployAdmin admin1 on sn1] [1] started
+2026-03-18 13:33:36.302 UTC INFO - [admin1] newParameters called for Monitor
+2026-03-18 13:33:36.311 UTC INFO - [admin1] newGlobalParameters are identical to old global parameters
+2026-03-18 13:33:36.315 UTC INFO - [admin1] PlanProgress [id=15 name=Deploy Admin Service state=RUNNING reportTime=2026-03-18 13:33:36 UTC numAttempts=1 generalTask_Total=3 generalTask_Successful=1 generalTask_NotStarted=2]
+2026-03-18 13:33:36.317 UTC INFO - [admin1] Plan 15 [Deploy Admin Service] task [DeployAdmin admin1 on sn1] [1] ended, state=SUCCEEDED
+2026-03-18 13:33:36.317 UTC INFO - [admin1] Plan 15 [Deploy Admin Service] task [WaitForAdminState admin1 to reach RUNNING] [2] started
+2026-03-18 13:33:36.333 UTC INFO - [admin1] PlanProgress [id=15 name=Deploy Admin Service state=RUNNING reportTime=2026-03-18 13:33:36 UTC numAttempts=1 generalTask_Total=3 generalTask_Successful=2 generalTask_NotStarted=1]
+2026-03-18 13:33:36.335 UTC INFO - [admin1] Plan 15 [Deploy Admin Service] task [WaitForAdminState admin1 to reach RUNNING] [2] ended, state=SUCCEEDED
+2026-03-18 13:33:36.335 UTC INFO - [admin1] Plan 15 [Deploy Admin Service] task [UpdateAdminHelperHost null] [3] started
+2026-03-18 13:33:36.341 UTC INFO - [admin1] oracle.kv.impl.admin.param.Parameters@6b83200e changed helperHost to sn1:5010
+2026-03-18 13:33:36.391 UTC INFO - [admin1] PlanProgress [id=15 name=Deploy Admin Service state=RUNNING reportTime=2026-03-18 13:33:36 UTC numAttempts=1 generalTask_Total=3 generalTask_Successful=3]
+2026-03-18 13:33:36.394 UTC INFO - [admin1] Plan 15 [Deploy Admin Service] task [UpdateAdminHelperHost null] [3] ended, state=SUCCEEDED
+2026-03-18 13:33:36.395 UTC INFO - [admin1] PlanStateChange [id=15 name=Deploy Admin Service state=SUCCEEDED at 2026-03-18 13:33:36 UTC numAttempts=1 : Plan finished.]
+2026-03-18 13:33:36.396 UTC INFO - [admin1] Plan 15 [Deploy Admin Service] ended, state=SUCCEEDED
+2026-03-18 13:33:36.405 UTC INFO - [admin1] Created Storage Node Pool: BangalorePool
+2026-03-18 13:33:36.425 UTC INFO - [admin1] Added Storage Node sn1 to pool: BangalorePool
+2026-03-18 13:33:36.438 UTC INFO - [admin1] PlanStateChange [id=16 name=Deploy Storage Node state=APPROVED at 2026-03-18 13:33:36 UTC numAttempts=0 : approval requested]
+2026-03-18 13:33:36.442 UTC INFO - [admin1] Plan 16 [Deploy Storage Node] approved
+2026-03-18 13:33:36.445 UTC INFO - [admin1] PlanStateChange [id=16 name=Deploy Storage Node state=RUNNING at 2026-03-18 13:33:36 UTC numAttempts=1 : Plan is starting]
+2026-03-18 13:33:36.445 UTC INFO - [admin1] Plan 16 [Deploy Storage Node] started, 1 tasks
+2026-03-18 13:33:36.449 UTC INFO - [admin1] Plan 16 [Deploy Storage Node] task [DeploySN sn2(sn2:5000) zone=zn1] [1] started
+2026-03-18 13:33:37.135 UTC INFO - [admin1] Monitor collector: adding sn2 to monitoring
+2026-03-18 13:33:37.137 UTC INFO - [admin1] PlanProgress [id=16 name=Deploy Storage Node state=RUNNING reportTime=2026-03-18 13:33:37 UTC numAttempts=1 generalTask_Total=1 generalTask_Successful=1]
+2026-03-18 13:33:37.139 UTC INFO - [admin1] Plan 16 [Deploy Storage Node] task [DeploySN sn2(sn2:5000) zone=zn1] [1] ended, state=SUCCEEDED
+2026-03-18 13:33:37.139 UTC INFO - [admin1] PlanStateChange [id=16 name=Deploy Storage Node state=SUCCEEDED at 2026-03-18 13:33:37 UTC numAttempts=1 : Plan finished.]
+2026-03-18 13:33:37.141 UTC INFO - [admin1] Plan 16 [Deploy Storage Node] ended, state=SUCCEEDED
+2026-03-18 13:33:37.152 UTC INFO - [admin1] Added Storage Node sn2 to pool: BangalorePool
+2026-03-18 13:33:36.933 UTC INFO - [sn2] LIFECYCLE Service status change: from=WAITING_FOR_DEPLOY to=STARTING
+2026-03-18 13:33:37.155 UTC INFO - [admin1] [sn2] Service status: STARTING 2026-03-18 13:33:36 UTC
+2026-03-18 13:33:36.934 UTC INFO - [sn2] Starting StorageNodeAgent for mystore
+2026-03-18 13:33:36.934 UTC INFO - [sn2] Software versions: NoSQL version: 25.3.21 2025-12-19 19:10:14 UTC  Build id: 60eebbcaec4d Edition: Community, JE version: 25.3.17, Java version: 17.0.9
+2026-03-18 13:33:36.934 UTC INFO - [sn2] SNA process command line: /usr/lib64/graalvm/graalvm-community-java17/bin/java -Xmx256m -Xms128m -jar lib/kvstore.jar start -root /kvroot
+2026-03-18 13:33:37.089 UTC INFO - [sn2] Create collector service and register parameter listeners successfully.
+2026-03-18 13:33:37.094 UTC INFO - [sn2] Started MasterRebalanceThread
+2026-03-18 13:33:37.101 UTC INFO - [sn2] Starting MonitorAgent.  Server socket factory:<ClearServerSocketFactory backlog=1024 portRange=5041,5069 acceptMaxActiveConns=0 useAsync> Client socket factory:<ClientSocketFactory name=mystore|sn|monitor id=460265661 connectMs=10000 readMs=5000 clientId=none localAddr=none>
+2026-03-18 13:33:37.108 UTC INFO - [sn2] mystore:sn2:MONITOR service port: 5041
+2026-03-18 13:33:37.116 UTC INFO - [sn2] Successfully created secure proxy for the storage node agent
+2026-03-18 13:33:37.123 UTC INFO - [sn2] mystore:sn2:MAIN service port: 5041
+2026-03-18 13:33:37.127 UTC INFO - [sn2] Rebound to registry port 5000 using name sn2 with SSF:<ClearServerSocketFactory backlog=1024 portRange=5041,5069 acceptMaxActiveConns=0 useAsync>
+2026-03-18 13:33:37.127 UTC INFO - [sn2] LIFECYCLE Service status change: from=STARTING to=RUNNING
+2026-03-18 13:33:37.155 UTC INFO - [admin1] [sn2] Service status: RUNNING 2026-03-18 13:33:37 UTC
+2026-03-18 13:33:37.128 UTC INFO - [sn2] Started StorageNodeAgent for mystore
+2026-03-18 13:33:37.173 UTC INFO - [admin1] PlanStateChange [id=17 name=Deploy Storage Node state=APPROVED at 2026-03-18 13:33:37 UTC numAttempts=0 : approval requested]
+2026-03-18 13:33:37.177 UTC INFO - [admin1] Plan 17 [Deploy Storage Node] approved
+2026-03-18 13:33:37.181 UTC INFO - [admin1] PlanStateChange [id=17 name=Deploy Storage Node state=RUNNING at 2026-03-18 13:33:37 UTC numAttempts=1 : Plan is starting]
+2026-03-18 13:33:37.181 UTC INFO - [admin1] Plan 17 [Deploy Storage Node] started, 1 tasks
+2026-03-18 13:33:37.183 UTC INFO - [admin1] Plan 17 [Deploy Storage Node] task [DeploySN sn3(sn3:5000) zone=zn1] [1] started
+2026-03-18 13:33:37.833 UTC INFO - [admin1] Monitor collector: adding sn3 to monitoring
+2026-03-18 13:33:37.844 UTC INFO - [admin1] PlanProgress [id=17 name=Deploy Storage Node state=RUNNING reportTime=2026-03-18 13:33:37 UTC numAttempts=1 generalTask_Total=1 generalTask_Successful=1]
+2026-03-18 13:33:37.636 UTC INFO - [sn3] LIFECYCLE Service status change: from=WAITING_FOR_DEPLOY to=STARTING
+2026-03-18 13:33:37.848 UTC INFO - [admin1] [sn3] Service status: STARTING 2026-03-18 13:33:37 UTC
+2026-03-18 13:33:37.637 UTC INFO - [sn3] Starting StorageNodeAgent for mystore
+2026-03-18 13:33:37.637 UTC INFO - [sn3] Software versions: NoSQL version: 25.3.21 2025-12-19 19:10:14 UTC  Build id: 60eebbcaec4d Edition: Community, JE version: 25.3.17, Java version: 17.0.9
+2026-03-18 13:33:37.637 UTC INFO - [sn3] SNA process command line: /usr/lib64/graalvm/graalvm-community-java17/bin/java -Xmx256m -Xms128m -jar lib/kvstore.jar start -root /kvroot
+2026-03-18 13:33:37.789 UTC INFO - [sn3] Create collector service and register parameter listeners successfully.
+2026-03-18 13:33:37.794 UTC INFO - [sn3] Started MasterRebalanceThread
+2026-03-18 13:33:37.801 UTC INFO - [sn3] Starting MonitorAgent.  Server socket factory:<ClearServerSocketFactory backlog=1024 portRange=5061,5089 acceptMaxActiveConns=0 useAsync> Client socket factory:<ClientSocketFactory name=mystore|sn|monitor id=-1771237254 connectMs=10000 readMs=5000 clientId=none localAddr=none>
+2026-03-18 13:33:37.807 UTC INFO - [sn3] mystore:sn3:MONITOR service port: 5061
+2026-03-18 13:33:37.815 UTC INFO - [sn3] Successfully created secure proxy for the storage node agent
+2026-03-18 13:33:37.819 UTC INFO - [sn3] mystore:sn3:MAIN service port: 5061
+2026-03-18 13:33:37.821 UTC INFO - [sn3] Rebound to registry port 5000 using name sn3 with SSF:<ClearServerSocketFactory backlog=1024 portRange=5061,5089 acceptMaxActiveConns=0 useAsync>
+2026-03-18 13:33:37.821 UTC INFO - [sn3] LIFECYCLE Service status change: from=STARTING to=RUNNING
+2026-03-18 13:33:37.848 UTC INFO - [admin1] [sn3] Service status: RUNNING 2026-03-18 13:33:37 UTC
+2026-03-18 13:33:37.822 UTC INFO - [sn3] Started StorageNodeAgent for mystore
+2026-03-18 13:33:37.851 UTC INFO - [admin1] Plan 17 [Deploy Storage Node] task [DeploySN sn3(sn3:5000) zone=zn1] [1] ended, state=SUCCEEDED
+2026-03-18 13:33:37.851 UTC INFO - [admin1] PlanStateChange [id=17 name=Deploy Storage Node state=SUCCEEDED at 2026-03-18 13:33:37 UTC numAttempts=1 : Plan finished.]
+2026-03-18 13:33:37.856 UTC INFO - [admin1] Plan 17 [Deploy Storage Node] ended, state=SUCCEEDED
+2026-03-18 13:33:37.865 UTC INFO - [admin1] Added Storage Node sn3 to pool: BangalorePool
+2026-03-18 13:33:37.888 UTC INFO - [admin1] topo has nothing to rebalance
+2026-03-18 13:33:37.928 UTC INFO - [admin1] PlanStateChange [id=18 name=Deploy Topo state=APPROVED at 2026-03-18 13:33:37 UTC numAttempts=0 : approval requested]
+2026-03-18 13:33:37.930 UTC INFO - [admin1] Plan 18 [Deploy Topo] approved
+2026-03-18 13:33:37.942 UTC INFO - [admin1] Plan 18 [Deploy Topo] deploying topology candidate topo.
+2026-03-18 13:33:37.955 UTC INFO - [admin1] Current topology: store=mystore  numPartitions=0 sequence=4
+  zn: id=zn1 name=Bangalore repFactor=1 type=PRIMARY allowArbiters=false masterAffinity=false
+
+  sn=[sn1] zn:[id=zn1 name=Bangalore] sn1:5000
+  sn=[sn2] zn:[id=zn1 name=Bangalore] sn2:5000
+  sn=[sn3] zn:[id=zn1 name=Bangalore] sn3:5000
+
+  numShards=0
+
+2026-03-18 13:33:37.957 UTC INFO - [admin1] Preview of changes to be executed by Plan 18 [Deploy Topo]:
+Topology transformation from current deployed topology to topo:
+Create 3 shards 
+Create 3 RNs 
+Create 6 partitions 
+
+shard rg1
+  1 new RN : rg1-rn1 
+  2 new partitions 
+shard rg2
+  1 new RN : rg2-rn1 
+  2 new partitions 
+shard rg3
+  1 new RN : rg3-rn1 
+  2 new partitions 
+
+2026-03-18 13:33:37.958 UTC INFO - [admin1] Target topology candidate: topo
+store=mystore  numPartitions=6 sequence=16
+  zn: id=zn1 name=Bangalore repFactor=1 type=PRIMARY allowArbiters=false masterAffinity=false
+
+  sn=[sn1] zn:[id=zn1 name=Bangalore] sn1:5000
+    [rg1-rn1]
+  sn=[sn2] zn:[id=zn1 name=Bangalore] sn2:5000
+    [rg2-rn1]
+  sn=[sn3] zn:[id=zn1 name=Bangalore] sn3:5000
+    [rg3-rn1]
+
+  numShards=3
+  shard=[rg1] num partitions=2
+    [rg1-rn1] sn=sn1
+  shard=[rg2] num partitions=2
+    [rg2-rn1] sn=sn2
+  shard=[rg3] num partitions=2
+    [rg3-rn1] sn=sn3
+
+2026-03-18 13:33:37.959 UTC INFO - [admin1] PlanStateChange [id=18 name=Deploy Topo state=RUNNING at 2026-03-18 13:33:37 UTC numAttempts=1 : Plan is starting]
+2026-03-18 13:33:37.959 UTC INFO - [admin1] Plan 18 [Deploy Topo] started, 17 tasks
+2026-03-18 13:33:37.964 UTC INFO - [admin1] Plan 18 [Deploy Topo] task [UpdateDatacenterV2 zone=zn1] [1] started
+2026-03-18 13:33:37.970 UTC INFO - [admin1] PlanProgress [id=18 name=Deploy Topo state=RUNNING reportTime=2026-03-18 13:33:37 UTC numAttempts=1 generalTask_Total=17 generalTask_Successful=1 generalTask_NotStarted=16]
+2026-03-18 13:33:37.973 UTC INFO - [admin1] Plan 18 [Deploy Topo] task [UpdateDatacenterV2 zone=zn1] [1] ended, state=SUCCEEDED
+2026-03-18 13:33:37.973 UTC INFO - [admin1] Plan 18 [Deploy Topo] task [DeployShard on [sn1] zn:[id=zn1 name=Bangalore] sn1:5000 ] [2] started
+2026-03-18 13:33:37.992 UTC INFO - [admin1] PlanProgress [id=18 name=Deploy Topo state=RUNNING reportTime=2026-03-18 13:33:37 UTC numAttempts=1 generalTask_Total=17 generalTask_Successful=2 generalTask_NotStarted=15]
+2026-03-18 13:33:37.996 UTC INFO - [admin1] Plan 18 [Deploy Topo] task [DeployShard rg1 on [sn1] zn:[id=zn1 name=Bangalore] sn1:5000 ] [2] ended, state=SUCCEEDED
+2026-03-18 13:33:37.996 UTC INFO - [admin1] Plan 18 [Deploy Topo] task [DeployNewRN on sn1(sn1:5000)] [3] started
+2026-03-18 13:33:38.002 UTC INFO - [admin1] Plan 18 [Deploy Topo] task [DeployNewRN rg1-rn1 on sn1(sn1:5000)] creating rg1-rn1 on sn1 haPort=sn1:5011 helpers=sn1:5011 storage directory path=/kvroot/data directory size=10737418240 log directory path =/kvroot/logs log directory size = 0 heapMB=1392 cachePercent=70 cacheSize=unspecified -XX:ParallelGCThreads=70
+2026-03-18 13:33:38.181 UTC INFO - [admin1] Checking status of system tables
+2026-03-18 13:33:38.217 UTC INFO - [admin1] PlanStateChange [id=19 name=SYS$Add index to system table SYS$TableMetadata:SeqIndex state=APPROVED at 2026-03-18 13:33:38 UTC numAttempts=0 : approval requested]
+2026-03-18 13:33:38.221 UTC INFO - [admin1] Plan 19 [SYS$Add index to system table SYS$TableMetadata:SeqIndex] approved
+2026-03-18 13:33:38.221 UTC INFO - [admin1] PlanStateChange [id=19 name=SYS$Add index to system table SYS$TableMetadata:SeqIndex state=RUNNING at 2026-03-18 13:33:38 UTC numAttempts=1 : Plan is starting]
+2026-03-18 13:33:38.221 UTC INFO - [admin1] Plan 19 [SYS$Add index to system table SYS$TableMetadata:SeqIndex] started, 3 tasks
+2026-03-18 13:33:38.223 UTC INFO - [admin1] Plan 19 [SYS$Add index to system table SYS$TableMetadata:SeqIndex] task [StartAddIndex SYS$TableMetadata:SeqIndex] [1] started
+2026-03-18 13:33:38.230 UTC INFO - [admin1] Plan 19 [SYS$Add index to system table SYS$TableMetadata:SeqIndex] broadcasting TableMetadata[13, n:-, t:12, 13] for StartAddIndex SYS$TableMetadata:SeqIndex
+2026-03-18 13:33:38.239 UTC INFO - [admin1] Plan 19 [SYS$Add index to system table SYS$TableMetadata:SeqIndex] rg1-rn1 on sn1 cannot be contacted for TABLE metadata update to StartAddIndex SYS$TableMetadata:SeqIndex during broadcast: java.rmi.NotBoundException: Service not found: hostName=sn1 registryPort=5000 bindingName=mystore:rg1-rn1:ADMIN
+2026-03-18 13:33:38.239 UTC INFO - [admin1] Plan 19 [SYS$Add index to system table SYS$TableMetadata:SeqIndex] broadcast TABLE metadata to 1 out of 1 groups, will  retry, acceptable failure threshold=0, attempts=1
+2026-03-18 13:33:40.224 UTC INFO - [admin1] Checking status of system tables
+2026-03-18 13:33:40.390 UTC INFO - [admin1] Monitor collector: adding rg1-rn1 to monitoring
+2026-03-18 13:33:40.397 UTC INFO - [admin1] PlanProgress [id=18 name=Deploy Topo state=RUNNING reportTime=2026-03-18 13:33:40 UTC numAttempts=1 generalTask_Total=17 generalTask_Successful=3 generalTask_NotStarted=14]
+2026-03-18 13:33:40.407 UTC INFO - [admin1] Plan 18 [Deploy Topo] task [DeployNewRN rg1-rn1 on sn1(sn1:5000)] [3] ended, state=SUCCEEDED
+2026-03-18 13:33:40.408 UTC INFO - [admin1] Plan 18 [Deploy Topo] task [UpdateNthRNHelperHost] [4] started
+2026-03-18 13:33:40.412 UTC INFO - [admin1] Changing helperHost for rg1-rn1 in metadata database  to sn1:5011
+2026-03-18 13:33:38.570 UTC INFO - [rg1-rn1] Thread[ rg1-rn1 RepNodeStateUpdateThread,5,main] started
+2026-03-18 13:33:38.596 UTC INFO - [rg1-rn1] Software versions: NoSQL version: 25.3.21 2025-12-19 19:10:14 UTC  Build id: 60eebbcaec4d Edition: Community, JE version: 25.3.17, Java version: 17.0.9
+2026-03-18 13:33:38.599 UTC INFO - [rg1-rn1] Created new environment dir: /kvroot/data/rg1-rn1/env
+2026-03-18 13:33:38.600 UTC INFO - [rg1-rn1] Storage type of: /kvroot/data/rg1-rn1/env is UNKNOWN
+2026-03-18 13:33:38.605 UTC INFO - [rg1-rn1] SN memory allocation parameters: rnHeapPercent:68 jvmOverheadPercent:25 javaAllMemoryPercent:85 snMemorySizeMB:2048 snCapacity:1 rnMaxHeapMB:1392 allRNsMaxHeapMB:1392
+2026-03-18 13:33:38.605 UTC INFO - [rg1-rn1] JVM Runtime maxMemory:1,441,792 kB JE cache size:0 kB
+2026-03-18 13:33:38.606 UTC INFO - [rg1-rn1] Environment variable MALLOC_ARENA_MAX: 1
+2026-03-18 13:33:38.609 UTC INFO - [rg1-rn1] Non-default JE properties for environment: {je.cleaner.threads=2, je.evictor.criticalPercentage=20, je.cleaner.minUtilization=40, je.log.numBuffers=16, je.rep.feederTimeout=10 s, je.lock.timeout=10 s, je.rep.preHeartbeatTimeoutMs=5000 ms, je.env.runVerifier=false, je.cleaner.readSize=1048576, je.log.writeQueueSize=2097152, je.rep.replicaAckTimeout=5 s, je.log.fileCacheSize=2000, je.log.iteratorReadSize=1048576, je.log.fileMax=1073741824, je.lock.nLockTables=97, je.env.runEvictor=true, je.rep.replicaTimeout=10 s, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.rep.ignoreSecondaryNodeId=true, je.cleaner.minFileUtilization=5, je.rep.envUnknownStateTimeout=10 s, je.txn.durability=write_no_sync,write_no_sync,simple_majority, je.log.faultReadSize=4096, je.rep.replayMaxOpenDbHandles=100, je.rep.vlsn.distance=1000000, je.rep.vlsn.logCacheSize=128, je.nodeMaxEntries=128}
+2026-03-18 13:33:38.609 UTC INFO - [rg1-rn1] DataChannelFactory: basic
+2026-03-18 13:33:38.619 UTC INFO - [rg1-rn1] Table manager created (max change history=1000)
+2026-03-18 13:33:38.642 UTC INFO - [rg1-rn1] Partition database cache mode: EVICT_LN
+2026-03-18 13:33:38.654 UTC INFO - [rg1-rn1] Starting task: interval is 20 SECONDS, delay is 1349(ms)
+2026-03-18 13:33:38.680 UTC INFO - [rg1-rn1] Request type ALL is enabled
+2026-03-18 13:33:38.687 UTC INFO - [rg1-rn1] Thread[ rg1-rn1 MetadataUpdateThread,5,main] started
+2026-03-18 13:33:38.691 UTC INFO - [rg1-rn1] Registering GC listener with G1 Young Generation
+2026-03-18 13:33:38.691 UTC INFO - [rg1-rn1] Registering GC listener with G1 Old Generation
+2026-03-18 13:33:38.697 UTC INFO - [rg1-rn1] Coordinating tasks:JEDataEviction, JEVerifyLog, JEDataErasure, KVStorageStats, JEBackupManagerCopyLogFile, JELogFlusherASync, JELogFlusherSync, JEINCompressor, JEINCheckpointer, JECleaner, JEVerifyBtree, JEOutputStats, KVIndexCreationMax real permits:22
+2026-03-18 13:33:38.701 UTC INFO - [rg1-rn1] LIFECYCLE Service status change: from=INITIAL to=STARTING
+2026-03-18 13:33:40.481 UTC INFO - [admin1] [rg1-rn1] Service status: STARTING 2026-03-18 13:33:38 UTC
+2026-03-18 13:33:38.702 UTC INFO - [rg1-rn1] Starting RepNodeService
+2026-03-18 13:33:38.710 UTC INFO - [rg1-rn1] Starting RN MonitorAgent.  Server socket factory:<ClearServerSocketFactory backlog=1024 portRange=5021,5049 acceptMaxActiveConns=8192 useAsync> Client socket connect factory: <ClientSocketFactory name=mystore|rn|monitor id=221361148 connectMs=10000 readMs=10000 clientId=none localAddr=none>
+2026-03-18 13:33:38.847 UTC INFO - [rg1-rn1] mystore:rg1-rn1:MONITOR service port: 5024
+2026-03-18 13:33:38.884 UTC INFO - [rg1-rn1] Starting MonitorAgent
+2026-03-18 13:33:38.899 UTC INFO - [rg1-rn1] Successfully created secure proxy for the repnode admin
+2026-03-18 13:33:38.918 UTC INFO - [rg1-rn1] mystore:rg1-rn1:ADMIN service port: 5024
+2026-03-18 13:33:38.922 UTC INFO - [rg1-rn1] RepNodeAdmin registered
+2026-03-18 13:33:39.002 UTC INFO - [rg1-rn1] JE: Coordinating tasks:JEBackupManagerCopyLogFile, JELogFlusherASync, JEDataEviction, JELogFlusherSync, JEINCompressor, JEINCheckpointer, JECleaner, JEVerifyBtree, JEOutputStats, JEVerifyLog, JEDataErasureMax real permits:20
+2026-03-18 13:33:39.172 UTC INFO - [rg1-rn1] JE: Ack expiry timer period:1000000000 ns
+2026-03-18 13:33:39.203 UTC INFO - [rg1-rn1] JE recovery: POPULATE_UTILIZATION_PROFILE
+2026-03-18 13:33:39.220 UTC INFO - [rg1-rn1] JE recovery: POPULATE_EXPIRATION_PROFILE
+2026-03-18 13:33:39.227 UTC INFO - [rg1-rn1] JE recovery: CKPT
+2026-03-18 13:33:39.228 UTC INFO - [rg1-rn1] JE: Checkpoint Start.Checkpoint Id=1
+2026-03-18 13:33:39.237 UTC INFO - [rg1-rn1] JE: ERASER transferred suspect obsolete offsets to global tracker. Total offsets transferred: 0
+2026-03-18 13:33:39.239 UTC INFO - [rg1-rn1] JE: Checkpoint End. Checkpoint Id=1 success=true
+2026-03-18 13:33:39.246 UTC INFO - [rg1-rn1] JE: ERASER initializing new cycle. Total files: 0
+2026-03-18 13:33:39.246 UTC INFO - [rg1-rn1] JE recovery: RECOVERY_FINISHED
+2026-03-18 13:33:39.246 UTC INFO - [rg1-rn1] JE: The following ConfigParam(s) in je.properties is/are deprecated and removed, hence the configuration(s) won't take any effect: je.rep.txnRollbackLimit, je.rep.preserveRecordVersion, je.rep.txnRollbackDisabled
+2026-03-18 13:33:39.249 UTC INFO - [rg1-rn1] JE: ERASER new cycle started. Cycle start: 2026-03-18 13:33:39.245 UTC, end: 2026-03-24 13:33:39.245 UTC, filesCompleted: [], filesRemaining: [].
+2026-03-18 13:33:39.250 UTC INFO - [rg1-rn1] JE: ERASER cycle completed. Cycle start: 2026-03-18 13:33:39.245 UTC, end: 2026-03-24 13:33:39.245 UTC, filesCompleted: [], filesRemaining: [].
+2026-03-18 13:33:39.270 UTC INFO - [rg1-rn1] JE: No server auth method
+2026-03-18 13:33:39.271 UTC INFO - [rg1-rn1] JE: Started ServiceDispatcher. HostPort=sn1:5011
+2026-03-18 13:33:39.271 UTC INFO - [rg1-rn1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2026-03-18 13:33:39.301 UTC INFO - [rg1-rn1] JE: DTVLSN at start:0
+2026-03-18 13:33:39.303 UTC INFO - [rg1-rn1] JE: State change from DETACHED to UNKNOWN with masterId=NullNode(-1), masterTerm=0(NULL_TERM)
+2026-03-18 13:33:39.314 UTC INFO - [rg1-rn1] JE: Learner started
+2026-03-18 13:33:39.316 UTC INFO - [rg1-rn1] JE: Acceptor started
+2026-03-18 13:33:39.316 UTC INFO - [rg1-rn1] JE: Current group size: 0
+2026-03-18 13:33:39.317 UTC INFO - [rg1-rn1] JE: The very first group start up with node rg1-rn1(-1)
+2026-03-18 13:33:39.326 UTC INFO - [rg1-rn1] JE: rg1-rn1 persisted to election state file: {"promisedProposal":"00000179cf2b6c00179cf2b6c00(MIN_TERM)"}
+2026-03-18 13:33:39.326 UTC INFO - [rg1-rn1] JE: rg1-rn1 no barrier needed, initialized promised term to 179cf2b6c00(MIN_TERM)
+2026-03-18 13:33:39.330 UTC INFO - [rg1-rn1] JE: Learner notified. Proposal:0000019d0126e47e:c91d38eaede0632179f990f753673c8e:00000001[19d0126e47e(2026-03-18T13:33:39.326Z)] Value: Value:sn1$$$5011$$$rg1-rn1$$$1
+2026-03-18 13:33:39.330 UTC INFO - [rg1-rn1] JE: Master changed to rg1-rn1 at term 19d0126e47e(2026-03-18T13:33:39.326Z), group status: empty.
+2026-03-18 13:33:39.330 UTC INFO - [rg1-rn1] JE: Nascent group. rg1-rn1 is master by virtue of being the first node.
+2026-03-18 13:33:39.330 UTC INFO - [rg1-rn1] JE: State change from UNKNOWN to MASTER with masterId=rg1-rn1(1), masterTerm=19d0126e47e(2026-03-18T13:33:39.326Z)
+2026-03-18 13:33:39.354 UTC INFO - [rg1-rn1] JE: Successfully added node:rg1-rn1(1) HostPort = sn1: 5011 [ELECTABLE]
+2026-03-18 13:33:39.356 UTC INFO - [rg1-rn1] JE recovery: BECOME_CONSISTENT
+2026-03-18 13:33:39.357 UTC INFO - [rg1-rn1] JE: Node rg1-rn1 started
+2026-03-18 13:33:39.357 UTC INFO - [rg1-rn1] JE: State change from MASTER to UNKNOWN with masterId=NullNode(-1), masterTerm=0(NULL_TERM)
+2026-03-18 13:33:39.358 UTC INFO - [rg1-rn1] JE: State change from UNKNOWN to MASTER with masterId=rg1-rn1(1), masterTerm=19d0126e47e(2026-03-18T13:33:39.326Z)
+2026-03-18 13:33:39.381 UTC INFO - [rg1-rn1] JE: Feeder manager accepting requests.
+2026-03-18 13:33:39.382 UTC INFO - [rg1-rn1] JE: Joining group as master
+2026-03-18 13:33:39.397 UTC INFO - [rg1-rn1] Opened JE environment: 25.3.17 JVM max heap: 1,476,395,008 JE properties:  nodeName=null allowCreate=true recoveryProgressListener=true classLoader=false customStats=false cacheSize=1033476505 cacheMode=EVICT_LN exceptionListener=false map={je.log.numBuffers=16, je.maxMemory=0, je.rep.preHeartbeatTimeoutMs=5000 ms, je.rep.replicaAckTimeout=5 s, je.log.fileCacheSize=2000, je.log.iteratorReadSize=1048576, je.lock.nLockTables=97, je.rep.nodeName=rg1-rn1, je.file.logging.directory=/kvroot/logs, je.rep.ignoreSecondaryNodeId=true, je.env.runEraser=true, je.rep.envUnknownStateTimeout=10 s, je.rep.vlsn.logCacheSize=128, je.rep.groupName=rg1, je.evictor.criticalPercentage=20, je.maxDisk=10737418240, je.rep.feederTimeout=10 s, je.lock.timeout=10 s, je.checkpointer.bytesInterval=500000000, je.env.isTransactional=true, je.maxMemoryPercent=70, je.txn.durability=write_no_sync,write_no_sync,simple_majority, je.log.faultReadSize=4096, je.rep.node.priority=1, je.cleaner.minUtilization=40, je.rep.disableAuthoritativeMaster=false, je.rep.electableGroupSizeOverride=0, je.file.logging.prefix=rg1-rn1, je.erase.period=6 DAYS, je.log.fileMax=1073741824, je.env.runEvictor=true, je.cleaner.minFileUtilization=5, je.rep.replayMaxOpenDbHandles=100, je.rep.vlsn.distance=1000000, je.nodeMaxEntries=128, je.rep.nodeHostPort=sn1:5011, je.cleaner.threads=2, je.env.runVerifier=false, je.cleaner.readSize=1048576, je.log.writeQueueSize=2097152, je.rep.helperHosts=sn1:5011, je.rep.replicaTimeout=10 s, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.rep.nodeType=ELECTABLE}
+2026-03-18 13:33:39.411 UTC INFO - [rg1-rn1] Local Environment version updated to: 25.3.21 2025-12-19 19:10:14 UTC  Build id: 60eebbcaec4d Edition: Community Previous version:  none
+2026-03-18 13:33:39.414 UTC INFO - [rg1-rn1] LIFECYCLE Replication state change: state=MASTER type=ELECTABLE master=rg1-rn1 time=2026-03-18 13:33:39.358 UTC
+2026-03-18 13:33:39.415 UTC INFO - [rg1-rn1] MigrationStateTracker-serviceId-rg1-rn1 queue added:MASTER
+2026-03-18 13:33:39.415 UTC INFO - [rg1-rn1] TableManagerStateTracker-serviceId-rg1-rn1 queue added:MASTER
+2026-03-18 13:33:39.416 UTC INFO - [rg1-rn1] MasterBalanceStateTracker-serviceId-rg1-rn1 queue added:MASTER
+2026-03-18 13:33:39.416 UTC INFO - [rg1-rn1] TextIndexFeederStateTracker-serviceId-rg1-rn1 queue added:MASTER
+2026-03-18 13:33:39.422 UTC INFO - [rg1-rn1] Replicated environment handle established. Cache size: 1033476505, State: MASTER
+2026-03-18 13:33:39.424 UTC INFO - [rg1-rn1] Store did not contain a topology
+2026-03-18 13:33:39.424 UTC INFO - [rg1-rn1] MasterBalanceStateTracker-serviceId-rg1-rn1 thread start: rg1-rn1
+2026-03-18 13:33:39.424 UTC INFO - [rg1-rn1] MigrationStateTracker-serviceId-rg1-rn1 thread start: rg1-rn1
+2026-03-18 13:33:39.424 UTC INFO - [rg1-rn1] TableManagerStateTracker-serviceId-rg1-rn1 thread start: rg1-rn1
+2026-03-18 13:33:39.425 UTC INFO - [rg1-rn1] TextIndexFeederStateTracker-serviceId-rg1-rn1 thread start: rg1-rn1
+2026-03-18 13:33:39.425 UTC INFO - [rg1-rn1] Table manager change state to MASTER
+2026-03-18 13:33:39.425 UTC INFO - [rg1-rn1] TIF received state change MASTER
+2026-03-18 13:33:39.425 UTC INFO - [rg1-rn1] Topology needs to be pushed to this node.
+2026-03-18 13:33:39.425 UTC INFO - [rg1-rn1] no text index found, skip starting TIF.
+2026-03-18 13:33:39.425 UTC INFO - [rg1-rn1] Migration manager change state to MASTER.
+2026-03-18 13:33:39.431 UTC INFO - [rg1-rn1] Starting Thread[KV table maintenance,5,main]
+2026-03-18 13:33:39.435 UTC INFO - [rg1-rn1] Migration db opened: MigrationDB, generation db opened: PartitionGenMD
+2026-03-18 13:33:39.437 UTC INFO - [rg1-rn1] Migration service accepting requests.
+2026-03-18 13:33:39.441 UTC INFO - [rg1-rn1] Retrying to update migration services and generation table on state change, last failure: Partition generation table is unavailable
+2026-03-18 13:33:39.443 UTC INFO - [rg1-rn1] mystore:rg1-rn1:MAIN service port: 5024
+2026-03-18 13:33:39.446 UTC INFO - [rg1-rn1] No RN Login configured. 
+2026-03-18 13:33:39.450 UTC INFO - [rg1-rn1] Start statistics gathering: Thread[Key Stats Gather Thread,5,main]
+2026-03-18 13:33:39.450 UTC INFO - [rg1-rn1] LIFECYCLE Service status change: from=STARTING to=RUNNING
+2026-03-18 13:33:40.483 UTC INFO - [admin1] [rg1-rn1] Service status: RUNNING 2026-03-18 13:33:39 UTC
+2026-03-18 13:33:39.450 UTC INFO - [rg1-rn1] Topology not immediately available - waiting
+2026-03-18 13:33:39.452 UTC INFO - [rg1-rn1] Started RepNodeService
+2026-03-18 13:33:40.071 UTC INFO - [rg1-rn1] Obtained DialogEndpointGroupPerf with 2 endpoints and estimated 10000 bytes; next obtain after 57 seconds
+2026-03-18 13:33:40.099 UTC INFO - [rg1-rn1] Obtained NioChannelThreadPoolPerf with 4 executors, 3 handlers and estimated 7200 bytes; next obtain after 41 seconds
+2026-03-18 13:33:40.492 UTC INFO - [admin1] Changed helperHost for rg1-rn1 on sn1 to sn1:5011
+2026-03-18 13:33:40.336 UTC INFO - [rg1-rn1] Localized topology (6, 0)
+2026-03-18 13:33:40.336 UTC INFO - [rg1-rn1] Topology updated from seq#: 0 to 6
+2026-03-18 13:33:40.339 UTC INFO - [rg1-rn1] Cached topology with sequence number 6
+2026-03-18 13:33:40.345 UTC INFO - [rg1-rn1] Open SecurityMetadata DB
+2026-03-18 13:33:40.347 UTC INFO - [rg1-rn1] [PGT-rg1-rn1] Initialize partition generation table from db
+2026-03-18 13:33:40.349 UTC INFO - [rg1-rn1] [PGDB-rg1-rn1] Finish scan db=PartitionGenMDrecords #scanned=0, #returned=0
+2026-03-18 13:33:40.352 UTC INFO - [rg1-rn1] Open TableMetadata DB
+2026-03-18 13:33:40.353 UTC INFO - [rg1-rn1] Establishing secondary database handles, table seq#: 0
+2026-03-18 13:33:40.355 UTC INFO - [rg1-rn1] Partition update succeeded. Established 0 partition database handles, topology (6, 0). 
+2026-03-18 13:33:40.369 UTC INFO - [rg1-rn1] Topology stored seq# 6
+2026-03-18 13:33:40.369 UTC INFO - [rg1-rn1] Updating table metadata with TableMetadata[12, n:-, t:12, 12]
+2026-03-18 13:33:40.371 UTC INFO - [rg1-rn1] Established 0 secondary database handles
+2026-03-18 13:33:40.373 UTC INFO - [rg1-rn1] Establishing secondary database handles, table seq#: 0
+2026-03-18 13:33:40.385 UTC INFO - [rg1-rn1] Metadata stored: TableMetadata[12, n:-, t:12, 12]
+2026-03-18 13:33:40.387 UTC INFO - [rg1-rn1] Establishing secondary database handles, table seq#: 12
+2026-03-18 13:33:40.388 UTC INFO - [rg1-rn1] Established 0 secondary database handles
+2026-03-18 13:33:40.499 UTC INFO - [admin1] PlanProgress [id=18 name=Deploy Topo state=RUNNING reportTime=2026-03-18 13:33:40 UTC numAttempts=1 generalTask_Total=17 generalTask_Successful=4 generalTask_NotStarted=13]
+2026-03-18 13:33:40.505 UTC INFO - [admin1] Plan 18 [Deploy Topo] task [UpdateNthRNHelperHost] [4] ended, state=SUCCEEDED
+2026-03-18 13:33:40.505 UTC INFO - [admin1] Plan 18 [Deploy Topo] task [NewNthRNParameters] [5] started
+2026-03-18 13:33:40.553 UTC INFO - [admin1] PlanProgress [id=18 name=Deploy Topo state=RUNNING reportTime=2026-03-18 13:33:40 UTC numAttempts=1 generalTask_Total=17 generalTask_Successful=5 generalTask_NotStarted=12]
+2026-03-18 13:33:40.559 UTC INFO - [admin1] Plan 18 [Deploy Topo] task [NewNthRNParameters] [5] ended, state=SUCCEEDED
+2026-03-18 13:33:40.560 UTC INFO - [admin1] Plan 18 [Deploy Topo] task [DeployShard on [sn2] zn:[id=zn1 name=Bangalore] sn2:5000 ] [6] started
+2026-03-18 13:33:40.573 UTC INFO - [admin1] PlanProgress [id=18 name=Deploy Topo state=RUNNING reportTime=2026-03-18 13:33:40 UTC numAttempts=1 generalTask_Total=17 generalTask_Successful=6 generalTask_NotStarted=11]
+2026-03-18 13:33:40.579 UTC INFO - [admin1] Plan 18 [Deploy Topo] task [DeployShard rg2 on [sn2] zn:[id=zn1 name=Bangalore] sn2:5000 ] [6] ended, state=SUCCEEDED
+2026-03-18 13:33:40.580 UTC INFO - [admin1] Plan 18 [Deploy Topo] task [DeployNewRN on sn2(sn2:5000)] [7] started
+2026-03-18 13:33:40.584 UTC INFO - [admin1] Plan 18 [Deploy Topo] task [DeployNewRN rg2-rn1 on sn2(sn2:5000)] creating rg2-rn1 on sn2 haPort=sn2:5030 helpers=sn2:5030 storage directory path=/kvroot/data directory size=10737418240 log directory path =/kvroot/logs log directory size = 0 heapMB=1392 cachePercent=70 cacheSize=unspecified -XX:ParallelGCThreads=70
+2026-03-18 13:33:42.227 UTC INFO - [admin1] Checking status of system tables
+2026-03-18 13:33:43.008 UTC INFO - [admin1] Monitor collector: adding rg2-rn1 to monitoring
+2026-03-18 13:33:43.012 UTC INFO - [admin1] PlanProgress [id=18 name=Deploy Topo state=RUNNING reportTime=2026-03-18 13:33:43 UTC numAttempts=1 generalTask_Total=17 generalTask_Successful=7 generalTask_NotStarted=10]
+2026-03-18 13:33:43.019 UTC INFO - [admin1] Plan 18 [Deploy Topo] task [DeployNewRN rg2-rn1 on sn2(sn2:5000)] [7] ended, state=SUCCEEDED
+2026-03-18 13:33:43.020 UTC INFO - [admin1] Plan 18 [Deploy Topo] task [UpdateNthRNHelperHost] [8] started
+2026-03-18 13:33:43.022 UTC INFO - [admin1] Changing helperHost for rg2-rn1 in metadata database  to sn2:5030
+2026-03-18 13:33:41.175 UTC INFO - [rg2-rn1] Thread[ rg2-rn1 RepNodeStateUpdateThread,5,main] started
+2026-03-18 13:33:41.206 UTC INFO - [rg2-rn1] Software versions: NoSQL version: 25.3.21 2025-12-19 19:10:14 UTC  Build id: 60eebbcaec4d Edition: Community, JE version: 25.3.17, Java version: 17.0.9
+2026-03-18 13:33:41.212 UTC INFO - [rg2-rn1] Created new environment dir: /kvroot/data/rg2-rn1/env
+2026-03-18 13:33:41.214 UTC INFO - [rg2-rn1] Storage type of: /kvroot/data/rg2-rn1/env is UNKNOWN
+2026-03-18 13:33:41.219 UTC INFO - [rg2-rn1] SN memory allocation parameters: rnHeapPercent:68 jvmOverheadPercent:25 javaAllMemoryPercent:85 snMemorySizeMB:2048 snCapacity:1 rnMaxHeapMB:1392 allRNsMaxHeapMB:1392
+2026-03-18 13:33:41.220 UTC INFO - [rg2-rn1] JVM Runtime maxMemory:1,441,792 kB JE cache size:0 kB
+2026-03-18 13:33:41.220 UTC INFO - [rg2-rn1] Environment variable MALLOC_ARENA_MAX: 1
+2026-03-18 13:33:41.224 UTC INFO - [rg2-rn1] Non-default JE properties for environment: {je.cleaner.threads=2, je.evictor.criticalPercentage=20, je.cleaner.minUtilization=40, je.log.numBuffers=16, je.rep.feederTimeout=10 s, je.lock.timeout=10 s, je.rep.preHeartbeatTimeoutMs=5000 ms, je.env.runVerifier=false, je.cleaner.readSize=1048576, je.log.writeQueueSize=2097152, je.rep.replicaAckTimeout=5 s, je.log.fileCacheSize=2000, je.log.iteratorReadSize=1048576, je.log.fileMax=1073741824, je.lock.nLockTables=97, je.env.runEvictor=true, je.rep.replicaTimeout=10 s, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.rep.ignoreSecondaryNodeId=true, je.cleaner.minFileUtilization=5, je.rep.envUnknownStateTimeout=10 s, je.txn.durability=write_no_sync,write_no_sync,simple_majority, je.log.faultReadSize=4096, je.rep.replayMaxOpenDbHandles=100, je.rep.vlsn.distance=1000000, je.rep.vlsn.logCacheSize=128, je.nodeMaxEntries=128}
+2026-03-18 13:33:41.225 UTC INFO - [rg2-rn1] DataChannelFactory: basic
+2026-03-18 13:33:41.235 UTC INFO - [rg2-rn1] Table manager created (max change history=1000)
+2026-03-18 13:33:41.261 UTC INFO - [rg2-rn1] Partition database cache mode: EVICT_LN
+2026-03-18 13:33:41.276 UTC INFO - [rg2-rn1] Starting task: interval is 20 SECONDS, delay is 18728(ms)
+2026-03-18 13:33:41.305 UTC INFO - [rg2-rn1] Request type ALL is enabled
+2026-03-18 13:33:41.311 UTC INFO - [rg2-rn1] Thread[ rg2-rn1 MetadataUpdateThread,5,main] started
+2026-03-18 13:33:41.316 UTC INFO - [rg2-rn1] Registering GC listener with G1 Young Generation
+2026-03-18 13:33:41.316 UTC INFO - [rg2-rn1] Registering GC listener with G1 Old Generation
+2026-03-18 13:33:41.323 UTC INFO - [rg2-rn1] Coordinating tasks:JEDataEviction, JEVerifyLog, JEDataErasure, KVStorageStats, JEBackupManagerCopyLogFile, JELogFlusherASync, JELogFlusherSync, JEINCompressor, JEINCheckpointer, JECleaner, JEVerifyBtree, JEOutputStats, KVIndexCreationMax real permits:22
+2026-03-18 13:33:41.328 UTC INFO - [rg2-rn1] LIFECYCLE Service status change: from=INITIAL to=STARTING
+2026-03-18 13:33:43.028 UTC INFO - [admin1] [rg2-rn1] Service status: STARTING 2026-03-18 13:33:41 UTC
+2026-03-18 13:33:41.328 UTC INFO - [rg2-rn1] Starting RepNodeService
+2026-03-18 13:33:41.338 UTC INFO - [rg2-rn1] Starting RN MonitorAgent.  Server socket factory:<ClearServerSocketFactory backlog=1024 portRange=5041,5069 acceptMaxActiveConns=8192 useAsync> Client socket connect factory: <ClientSocketFactory name=mystore|rn|monitor id=-799655300 connectMs=10000 readMs=10000 clientId=none localAddr=none>
+2026-03-18 13:33:41.471 UTC INFO - [rg2-rn1] mystore:rg2-rn1:MONITOR service port: 5043
+2026-03-18 13:33:41.507 UTC INFO - [rg2-rn1] Starting MonitorAgent
+2026-03-18 13:33:41.527 UTC INFO - [rg2-rn1] Successfully created secure proxy for the repnode admin
+2026-03-18 13:33:41.555 UTC INFO - [rg2-rn1] mystore:rg2-rn1:ADMIN service port: 5043
+2026-03-18 13:33:41.561 UTC INFO - [rg2-rn1] RepNodeAdmin registered
+2026-03-18 13:33:41.647 UTC INFO - [rg2-rn1] JE: Coordinating tasks:JEBackupManagerCopyLogFile, JELogFlusherASync, JEDataEviction, JELogFlusherSync, JEINCompressor, JEINCheckpointer, JECleaner, JEVerifyBtree, JEOutputStats, JEVerifyLog, JEDataErasureMax real permits:20
+2026-03-18 13:33:41.820 UTC INFO - [rg2-rn1] JE: Ack expiry timer period:1000000000 ns
+2026-03-18 13:33:41.853 UTC INFO - [rg2-rn1] JE recovery: POPULATE_UTILIZATION_PROFILE
+2026-03-18 13:33:41.871 UTC INFO - [rg2-rn1] JE recovery: POPULATE_EXPIRATION_PROFILE
+2026-03-18 13:33:41.879 UTC INFO - [rg2-rn1] JE recovery: CKPT
+2026-03-18 13:33:41.880 UTC INFO - [rg2-rn1] JE: Checkpoint Start.Checkpoint Id=1
+2026-03-18 13:33:41.895 UTC INFO - [rg2-rn1] JE: ERASER transferred suspect obsolete offsets to global tracker. Total offsets transferred: 0
+2026-03-18 13:33:41.897 UTC INFO - [rg2-rn1] JE: Checkpoint End. Checkpoint Id=1 success=true
+2026-03-18 13:33:41.903 UTC INFO - [rg2-rn1] JE recovery: RECOVERY_FINISHED
+2026-03-18 13:33:41.903 UTC INFO - [rg2-rn1] JE: The following ConfigParam(s) in je.properties is/are deprecated and removed, hence the configuration(s) won't take any effect: je.rep.txnRollbackLimit, je.rep.preserveRecordVersion, je.rep.txnRollbackDisabled
+2026-03-18 13:33:41.904 UTC INFO - [rg2-rn1] JE: ERASER initializing new cycle. Total files: 0
+2026-03-18 13:33:41.910 UTC INFO - [rg2-rn1] JE: ERASER new cycle started. Cycle start: 2026-03-18 13:33:41.902 UTC, end: 2026-03-24 13:33:41.902 UTC, filesCompleted: [], filesRemaining: [].
+2026-03-18 13:33:41.910 UTC INFO - [rg2-rn1] JE: ERASER cycle completed. Cycle start: 2026-03-18 13:33:41.902 UTC, end: 2026-03-24 13:33:41.902 UTC, filesCompleted: [], filesRemaining: [].
+2026-03-18 13:33:41.915 UTC INFO - [rg2-rn1] JE: No server auth method
+2026-03-18 13:33:41.916 UTC INFO - [rg2-rn1] JE: Started ServiceDispatcher. HostPort=sn2:5030
+2026-03-18 13:33:41.916 UTC INFO - [rg2-rn1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2026-03-18 13:33:41.957 UTC INFO - [rg2-rn1] JE: DTVLSN at start:0
+2026-03-18 13:33:41.960 UTC INFO - [rg2-rn1] JE: State change from DETACHED to UNKNOWN with masterId=NullNode(-1), masterTerm=0(NULL_TERM)
+2026-03-18 13:33:41.971 UTC INFO - [rg2-rn1] JE: Learner started
+2026-03-18 13:33:41.973 UTC INFO - [rg2-rn1] JE: Acceptor started
+2026-03-18 13:33:41.974 UTC INFO - [rg2-rn1] JE: Current group size: 0
+2026-03-18 13:33:41.974 UTC INFO - [rg2-rn1] JE: The very first group start up with node rg2-rn1(-1)
+2026-03-18 13:33:41.987 UTC INFO - [rg2-rn1] JE: rg2-rn1 persisted to election state file: {"promisedProposal":"00000179cf2b6c00179cf2b6c00(MIN_TERM)"}
+2026-03-18 13:33:41.987 UTC INFO - [rg2-rn1] JE: rg2-rn1 no barrier needed, initialized promised term to 179cf2b6c00(MIN_TERM)
+2026-03-18 13:33:41.996 UTC INFO - [rg2-rn1] JE: Learner notified. Proposal:0000019d0126eee4:a023683e91d5415b6695d285a78fcc70:00000001[19d0126eee4(2026-03-18T13:33:41.988Z)] Value: Value:sn2$$$5030$$$rg2-rn1$$$1
+2026-03-18 13:33:41.997 UTC INFO - [rg2-rn1] JE: Master changed to rg2-rn1 at term 19d0126eee4(2026-03-18T13:33:41.988Z), group status: empty.
+2026-03-18 13:33:41.997 UTC INFO - [rg2-rn1] JE: Nascent group. rg2-rn1 is master by virtue of being the first node.
+2026-03-18 13:33:41.998 UTC INFO - [rg2-rn1] JE: State change from UNKNOWN to MASTER with masterId=rg2-rn1(1), masterTerm=19d0126eee4(2026-03-18T13:33:41.988Z)
+2026-03-18 13:33:42.041 UTC INFO - [rg2-rn1] JE: Successfully added node:rg2-rn1(1) HostPort = sn2: 5030 [ELECTABLE]
+2026-03-18 13:33:42.042 UTC INFO - [rg2-rn1] JE recovery: BECOME_CONSISTENT
+2026-03-18 13:33:42.043 UTC INFO - [rg2-rn1] JE: Node rg2-rn1 started
+2026-03-18 13:33:42.044 UTC INFO - [rg2-rn1] JE: State change from MASTER to UNKNOWN with masterId=NullNode(-1), masterTerm=0(NULL_TERM)
+2026-03-18 13:33:42.045 UTC INFO - [rg2-rn1] JE: State change from UNKNOWN to MASTER with masterId=rg2-rn1(1), masterTerm=19d0126eee4(2026-03-18T13:33:41.988Z)
+2026-03-18 13:33:42.064 UTC INFO - [rg2-rn1] JE: Feeder manager accepting requests.
+2026-03-18 13:33:42.065 UTC INFO - [rg2-rn1] JE: Joining group as master
+2026-03-18 13:33:42.079 UTC INFO - [rg2-rn1] Opened JE environment: 25.3.17 JVM max heap: 1,476,395,008 JE properties:  nodeName=null allowCreate=true recoveryProgressListener=true classLoader=false customStats=false cacheSize=1033476505 cacheMode=EVICT_LN exceptionListener=false map={je.log.numBuffers=16, je.maxMemory=0, je.rep.preHeartbeatTimeoutMs=5000 ms, je.rep.replicaAckTimeout=5 s, je.log.fileCacheSize=2000, je.log.iteratorReadSize=1048576, je.lock.nLockTables=97, je.rep.nodeName=rg2-rn1, je.file.logging.directory=/kvroot/logs, je.rep.ignoreSecondaryNodeId=true, je.env.runEraser=true, je.rep.envUnknownStateTimeout=10 s, je.rep.vlsn.logCacheSize=128, je.rep.groupName=rg2, je.evictor.criticalPercentage=20, je.maxDisk=10737418240, je.rep.feederTimeout=10 s, je.lock.timeout=10 s, je.checkpointer.bytesInterval=500000000, je.env.isTransactional=true, je.maxMemoryPercent=70, je.txn.durability=write_no_sync,write_no_sync,simple_majority, je.log.faultReadSize=4096, je.rep.node.priority=1, je.cleaner.minUtilization=40, je.rep.disableAuthoritativeMaster=false, je.rep.electableGroupSizeOverride=0, je.file.logging.prefix=rg2-rn1, je.erase.period=6 DAYS, je.log.fileMax=1073741824, je.env.runEvictor=true, je.cleaner.minFileUtilization=5, je.rep.replayMaxOpenDbHandles=100, je.rep.vlsn.distance=1000000, je.nodeMaxEntries=128, je.rep.nodeHostPort=sn2:5030, je.cleaner.threads=2, je.env.runVerifier=false, je.cleaner.readSize=1048576, je.log.writeQueueSize=2097152, je.rep.helperHosts=sn2:5030, je.rep.replicaTimeout=10 s, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.rep.nodeType=ELECTABLE}
+2026-03-18 13:33:42.094 UTC INFO - [rg2-rn1] Local Environment version updated to: 25.3.21 2025-12-19 19:10:14 UTC  Build id: 60eebbcaec4d Edition: Community Previous version:  none
+2026-03-18 13:33:42.096 UTC INFO - [rg2-rn1] LIFECYCLE Replication state change: state=MASTER type=ELECTABLE master=rg2-rn1 time=2026-03-18 13:33:42.044 UTC
+2026-03-18 13:33:42.096 UTC INFO - [rg2-rn1] MigrationStateTracker-serviceId-rg2-rn1 queue added:MASTER
+2026-03-18 13:33:42.096 UTC INFO - [rg2-rn1] TableManagerStateTracker-serviceId-rg2-rn1 queue added:MASTER
+2026-03-18 13:33:42.096 UTC INFO - [rg2-rn1] MasterBalanceStateTracker-serviceId-rg2-rn1 queue added:MASTER
+2026-03-18 13:33:42.096 UTC INFO - [rg2-rn1] TextIndexFeederStateTracker-serviceId-rg2-rn1 queue added:MASTER
+2026-03-18 13:33:42.099 UTC INFO - [rg2-rn1] Replicated environment handle established. Cache size: 1033476505, State: MASTER
+2026-03-18 13:33:42.100 UTC INFO - [rg2-rn1] Store did not contain a topology
+2026-03-18 13:33:42.100 UTC INFO - [rg2-rn1] MasterBalanceStateTracker-serviceId-rg2-rn1 thread start: rg2-rn1
+2026-03-18 13:33:42.100 UTC INFO - [rg2-rn1] TableManagerStateTracker-serviceId-rg2-rn1 thread start: rg2-rn1
+2026-03-18 13:33:42.100 UTC INFO - [rg2-rn1] MigrationStateTracker-serviceId-rg2-rn1 thread start: rg2-rn1
+2026-03-18 13:33:42.101 UTC INFO - [rg2-rn1] TextIndexFeederStateTracker-serviceId-rg2-rn1 thread start: rg2-rn1
+2026-03-18 13:33:42.101 UTC INFO - [rg2-rn1] Topology needs to be pushed to this node.
+2026-03-18 13:33:42.101 UTC INFO - [rg2-rn1] TIF received state change MASTER
+2026-03-18 13:33:42.101 UTC INFO - [rg2-rn1] no text index found, skip starting TIF.
+2026-03-18 13:33:42.100 UTC INFO - [rg2-rn1] Table manager change state to MASTER
+2026-03-18 13:33:42.101 UTC INFO - [rg2-rn1] Migration manager change state to MASTER.
+2026-03-18 13:33:42.104 UTC INFO - [rg2-rn1] Starting Thread[KV table maintenance,5,main]
+2026-03-18 13:33:42.115 UTC INFO - [rg2-rn1] Migration db opened: MigrationDB, generation db opened: PartitionGenMD
+2026-03-18 13:33:42.119 UTC INFO - [rg2-rn1] mystore:rg2-rn1:MAIN service port: 5043
+2026-03-18 13:33:42.119 UTC INFO - [rg2-rn1] Migration service accepting requests.
+2026-03-18 13:33:42.122 UTC INFO - [rg2-rn1] Retrying to update migration services and generation table on state change, last failure: Partition generation table is unavailable
+2026-03-18 13:33:42.123 UTC INFO - [rg2-rn1] No RN Login configured. 
+2026-03-18 13:33:42.127 UTC INFO - [rg2-rn1] Start statistics gathering: Thread[Key Stats Gather Thread,5,main]
+2026-03-18 13:33:42.127 UTC INFO - [rg2-rn1] LIFECYCLE Service status change: from=STARTING to=RUNNING
+2026-03-18 13:33:43.029 UTC INFO - [admin1] [rg2-rn1] Service status: RUNNING 2026-03-18 13:33:42 UTC
+2026-03-18 13:33:42.127 UTC INFO - [rg2-rn1] Topology not immediately available - waiting
+2026-03-18 13:33:42.133 UTC INFO - [rg2-rn1] Started RepNodeService
+2026-03-18 13:33:42.950 UTC INFO - [rg2-rn1] Localized topology (8, 0)
+2026-03-18 13:33:42.950 UTC INFO - [rg2-rn1] Topology updated from seq#: 0 to 8
+2026-03-18 13:33:42.953 UTC INFO - [rg2-rn1] Cached topology with sequence number 8
+2026-03-18 13:33:42.955 UTC INFO - [rg2-rn1] Open SecurityMetadata DB
+2026-03-18 13:33:42.958 UTC INFO - [rg2-rn1] [PGT-rg2-rn1] Initialize partition generation table from db
+2026-03-18 13:33:42.961 UTC INFO - [rg2-rn1] [PGDB-rg2-rn1] Finish scan db=PartitionGenMDrecords #scanned=0, #returned=0
+2026-03-18 13:33:42.963 UTC INFO - [rg2-rn1] Open TableMetadata DB
+2026-03-18 13:33:42.964 UTC INFO - [rg2-rn1] Establishing secondary database handles, table seq#: 0
+2026-03-18 13:33:42.966 UTC INFO - [rg2-rn1] Established 0 secondary database handles
+2026-03-18 13:33:42.966 UTC INFO - [rg2-rn1] Establishing secondary database handles, table seq#: 0
+2026-03-18 13:33:42.967 UTC INFO - [rg2-rn1] Partition update succeeded. Established 0 partition database handles, topology (8, 0). 
+2026-03-18 13:33:42.971 UTC INFO - [rg2-rn1] Topology stored seq# 8
+2026-03-18 13:33:42.982 UTC INFO - [rg2-rn1] Updating table metadata with TableMetadata[13, n:-, t:12, 13]
+2026-03-18 13:33:43.003 UTC INFO - [rg2-rn1] Metadata stored: TableMetadata[13, n:-, t:12, 13]
+2026-03-18 13:33:43.005 UTC INFO - [rg2-rn1] Starting Thread[KV table maintenance,5,main]
+2026-03-18 13:33:43.006 UTC INFO - [rg2-rn1] Establishing secondary database handles, table seq#: 13
+2026-03-18 13:33:43.055 UTC INFO - [admin1] Changed helperHost for rg2-rn1 on sn2 to sn2:5030
+2026-03-18 13:33:43.060 UTC INFO - [admin1] PlanProgress [id=18 name=Deploy Topo state=RUNNING reportTime=2026-03-18 13:33:43 UTC numAttempts=1 generalTask_Total=17 generalTask_Successful=8 generalTask_NotStarted=9]
+2026-03-18 13:33:43.063 UTC INFO - [admin1] Plan 18 [Deploy Topo] task [UpdateNthRNHelperHost] [8] ended, state=SUCCEEDED
+2026-03-18 13:33:43.064 UTC INFO - [admin1] Plan 18 [Deploy Topo] task [NewNthRNParameters] [9] started
+2026-03-18 13:33:43.118 UTC INFO - [admin1] PlanProgress [id=18 name=Deploy Topo state=RUNNING reportTime=2026-03-18 13:33:43 UTC numAttempts=1 generalTask_Total=17 generalTask_Successful=9 generalTask_NotStarted=8]
+2026-03-18 13:33:43.126 UTC INFO - [admin1] Plan 18 [Deploy Topo] task [NewNthRNParameters] [9] ended, state=SUCCEEDED
+2026-03-18 13:33:43.127 UTC INFO - [admin1] Plan 18 [Deploy Topo] task [DeployShard on [sn3] zn:[id=zn1 name=Bangalore] sn3:5000 ] [10] started
+2026-03-18 13:33:43.139 UTC INFO - [admin1] PlanProgress [id=18 name=Deploy Topo state=RUNNING reportTime=2026-03-18 13:33:43 UTC numAttempts=1 generalTask_Total=17 generalTask_Successful=10 generalTask_NotStarted=7]
+2026-03-18 13:33:43.153 UTC INFO - [admin1] Plan 18 [Deploy Topo] task [DeployShard rg3 on [sn3] zn:[id=zn1 name=Bangalore] sn3:5000 ] [10] ended, state=SUCCEEDED
+2026-03-18 13:33:43.154 UTC INFO - [admin1] Plan 18 [Deploy Topo] task [DeployNewRN on sn3(sn3:5000)] [11] started
+2026-03-18 13:33:43.159 UTC INFO - [admin1] Plan 18 [Deploy Topo] task [DeployNewRN rg3-rn1 on sn3(sn3:5000)] creating rg3-rn1 on sn3 haPort=sn3:5050 helpers=sn3:5050 storage directory path=/kvroot/data directory size=10737418240 log directory path =/kvroot/logs log directory size = 0 heapMB=1392 cachePercent=70 cacheSize=unspecified -XX:ParallelGCThreads=70
+2026-03-18 13:33:44.233 UTC INFO - [admin1] Checking status of system tables
+2026-03-18 13:33:45.573 UTC INFO - [admin1] Monitor collector: adding rg3-rn1 to monitoring
+2026-03-18 13:33:45.582 UTC INFO - [admin1] PlanProgress [id=18 name=Deploy Topo state=RUNNING reportTime=2026-03-18 13:33:45 UTC numAttempts=1 generalTask_Total=17 generalTask_Successful=11 generalTask_NotStarted=6]
+2026-03-18 13:33:45.585 UTC INFO - [admin1] Plan 18 [Deploy Topo] task [DeployNewRN rg3-rn1 on sn3(sn3:5000)] [11] ended, state=SUCCEEDED
+2026-03-18 13:33:45.585 UTC INFO - [admin1] Plan 18 [Deploy Topo] task [UpdateNthRNHelperHost] [12] started
+2026-03-18 13:33:45.587 UTC INFO - [admin1] Changing helperHost for rg3-rn1 in metadata database  to sn3:5050
+2026-03-18 13:33:43.768 UTC INFO - [rg3-rn1] Thread[ rg3-rn1 RepNodeStateUpdateThread,5,main] started
+2026-03-18 13:33:43.794 UTC INFO - [rg3-rn1] Software versions: NoSQL version: 25.3.21 2025-12-19 19:10:14 UTC  Build id: 60eebbcaec4d Edition: Community, JE version: 25.3.17, Java version: 17.0.9
+2026-03-18 13:33:43.798 UTC INFO - [rg3-rn1] Created new environment dir: /kvroot/data/rg3-rn1/env
+2026-03-18 13:33:43.799 UTC INFO - [rg3-rn1] Storage type of: /kvroot/data/rg3-rn1/env is UNKNOWN
+2026-03-18 13:33:43.803 UTC INFO - [rg3-rn1] SN memory allocation parameters: rnHeapPercent:68 jvmOverheadPercent:25 javaAllMemoryPercent:85 snMemorySizeMB:2048 snCapacity:1 rnMaxHeapMB:1392 allRNsMaxHeapMB:1392
+2026-03-18 13:33:43.804 UTC INFO - [rg3-rn1] JVM Runtime maxMemory:1,441,792 kB JE cache size:0 kB
+2026-03-18 13:33:43.804 UTC INFO - [rg3-rn1] Environment variable MALLOC_ARENA_MAX: 1
+2026-03-18 13:33:43.807 UTC INFO - [rg3-rn1] Non-default JE properties for environment: {je.cleaner.threads=2, je.evictor.criticalPercentage=20, je.cleaner.minUtilization=40, je.log.numBuffers=16, je.rep.feederTimeout=10 s, je.lock.timeout=10 s, je.rep.preHeartbeatTimeoutMs=5000 ms, je.env.runVerifier=false, je.cleaner.readSize=1048576, je.log.writeQueueSize=2097152, je.rep.replicaAckTimeout=5 s, je.log.fileCacheSize=2000, je.log.iteratorReadSize=1048576, je.log.fileMax=1073741824, je.lock.nLockTables=97, je.env.runEvictor=true, je.rep.replicaTimeout=10 s, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.rep.ignoreSecondaryNodeId=true, je.cleaner.minFileUtilization=5, je.rep.envUnknownStateTimeout=10 s, je.txn.durability=write_no_sync,write_no_sync,simple_majority, je.log.faultReadSize=4096, je.rep.replayMaxOpenDbHandles=100, je.rep.vlsn.distance=1000000, je.rep.vlsn.logCacheSize=128, je.nodeMaxEntries=128}
+2026-03-18 13:33:43.808 UTC INFO - [rg3-rn1] DataChannelFactory: basic
+2026-03-18 13:33:43.818 UTC INFO - [rg3-rn1] Table manager created (max change history=1000)
+2026-03-18 13:33:43.844 UTC INFO - [rg3-rn1] Partition database cache mode: EVICT_LN
+2026-03-18 13:33:43.856 UTC INFO - [rg3-rn1] Starting task: interval is 20 SECONDS, delay is 16147(ms)
+2026-03-18 13:33:43.884 UTC INFO - [rg3-rn1] Request type ALL is enabled
+2026-03-18 13:33:43.891 UTC INFO - [rg3-rn1] Thread[ rg3-rn1 MetadataUpdateThread,5,main] started
+2026-03-18 13:33:43.895 UTC INFO - [rg3-rn1] Registering GC listener with G1 Young Generation
+2026-03-18 13:33:43.895 UTC INFO - [rg3-rn1] Registering GC listener with G1 Old Generation
+2026-03-18 13:33:43.901 UTC INFO - [rg3-rn1] Coordinating tasks:JEDataEviction, JEVerifyLog, JEDataErasure, KVStorageStats, JEBackupManagerCopyLogFile, JELogFlusherASync, JELogFlusherSync, JEINCompressor, JEINCheckpointer, JECleaner, JEVerifyBtree, JEOutputStats, KVIndexCreationMax real permits:22
+2026-03-18 13:33:43.906 UTC INFO - [rg3-rn1] LIFECYCLE Service status change: from=INITIAL to=STARTING
+2026-03-18 13:33:45.596 UTC INFO - [admin1] [rg3-rn1] Service status: STARTING 2026-03-18 13:33:43 UTC
+2026-03-18 13:33:43.906 UTC INFO - [rg3-rn1] Starting RepNodeService
+2026-03-18 13:33:43.916 UTC INFO - [rg3-rn1] Starting RN MonitorAgent.  Server socket factory:<ClearServerSocketFactory backlog=1024 portRange=5061,5089 acceptMaxActiveConns=8192 useAsync> Client socket connect factory: <ClientSocketFactory name=mystore|rn|monitor id=-2073034037 connectMs=10000 readMs=10000 clientId=none localAddr=none>
+2026-03-18 13:33:44.041 UTC INFO - [rg3-rn1] mystore:rg3-rn1:MONITOR service port: 5063
+2026-03-18 13:33:44.077 UTC INFO - [rg3-rn1] Starting MonitorAgent
+2026-03-18 13:33:44.093 UTC INFO - [rg3-rn1] Successfully created secure proxy for the repnode admin
+2026-03-18 13:33:44.119 UTC INFO - [rg3-rn1] mystore:rg3-rn1:ADMIN service port: 5063
+2026-03-18 13:33:44.128 UTC INFO - [rg3-rn1] RepNodeAdmin registered
+2026-03-18 13:33:44.205 UTC INFO - [rg3-rn1] JE: Coordinating tasks:JEBackupManagerCopyLogFile, JELogFlusherASync, JEDataEviction, JELogFlusherSync, JEINCompressor, JEINCheckpointer, JECleaner, JEVerifyBtree, JEOutputStats, JEVerifyLog, JEDataErasureMax real permits:20
+2026-03-18 13:33:44.368 UTC INFO - [rg3-rn1] JE: Ack expiry timer period:1000000000 ns
+2026-03-18 13:33:44.398 UTC INFO - [rg3-rn1] JE recovery: POPULATE_UTILIZATION_PROFILE
+2026-03-18 13:33:44.415 UTC INFO - [rg3-rn1] JE recovery: POPULATE_EXPIRATION_PROFILE
+2026-03-18 13:33:44.422 UTC INFO - [rg3-rn1] JE recovery: CKPT
+2026-03-18 13:33:44.423 UTC INFO - [rg3-rn1] JE: Checkpoint Start.Checkpoint Id=1
+2026-03-18 13:33:44.487 UTC INFO - [rg3-rn1] JE: ERASER transferred suspect obsolete offsets to global tracker. Total offsets transferred: 0
+2026-03-18 13:33:44.492 UTC INFO - [rg3-rn1] JE: Checkpoint End. Checkpoint Id=1 success=true
+2026-03-18 13:33:44.503 UTC INFO - [rg3-rn1] JE: ERASER initializing new cycle. Total files: 0
+2026-03-18 13:33:44.505 UTC INFO - [rg3-rn1] JE recovery: RECOVERY_FINISHED
+2026-03-18 13:33:44.506 UTC INFO - [rg3-rn1] JE: The following ConfigParam(s) in je.properties is/are deprecated and removed, hence the configuration(s) won't take any effect: je.rep.txnRollbackLimit, je.rep.preserveRecordVersion, je.rep.txnRollbackDisabled
+2026-03-18 13:33:44.510 UTC INFO - [rg3-rn1] JE: ERASER new cycle started. Cycle start: 2026-03-18 13:33:44.501 UTC, end: 2026-03-24 13:33:44.501 UTC, filesCompleted: [], filesRemaining: [].
+2026-03-18 13:33:44.510 UTC INFO - [rg3-rn1] JE: ERASER cycle completed. Cycle start: 2026-03-18 13:33:44.501 UTC, end: 2026-03-24 13:33:44.501 UTC, filesCompleted: [], filesRemaining: [].
+2026-03-18 13:33:44.523 UTC INFO - [rg3-rn1] JE: No server auth method
+2026-03-18 13:33:44.523 UTC INFO - [rg3-rn1] JE: Started ServiceDispatcher. HostPort=sn3:5050
+2026-03-18 13:33:44.523 UTC INFO - [rg3-rn1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2026-03-18 13:33:44.576 UTC INFO - [rg3-rn1] JE: DTVLSN at start:0
+2026-03-18 13:33:44.579 UTC INFO - [rg3-rn1] JE: State change from DETACHED to UNKNOWN with masterId=NullNode(-1), masterTerm=0(NULL_TERM)
+2026-03-18 13:33:44.589 UTC INFO - [rg3-rn1] JE: Learner started
+2026-03-18 13:33:44.591 UTC INFO - [rg3-rn1] JE: Acceptor started
+2026-03-18 13:33:44.591 UTC INFO - [rg3-rn1] JE: Current group size: 0
+2026-03-18 13:33:44.591 UTC INFO - [rg3-rn1] JE: The very first group start up with node rg3-rn1(-1)
+2026-03-18 13:33:44.599 UTC INFO - [rg3-rn1] JE: rg3-rn1 persisted to election state file: {"promisedProposal":"00000179cf2b6c00179cf2b6c00(MIN_TERM)"}
+2026-03-18 13:33:44.599 UTC INFO - [rg3-rn1] JE: rg3-rn1 no barrier needed, initialized promised term to 179cf2b6c00(MIN_TERM)
+2026-03-18 13:33:44.603 UTC INFO - [rg3-rn1] JE: Learner notified. Proposal:0000019d0126f917:05e9914a64a343126e1bc3c635f14ec5:00000001[19d0126f917(2026-03-18T13:33:44.599Z)] Value: Value:sn3$$$5050$$$rg3-rn1$$$1
+2026-03-18 13:33:44.603 UTC INFO - [rg3-rn1] JE: Master changed to rg3-rn1 at term 19d0126f917(2026-03-18T13:33:44.599Z), group status: empty.
+2026-03-18 13:33:44.603 UTC INFO - [rg3-rn1] JE: Nascent group. rg3-rn1 is master by virtue of being the first node.
+2026-03-18 13:33:44.603 UTC INFO - [rg3-rn1] JE: State change from UNKNOWN to MASTER with masterId=rg3-rn1(1), masterTerm=19d0126f917(2026-03-18T13:33:44.599Z)
+2026-03-18 13:33:44.623 UTC INFO - [rg3-rn1] JE: Successfully added node:rg3-rn1(1) HostPort = sn3: 5050 [ELECTABLE]
+2026-03-18 13:33:44.624 UTC INFO - [rg3-rn1] JE recovery: BECOME_CONSISTENT
+2026-03-18 13:33:44.624 UTC INFO - [rg3-rn1] JE: Node rg3-rn1 started
+2026-03-18 13:33:44.625 UTC INFO - [rg3-rn1] JE: State change from MASTER to UNKNOWN with masterId=NullNode(-1), masterTerm=0(NULL_TERM)
+2026-03-18 13:33:44.626 UTC INFO - [rg3-rn1] JE: State change from UNKNOWN to MASTER with masterId=rg3-rn1(1), masterTerm=19d0126f917(2026-03-18T13:33:44.599Z)
+2026-03-18 13:33:44.642 UTC INFO - [rg3-rn1] JE: Feeder manager accepting requests.
+2026-03-18 13:33:44.643 UTC INFO - [rg3-rn1] JE: Joining group as master
+2026-03-18 13:33:44.652 UTC INFO - [rg3-rn1] Opened JE environment: 25.3.17 JVM max heap: 1,476,395,008 JE properties:  nodeName=null allowCreate=true recoveryProgressListener=true classLoader=false customStats=false cacheSize=1033476505 cacheMode=EVICT_LN exceptionListener=false map={je.log.numBuffers=16, je.maxMemory=0, je.rep.preHeartbeatTimeoutMs=5000 ms, je.rep.replicaAckTimeout=5 s, je.log.fileCacheSize=2000, je.log.iteratorReadSize=1048576, je.lock.nLockTables=97, je.rep.nodeName=rg3-rn1, je.file.logging.directory=/kvroot/logs, je.rep.ignoreSecondaryNodeId=true, je.env.runEraser=true, je.rep.envUnknownStateTimeout=10 s, je.rep.vlsn.logCacheSize=128, je.rep.groupName=rg3, je.evictor.criticalPercentage=20, je.maxDisk=10737418240, je.rep.feederTimeout=10 s, je.lock.timeout=10 s, je.checkpointer.bytesInterval=500000000, je.env.isTransactional=true, je.maxMemoryPercent=70, je.txn.durability=write_no_sync,write_no_sync,simple_majority, je.log.faultReadSize=4096, je.rep.node.priority=1, je.cleaner.minUtilization=40, je.rep.disableAuthoritativeMaster=false, je.rep.electableGroupSizeOverride=0, je.file.logging.prefix=rg3-rn1, je.erase.period=6 DAYS, je.log.fileMax=1073741824, je.env.runEvictor=true, je.cleaner.minFileUtilization=5, je.rep.replayMaxOpenDbHandles=100, je.rep.vlsn.distance=1000000, je.nodeMaxEntries=128, je.rep.nodeHostPort=sn3:5050, je.cleaner.threads=2, je.env.runVerifier=false, je.cleaner.readSize=1048576, je.log.writeQueueSize=2097152, je.rep.helperHosts=sn3:5050, je.rep.replicaTimeout=10 s, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.rep.nodeType=ELECTABLE}
+2026-03-18 13:33:44.666 UTC INFO - [rg3-rn1] Local Environment version updated to: 25.3.21 2025-12-19 19:10:14 UTC  Build id: 60eebbcaec4d Edition: Community Previous version:  none
+2026-03-18 13:33:44.667 UTC INFO - [rg3-rn1] LIFECYCLE Replication state change: state=MASTER type=ELECTABLE master=rg3-rn1 time=2026-03-18 13:33:44.625 UTC
+2026-03-18 13:33:44.667 UTC INFO - [rg3-rn1] MigrationStateTracker-serviceId-rg3-rn1 queue added:MASTER
+2026-03-18 13:33:44.667 UTC INFO - [rg3-rn1] TableManagerStateTracker-serviceId-rg3-rn1 queue added:MASTER
+2026-03-18 13:33:44.668 UTC INFO - [rg3-rn1] MasterBalanceStateTracker-serviceId-rg3-rn1 queue added:MASTER
+2026-03-18 13:33:44.668 UTC INFO - [rg3-rn1] TextIndexFeederStateTracker-serviceId-rg3-rn1 queue added:MASTER
+2026-03-18 13:33:44.670 UTC INFO - [rg3-rn1] Replicated environment handle established. Cache size: 1033476505, State: MASTER
+2026-03-18 13:33:44.670 UTC INFO - [rg3-rn1] Store did not contain a topology
+2026-03-18 13:33:44.671 UTC INFO - [rg3-rn1] MigrationStateTracker-serviceId-rg3-rn1 thread start: rg3-rn1
+2026-03-18 13:33:44.671 UTC INFO - [rg3-rn1] MasterBalanceStateTracker-serviceId-rg3-rn1 thread start: rg3-rn1
+2026-03-18 13:33:44.671 UTC INFO - [rg3-rn1] Migration manager change state to MASTER.
+2026-03-18 13:33:44.672 UTC INFO - [rg3-rn1] Topology needs to be pushed to this node.
+2026-03-18 13:33:44.672 UTC INFO - [rg3-rn1] TextIndexFeederStateTracker-serviceId-rg3-rn1 thread start: rg3-rn1
+2026-03-18 13:33:44.672 UTC INFO - [rg3-rn1] TableManagerStateTracker-serviceId-rg3-rn1 thread start: rg3-rn1
+2026-03-18 13:33:44.672 UTC INFO - [rg3-rn1] Table manager change state to MASTER
+2026-03-18 13:33:44.672 UTC INFO - [rg3-rn1] TIF received state change MASTER
+2026-03-18 13:33:44.673 UTC INFO - [rg3-rn1] no text index found, skip starting TIF.
+2026-03-18 13:33:44.677 UTC INFO - [rg3-rn1] Migration db opened: MigrationDB, generation db opened: PartitionGenMD
+2026-03-18 13:33:44.679 UTC INFO - [rg3-rn1] Migration service accepting requests.
+2026-03-18 13:33:44.681 UTC INFO - [rg3-rn1] Starting Thread[KV table maintenance,5,main]
+2026-03-18 13:33:44.682 UTC INFO - [rg3-rn1] Retrying to update migration services and generation table on state change, last failure: Partition generation table is unavailable
+2026-03-18 13:33:44.700 UTC INFO - [rg3-rn1] mystore:rg3-rn1:MAIN service port: 5063
+2026-03-18 13:33:44.704 UTC INFO - [rg3-rn1] No RN Login configured. 
+2026-03-18 13:33:44.708 UTC INFO - [rg3-rn1] Start statistics gathering: Thread[Key Stats Gather Thread,5,main]
+2026-03-18 13:33:44.709 UTC INFO - [rg3-rn1] LIFECYCLE Service status change: from=STARTING to=RUNNING
+2026-03-18 13:33:45.596 UTC INFO - [admin1] [rg3-rn1] Service status: RUNNING 2026-03-18 13:33:44 UTC
+2026-03-18 13:33:44.709 UTC INFO - [rg3-rn1] Topology not immediately available - waiting
+2026-03-18 13:33:44.711 UTC INFO - [rg3-rn1] Started RepNodeService
+2026-03-18 13:33:45.531 UTC INFO - [rg3-rn1] Localized topology (10, 0)
+2026-03-18 13:33:45.531 UTC INFO - [rg3-rn1] Topology updated from seq#: 0 to 10
+2026-03-18 13:33:45.533 UTC INFO - [rg3-rn1] Cached topology with sequence number 10
+2026-03-18 13:33:45.535 UTC INFO - [rg3-rn1] Open SecurityMetadata DB
+2026-03-18 13:33:45.538 UTC INFO - [rg3-rn1] [PGT-rg3-rn1] Initialize partition generation table from db
+2026-03-18 13:33:45.540 UTC INFO - [rg3-rn1] [PGDB-rg3-rn1] Finish scan db=PartitionGenMDrecords #scanned=0, #returned=0
+2026-03-18 13:33:45.542 UTC INFO - [rg3-rn1] Open TableMetadata DB
+2026-03-18 13:33:45.543 UTC INFO - [rg3-rn1] Establishing secondary database handles, table seq#: 0
+2026-03-18 13:33:45.543 UTC INFO - [rg3-rn1] Partition update succeeded. Established 0 partition database handles, topology (10, 0). 
+2026-03-18 13:33:45.548 UTC INFO - [rg3-rn1] Topology stored seq# 10
+2026-03-18 13:33:45.550 UTC INFO - [rg3-rn1] Established 0 secondary database handles
+2026-03-18 13:33:45.550 UTC INFO - [rg3-rn1] Establishing secondary database handles, table seq#: 0
+2026-03-18 13:33:45.552 UTC INFO - [rg3-rn1] Updating table metadata with TableMetadata[13, n:-, t:12, 13]
+2026-03-18 13:33:45.568 UTC INFO - [rg3-rn1] Metadata stored: TableMetadata[13, n:-, t:12, 13]
+2026-03-18 13:33:45.571 UTC INFO - [rg3-rn1] Starting Thread[KV table maintenance,5,main]
+2026-03-18 13:33:45.571 UTC INFO - [rg3-rn1] Establishing secondary database handles, table seq#: 13
+2026-03-18 13:33:45.613 UTC INFO - [admin1] Changed helperHost for rg3-rn1 on sn3 to sn3:5050
+2026-03-18 13:33:45.616 UTC INFO - [admin1] PlanProgress [id=18 name=Deploy Topo state=RUNNING reportTime=2026-03-18 13:33:45 UTC numAttempts=1 generalTask_Total=17 generalTask_Successful=12 generalTask_NotStarted=5]
+2026-03-18 13:33:45.623 UTC INFO - [admin1] Plan 18 [Deploy Topo] task [UpdateNthRNHelperHost] [12] ended, state=SUCCEEDED
+2026-03-18 13:33:45.623 UTC INFO - [admin1] Plan 18 [Deploy Topo] task [NewNthRNParameters] [13] started
+2026-03-18 13:33:45.673 UTC INFO - [admin1] PlanProgress [id=18 name=Deploy Topo state=RUNNING reportTime=2026-03-18 13:33:45 UTC numAttempts=1 generalTask_Total=17 generalTask_Successful=13 generalTask_NotStarted=4]
+2026-03-18 13:33:45.675 UTC INFO - [admin1] Plan 18 [Deploy Topo] task [NewNthRNParameters] [13] ended, state=SUCCEEDED
+2026-03-18 13:33:45.676 UTC INFO - [admin1] Plan 18 [Deploy Topo] task [BroadcastTopo] [14] started
+2026-03-18 13:33:45.677 UTC INFO - [admin1] Broadcasting topology seq# 10, changes for plan 18
+2026-03-18 13:33:45.743 UTC INFO - [admin1] PlanProgress [id=18 name=Deploy Topo state=RUNNING reportTime=2026-03-18 13:33:45 UTC numAttempts=1 generalTask_Total=17 generalTask_Successful=14 generalTask_NotStarted=3]
+2026-03-18 13:33:45.751 UTC INFO - [admin1] Plan 18 [Deploy Topo] task [BroadcastTopo] [14] ended, state=SUCCEEDED
+2026-03-18 13:33:45.752 UTC INFO - [admin1] Plan 18 [Deploy Topo] task [BroadcastMetadata] [15] started
+2026-03-18 13:33:45.755 UTC INFO - [admin1] PlanProgress [id=18 name=Deploy Topo state=RUNNING reportTime=2026-03-18 13:33:45 UTC numAttempts=1 generalTask_Total=17 generalTask_Successful=15 generalTask_NotStarted=2]
+2026-03-18 13:33:45.762 UTC INFO - [admin1] Plan 18 [Deploy Topo] task [BroadcastMetadata] [15] ended, state=SUCCEEDED
+2026-03-18 13:33:45.762 UTC INFO - [admin1] Plan 18 [Deploy Topo] task [AddPartitions totalPartitions=6] [16] started
+2026-03-18 13:33:45.767 UTC INFO - [admin1] Broadcasting topology seq# 16, changes for Initializing new partitions
+2026-03-18 13:33:45.850 UTC INFO - [admin1] PlanProgress [id=18 name=Deploy Topo state=RUNNING reportTime=2026-03-18 13:33:45 UTC numAttempts=1 generalTask_Total=17 generalTask_Successful=16 generalTask_NotStarted=1]
+2026-03-18 13:33:45.853 UTC INFO - [admin1] Plan 18 [Deploy Topo] task [AddPartitions totalPartitions=6] [16] ended, state=SUCCEEDED
+2026-03-18 13:33:45.853 UTC INFO - [admin1] Plan 18 [Deploy Topo] task [BroadcastTopo] [17] started
+2026-03-18 13:33:45.854 UTC INFO - [admin1] Broadcasting topology seq# 16, changes for plan 18
+2026-03-18 13:33:45.885 UTC INFO - [admin1] PlanProgress [id=18 name=Deploy Topo state=RUNNING reportTime=2026-03-18 13:33:45 UTC numAttempts=1 generalTask_Total=17 generalTask_Successful=17]
+2026-03-18 13:33:45.887 UTC INFO - [admin1] Plan 18 [Deploy Topo] task [BroadcastTopo] [17] ended, state=SUCCEEDED
+2026-03-18 13:33:45.889 UTC INFO - [admin1] PlanStateChange [id=18 name=Deploy Topo state=SUCCEEDED at 2026-03-18 13:33:45 UTC numAttempts=1 : Plan finished.]
+2026-03-18 13:33:45.893 UTC INFO - [admin1] Plan 18 [Deploy Topo] ended, state=SUCCEEDED
+2026-03-18 13:33:46.234 UTC INFO - [admin1] Checking status of system tables
+2026-03-18 13:33:48.238 UTC INFO - [admin1] Checking status of system tables
+2026-03-18 13:33:48.261 UTC INFO - [admin1] Plan 19 [SYS$Add index to system table SYS$TableMetadata:SeqIndex] successful broadcast to all groups of TABLE metadata seq# 13, for StartAddIndex SYS$TableMetadata:SeqIndex, attempts=2
+2026-03-18 13:33:48.266 UTC INFO - [admin1] PlanProgress [id=19 name=SYS$Add index to system table SYS$TableMetadata:SeqIndex state=RUNNING reportTime=2026-03-18 13:33:48 UTC numAttempts=1 generalTask_Total=3 generalTask_Successful=1 generalTask_NotStarted=2]
+2026-03-18 13:33:48.268 UTC INFO - [admin1] Plan 19 [SYS$Add index to system table SYS$TableMetadata:SeqIndex] task [StartAddIndex SYS$TableMetadata:SeqIndex] [1] ended, state=SUCCEEDED
+2026-03-18 13:33:48.269 UTC INFO - [admin1] Plan 19 [SYS$Add index to system table SYS$TableMetadata:SeqIndex] task [WaitForAddIndex SYS$TableMetadata:SeqIndex on rg1] [2] started
+2026-03-18 13:33:48.303 UTC INFO - [admin1] Plan 19 [SYS$Add index to system table SYS$TableMetadata:SeqIndex] task [WaitForAddIndex SYS$TableMetadata:SeqIndex on rg1] done=true
+2026-03-18 13:33:48.306 UTC INFO - [admin1] PlanProgress [id=19 name=SYS$Add index to system table SYS$TableMetadata:SeqIndex state=RUNNING reportTime=2026-03-18 13:33:48 UTC numAttempts=1 generalTask_Total=3 generalTask_Successful=2 generalTask_NotStarted=1]
+2026-03-18 13:33:48.308 UTC INFO - [admin1] Plan 19 [SYS$Add index to system table SYS$TableMetadata:SeqIndex] task [WaitForAddIndex SYS$TableMetadata:SeqIndex on rg1] [2] ended, state=SUCCEEDED
+2026-03-18 13:33:48.309 UTC INFO - [admin1] Plan 19 [SYS$Add index to system table SYS$TableMetadata:SeqIndex] task [CompleteAddIndex SYS$TableMetadata:SeqIndex] [3] started
+2026-03-18 13:33:48.314 UTC INFO - [admin1] Plan 19 [SYS$Add index to system table SYS$TableMetadata:SeqIndex] broadcasting TableMetadata[14, n:-, t:12, 14] for CompleteAddIndex SYS$TableMetadata:SeqIndex
+2026-03-18 13:33:48.379 UTC INFO - [admin1] Plan 19 [SYS$Add index to system table SYS$TableMetadata:SeqIndex] successful broadcast to all groups of TABLE metadata seq# 14, for CompleteAddIndex SYS$TableMetadata:SeqIndex, attempts=1
+2026-03-18 13:33:48.383 UTC INFO - [admin1] PlanProgress [id=19 name=SYS$Add index to system table SYS$TableMetadata:SeqIndex state=RUNNING reportTime=2026-03-18 13:33:48 UTC numAttempts=1 generalTask_Total=3 generalTask_Successful=3]
+2026-03-18 13:33:48.387 UTC INFO - [admin1] Plan 19 [SYS$Add index to system table SYS$TableMetadata:SeqIndex] task [CompleteAddIndex SYS$TableMetadata:SeqIndex] [3] ended, state=SUCCEEDED
+2026-03-18 13:33:48.387 UTC INFO - [admin1] PlanStateChange [id=19 name=SYS$Add index to system table SYS$TableMetadata:SeqIndex state=SUCCEEDED at 2026-03-18 13:33:48 UTC numAttempts=1 : Plan finished.]
+2026-03-18 13:33:48.390 UTC INFO - [admin1] Plan 19 [SYS$Add index to system table SYS$TableMetadata:SeqIndex] ended, state=SUCCEEDED
+2026-03-18 13:33:50.242 UTC INFO - [admin1] Checking status of system tables
+2026-03-18 13:33:50.247 UTC INFO - [admin1] Exit Thread[System table monitor,5,main]
+2026-03-18 13:33:36.277 UTC INFO - [sn1] admin1: Creating AdminService
+2026-03-18 13:33:36.282 UTC INFO - [sn1] LIFECYCLE Service monitor event: service=admin1 event=CREATE
+2026-03-18 13:33:36.312 UTC INFO - [sn1] admin1: Created AdminService
+2026-03-18 13:33:36.353 UTC INFO - [sn1] admin1: newAdminParameters called
+2026-03-18 13:33:38.123 UTC INFO - [sn1] rg1-rn1: Creating RepNode
+2026-03-18 13:33:38.133 UTC INFO - [sn1] LIFECYCLE Service monitor event: service=rg1-rn1 event=CREATE
+2026-03-18 13:33:38.137 UTC INFO - [sn1] rg1-rn1: Starting RepNode
+2026-03-18 13:33:38.149 UTC INFO - [sn1] Executing process with arguments: [/usr/lib64/graalvm/graalvm-community-java17/bin/java, -cp, lib/kvstore.jar, -XX:+UseLargePages, -Dje.rep.skipHelperHostResolution=true, -XX:CompileCommand=exclude,oracle/kv/impl/rep/table/TableManager.getSecondaryDB, -XX:CompileCommand=exclude,oracle/kv/impl/rep/table/TableManager.updateIndexKeyCreator, -XX:+UseG1GC, -XX:MaxGCPauseMillis=100, -XX:InitiatingHeapOccupancyPercent=85, -XX:G1HeapRegionSize=32m, -XX:G1MixedGCCountTarget=12, -XX:G1RSetRegionEntries=2560, -XX:G1HeapWastePercent=5, -XX:-ResizePLAB, -XX:+DisableExplicitGC, -Xlog:all=warning,gc*=info,safepoint=info:file=/kvroot/logs/rg1-rn1.gc:utctime:filecount=10,filesize=5242880, -XX:-OmitStackTraceInFastThrow, -Xms1392M, -Xmx1392M, -XX:ParallelGCThreads=2, -XX:ConcGCThreads=2, -Djava.security.properties=/kvroot/mystore/sn1/security-property/rg1-rn1-security.properties, -Djava.util.logging.config.file=/kvroot/mystore/log/config.rg1-rn1, oracle.kv.impl.sna.ManagedService, -root, /kvroot/mystore/sn1, -store, mystore, -class, RepNode, -service, rg1-rn1] with environment: {MALLOC_ARENA_MAX=1}
+2026-03-18 13:33:38.152 UTC INFO - [sn1] rg1-rn1: ProcessMonitor: startProcess
+2026-03-18 13:33:38.152 UTC INFO - [sn1] LIFECYCLE Service monitor event: service=rg1-rn1 event=START
+2026-03-18 13:33:38.152 UTC INFO - [sn1] rg1-rn1: Started RepNode
+2026-03-18 13:33:38.152 UTC INFO - [sn1] rg1-rn1: Configuring RepNode
+2026-03-18 13:33:38.652 UTC INFO - [sn1] rg1-rn1: ProcessMonitor: [0.002s][warning][pagesize] UseLargePages disabled, no large pages configured and available on the system.
+2026-03-18 13:33:38.653 UTC INFO - [sn1] rg1-rn1: ProcessMonitor: CompileCommand: exclude oracle/kv/impl/rep/table/TableManager.getSecondaryDB bool exclude = true
+2026-03-18 13:33:38.654 UTC INFO - [sn1] rg1-rn1: ProcessMonitor: CompileCommand: exclude oracle/kv/impl/rep/table/TableManager.updateIndexKeyCreator bool exclude = true
+2026-03-18 13:33:38.961 UTC INFO - [sn1] Updating service status, node: rg1-rn1, service status: STARTING
+2026-03-18 13:33:39.434 UTC INFO - [sn1] Updating replication state, node: rg1-rn1, replication state: MASTER
+2026-03-18 13:33:39.451 UTC INFO - [sn1] Updating service status, node: rg1-rn1, service status: RUNNING
+2026-03-18 13:33:39.455 UTC INFO - [sn1] rg1-rn1: ProcessMonitor: ManagedServiceStarted: rg1-rn1
+2026-03-18 13:33:40.388 UTC INFO - [sn1] rg1-rn1: Created RepNode
+2026-03-18 13:33:40.441 UTC INFO - [sn1] noteState called
+2026-03-18 13:33:40.442 UTC INFO - [sn1] added:State RN:rg1-rn1 state: MASTER top seq num: 6
+2026-03-18 13:33:40.447 UTC INFO - [sn1] sn: sn1 state transition: State RN:rg1-rn1 state: MASTER top seq num: 6 active masters:[rg1-rn1] active replicas:0 replica leases:0
+2026-03-18 13:33:40.447 UTC INFO - [sn1] Acquiring initial topology from RNs
+2026-03-18 13:33:40.467 UTC INFO - [sn1] Topology acquired from RN: rg1-rn1 Topo seq#: 6
+2026-03-18 13:33:40.486 UTC INFO - [sn1] rg1-rn1: newRepNodeParameters called
+2026-03-18 13:33:40.711 UTC INFO - [sn2] rg2-rn1: Creating RepNode
+2026-03-18 13:33:40.718 UTC INFO - [sn2] LIFECYCLE Service monitor event: service=rg2-rn1 event=CREATE
+2026-03-18 13:33:40.722 UTC INFO - [sn2] rg2-rn1: Starting RepNode
+2026-03-18 13:33:40.735 UTC INFO - [sn2] Executing process with arguments: [/usr/lib64/graalvm/graalvm-community-java17/bin/java, -cp, lib/kvstore.jar, -XX:+UseLargePages, -Dje.rep.skipHelperHostResolution=true, -XX:CompileCommand=exclude,oracle/kv/impl/rep/table/TableManager.getSecondaryDB, -XX:CompileCommand=exclude,oracle/kv/impl/rep/table/TableManager.updateIndexKeyCreator, -XX:+UseG1GC, -XX:MaxGCPauseMillis=100, -XX:InitiatingHeapOccupancyPercent=85, -XX:G1HeapRegionSize=32m, -XX:G1MixedGCCountTarget=12, -XX:G1RSetRegionEntries=2560, -XX:G1HeapWastePercent=5, -XX:-ResizePLAB, -XX:+DisableExplicitGC, -Xlog:all=warning,gc*=info,safepoint=info:file=/kvroot/logs/rg2-rn1.gc:utctime:filecount=10,filesize=5242880, -XX:-OmitStackTraceInFastThrow, -Xms1392M, -Xmx1392M, -XX:ParallelGCThreads=2, -XX:ConcGCThreads=2, -Djava.security.properties=/kvroot/mystore/sn2/security-property/rg2-rn1-security.properties, -Djava.util.logging.config.file=/kvroot/mystore/log/config.rg2-rn1, oracle.kv.impl.sna.ManagedService, -root, /kvroot/mystore/sn2, -store, mystore, -class, RepNode, -service, rg2-rn1] with environment: {MALLOC_ARENA_MAX=1}
+2026-03-18 13:33:40.736 UTC INFO - [sn2] rg2-rn1: ProcessMonitor: startProcess
+2026-03-18 13:33:40.737 UTC INFO - [sn2] LIFECYCLE Service monitor event: service=rg2-rn1 event=START
+2026-03-18 13:33:40.737 UTC INFO - [sn2] rg2-rn1: Started RepNode
+2026-03-18 13:33:40.737 UTC INFO - [sn2] rg2-rn1: Configuring RepNode
+2026-03-18 13:33:41.237 UTC INFO - [sn2] rg2-rn1: ProcessMonitor: [0.002s][warning][pagesize] UseLargePages disabled, no large pages configured and available on the system.
+2026-03-18 13:33:41.238 UTC INFO - [sn2] rg2-rn1: ProcessMonitor: CompileCommand: exclude oracle/kv/impl/rep/table/TableManager.getSecondaryDB bool exclude = true
+2026-03-18 13:33:41.238 UTC INFO - [sn2] rg2-rn1: ProcessMonitor: CompileCommand: exclude oracle/kv/impl/rep/table/TableManager.updateIndexKeyCreator bool exclude = true
+2026-03-18 13:33:41.609 UTC INFO - [sn2] Updating service status, node: rg2-rn1, service status: STARTING
+2026-03-18 13:33:42.106 UTC INFO - [sn2] Updating replication state, node: rg2-rn1, replication state: MASTER
+2026-03-18 13:33:42.130 UTC INFO - [sn2] Updating service status, node: rg2-rn1, service status: RUNNING
+2026-03-18 13:33:42.133 UTC INFO - [sn2] rg2-rn1: ProcessMonitor: ManagedServiceStarted: rg2-rn1
+2026-03-18 13:33:43.006 UTC INFO - [sn2] rg2-rn1: Created RepNode
+2026-03-18 13:33:43.044 UTC INFO - [sn2] rg2-rn1: newRepNodeParameters called
+2026-03-18 13:33:43.111 UTC INFO - [sn2] noteState called
+2026-03-18 13:33:43.111 UTC INFO - [sn2] added:State RN:rg2-rn1 state: MASTER top seq num: 8
+2026-03-18 13:33:43.116 UTC INFO - [sn2] sn: sn2 state transition: State RN:rg2-rn1 state: MASTER top seq num: 8 active masters:[rg2-rn1] active replicas:0 replica leases:0
+2026-03-18 13:33:43.116 UTC INFO - [sn2] Acquiring initial topology from RNs
+2026-03-18 13:33:43.133 UTC INFO - [sn2] Topology acquired from RN: rg2-rn1 Topo seq#: 8
+2026-03-18 13:33:43.296 UTC INFO - [sn3] rg3-rn1: Creating RepNode
+2026-03-18 13:33:43.301 UTC INFO - [sn3] LIFECYCLE Service monitor event: service=rg3-rn1 event=CREATE
+2026-03-18 13:33:43.305 UTC INFO - [sn3] rg3-rn1: Starting RepNode
+2026-03-18 13:33:43.327 UTC INFO - [sn3] Executing process with arguments: [/usr/lib64/graalvm/graalvm-community-java17/bin/java, -cp, lib/kvstore.jar, -XX:+UseLargePages, -Dje.rep.skipHelperHostResolution=true, -XX:CompileCommand=exclude,oracle/kv/impl/rep/table/TableManager.getSecondaryDB, -XX:CompileCommand=exclude,oracle/kv/impl/rep/table/TableManager.updateIndexKeyCreator, -XX:+UseG1GC, -XX:MaxGCPauseMillis=100, -XX:InitiatingHeapOccupancyPercent=85, -XX:G1HeapRegionSize=32m, -XX:G1MixedGCCountTarget=12, -XX:G1RSetRegionEntries=2560, -XX:G1HeapWastePercent=5, -XX:-ResizePLAB, -XX:+DisableExplicitGC, -Xlog:all=warning,gc*=info,safepoint=info:file=/kvroot/logs/rg3-rn1.gc:utctime:filecount=10,filesize=5242880, -XX:-OmitStackTraceInFastThrow, -Xms1392M, -Xmx1392M, -XX:ParallelGCThreads=2, -XX:ConcGCThreads=2, -Djava.security.properties=/kvroot/mystore/sn3/security-property/rg3-rn1-security.properties, -Djava.util.logging.config.file=/kvroot/mystore/log/config.rg3-rn1, oracle.kv.impl.sna.ManagedService, -root, /kvroot/mystore/sn3, -store, mystore, -class, RepNode, -service, rg3-rn1] with environment: {MALLOC_ARENA_MAX=1}
+2026-03-18 13:33:43.331 UTC INFO - [sn3] rg3-rn1: ProcessMonitor: startProcess
+2026-03-18 13:33:43.332 UTC INFO - [sn3] LIFECYCLE Service monitor event: service=rg3-rn1 event=START
+2026-03-18 13:33:43.332 UTC INFO - [sn3] rg3-rn1: Started RepNode
+2026-03-18 13:33:43.333 UTC INFO - [sn3] rg3-rn1: Configuring RepNode
+2026-03-18 13:33:43.832 UTC INFO - [sn3] rg3-rn1: ProcessMonitor: [0.002s][warning][pagesize] UseLargePages disabled, no large pages configured and available on the system.
+2026-03-18 13:33:43.833 UTC INFO - [sn3] rg3-rn1: ProcessMonitor: CompileCommand: exclude oracle/kv/impl/rep/table/TableManager.getSecondaryDB bool exclude = true
+2026-03-18 13:33:43.833 UTC INFO - [sn3] rg3-rn1: ProcessMonitor: CompileCommand: exclude oracle/kv/impl/rep/table/TableManager.updateIndexKeyCreator bool exclude = true
+2026-03-18 13:33:44.170 UTC INFO - [sn3] Updating service status, node: rg3-rn1, service status: STARTING
+2026-03-18 13:33:44.678 UTC INFO - [sn3] Updating replication state, node: rg3-rn1, replication state: MASTER
+2026-03-18 13:33:44.710 UTC INFO - [sn3] Updating service status, node: rg3-rn1, service status: RUNNING
+2026-03-18 13:33:44.712 UTC INFO - [sn3] rg3-rn1: ProcessMonitor: ManagedServiceStarted: rg3-rn1
+2026-03-18 13:33:45.571 UTC INFO - [sn3] rg3-rn1: Created RepNode
+2026-03-18 13:33:45.604 UTC INFO - [sn3] rg3-rn1: newRepNodeParameters called
+2026-03-18 13:33:45.682 UTC INFO - [sn3] noteState called
+2026-03-18 13:33:45.682 UTC INFO - [sn3] added:State RN:rg3-rn1 state: MASTER top seq num: 10
+2026-03-18 13:33:45.687 UTC INFO - [sn3] sn: sn3 state transition: State RN:rg3-rn1 state: MASTER top seq num: 10 active masters:[rg3-rn1] active replicas:0 replica leases:0
+2026-03-18 13:33:45.687 UTC INFO - [sn3] Acquiring initial topology from RNs
+2026-03-18 13:33:45.705 UTC INFO - [sn3] Topology acquired from RN: rg3-rn1 Topo seq#: 10
+2026-03-18 13:33:40.444 UTC INFO - [rg1-rn1] [PGDB-rg1-rn1] Finish scan db=PartitionGenMDrecords #scanned=0, #returned=0
+2026-03-18 13:33:40.546 UTC INFO - [rg1-rn1] newParameters are identical to old parameters
+2026-03-18 13:33:44.451 UTC INFO - [rg1-rn1] Topology is not ready
+2026-03-18 13:33:45.432 UTC INFO - [rg1-rn1] Metadata stored: TableMetadata[13, n:-, t:12, 13]
+2026-03-18 13:33:45.434 UTC INFO - [rg1-rn1] Starting Thread[KV table maintenance,5,main]
+2026-03-18 13:33:45.434 UTC INFO - [rg1-rn1] Establishing secondary database handles, table seq#: 13
+2026-03-18 13:33:45.445 UTC INFO - [rg1-rn1] Established 1 secondary database handles
+2026-03-18 13:33:45.446 UTC INFO - [rg1-rn1] Running secondary population
+2026-03-18 13:33:45.454 UTC INFO - [rg1-rn1] Completed populating secondary database(s)
+2026-03-18 13:33:45.695 UTC INFO - [rg1-rn1] Localized topology (10, 1)
+2026-03-18 13:33:45.695 UTC INFO - [rg1-rn1] Cached topology with sequence number 10
+2026-03-18 13:33:45.695 UTC INFO - [rg1-rn1] Topology incrementally updated from seq#: 6 to 10
+2026-03-18 13:33:45.696 UTC INFO - [rg1-rn1] Partition update succeeded. Established 0 partition database handles, topology (10, 1). 
+2026-03-18 13:33:45.704 UTC INFO - [rg1-rn1] Starting Thread[KV table maintenance,5,main]
+2026-03-18 13:33:45.704 UTC INFO - [rg1-rn1] Establishing secondary database handles, table seq#: 13
+2026-03-18 13:33:45.706 UTC INFO - [rg1-rn1] Established 1 secondary database handles
+2026-03-18 13:33:45.707 UTC INFO - [rg1-rn1] Topology stored seq# 10
+2026-03-18 13:33:45.778 UTC INFO - [rg1-rn1] Localized topology (16, 2)
+2026-03-18 13:33:45.779 UTC INFO - [rg1-rn1] Cached topology with sequence number 16
+2026-03-18 13:33:45.779 UTC INFO - [rg1-rn1] Topology incrementally updated from seq#: 10 to 16
+2026-03-18 13:33:45.783 UTC INFO - [rg1-rn1] Partition update succeeded. Established 2 partition database handles, topology (16, 2). Updated partition database handles: [PARTITION-1,PARTITION-2]. 
+2026-03-18 13:33:45.785 UTC INFO - [rg1-rn1] Starting Thread[KV table maintenance,5,main]
+2026-03-18 13:33:45.785 UTC INFO - [rg1-rn1] Establishing secondary database handles, table seq#: 13
+2026-03-18 13:33:45.787 UTC INFO - [rg1-rn1] Established 1 secondary database handles
+2026-03-18 13:33:45.792 UTC INFO - [rg1-rn1] Topology stored seq# 16
+2026-03-18 13:33:48.331 UTC INFO - [rg1-rn1] Metadata stored: TableMetadata[14, n:-, t:12, 14]
+2026-03-18 13:33:48.332 UTC INFO - [rg1-rn1] Starting Thread[KV table maintenance,5,main]
+2026-03-18 13:33:48.332 UTC INFO - [rg1-rn1] Establishing secondary database handles, table seq#: 14
+2026-03-18 13:33:48.335 UTC INFO - [rg1-rn1] Established 1 secondary database handles
+2026-03-18 13:33:54.477 UTC INFO - [rg1-rn1] Establishing RMI connection for admin DDL
+2026-03-18 13:33:54.509 UTC INFO - [rg1-rn1] Establishing RMI connection for admin DDL
+2026-03-18 13:33:54.518 UTC INFO - [rg1-rn1] Establishing RMI connection for admin DDL
+2026-03-18 13:33:43.036 UTC INFO - [rg2-rn1] Established 1 secondary database handles
+2026-03-18 13:33:43.037 UTC INFO - [rg2-rn1] Running secondary population
+2026-03-18 13:33:43.043 UTC INFO - [rg2-rn1] Completed populating secondary database(s)
+2026-03-18 13:33:43.098 UTC INFO - [rg2-rn1] newParameters are identical to old parameters
+2026-03-18 13:33:43.122 UTC INFO - [rg2-rn1] [PGDB-rg2-rn1] Finish scan db=PartitionGenMDrecords #scanned=0, #returned=0
+2026-03-18 13:33:45.728 UTC INFO - [rg2-rn1] Localized topology (10, 1)
+2026-03-18 13:33:45.729 UTC INFO - [rg2-rn1] Cached topology with sequence number 10
+2026-03-18 13:33:45.729 UTC INFO - [rg2-rn1] Topology incrementally updated from seq#: 8 to 10
+2026-03-18 13:33:45.730 UTC INFO - [rg2-rn1] Starting Thread[KV table maintenance,5,main]
+2026-03-18 13:33:45.730 UTC INFO - [rg2-rn1] Establishing secondary database handles, table seq#: 13
+2026-03-18 13:33:45.730 UTC INFO - [rg2-rn1] Partition update succeeded. Established 0 partition database handles, topology (10, 1). 
+2026-03-18 13:33:45.731 UTC INFO - [rg2-rn1] Established 1 secondary database handles
+2026-03-18 13:33:45.732 UTC INFO - [rg2-rn1] Topology stored seq# 10
+2026-03-18 13:33:45.808 UTC INFO - [rg2-rn1] Localized topology (16, 2)
+2026-03-18 13:33:45.809 UTC INFO - [rg2-rn1] Cached topology with sequence number 16
+2026-03-18 13:33:45.809 UTC INFO - [rg2-rn1] Topology incrementally updated from seq#: 10 to 16
+2026-03-18 13:33:45.811 UTC INFO - [rg2-rn1] Starting Thread[KV table maintenance,5,main]
+2026-03-18 13:33:45.811 UTC INFO - [rg2-rn1] Establishing secondary database handles, table seq#: 13
+2026-03-18 13:33:45.816 UTC INFO - [rg2-rn1] Topology stored seq# 16
+2026-03-18 13:33:45.818 UTC INFO - [rg2-rn1] Established 1 secondary database handles
+2026-03-18 13:33:45.818 UTC INFO - [rg2-rn1] Partition update succeeded. Established 2 partition database handles, topology (16, 2). Updated partition database handles: [PARTITION-3,PARTITION-4]. 
+2026-03-18 13:33:46.153 UTC INFO - [rg2-rn1] Establishing RMI connection for admin DDL
+2026-03-18 13:33:46.201 UTC INFO - [rg2-rn1] Establishing RMI connection for admin DDL
+2026-03-18 13:33:46.212 UTC INFO - [rg2-rn1] Establishing RMI connection for admin DDL
+2026-03-18 13:33:48.357 UTC INFO - [rg2-rn1] Metadata stored: TableMetadata[14, n:-, t:12, 14]
+2026-03-18 13:33:48.358 UTC INFO - [rg2-rn1] Starting Thread[KV table maintenance,5,main]
+2026-03-18 13:33:48.358 UTC INFO - [rg2-rn1] Establishing secondary database handles, table seq#: 14
+2026-03-18 13:33:48.359 UTC INFO - [rg2-rn1] Established 1 secondary database handles
+2026-03-18 13:34:00.078 UTC INFO - [rg2-rn1] Obtained DialogEndpointGroupPerf with 11 endpoints and estimated 55000 bytes; next obtain after 317 seconds
+2026-03-18 13:34:00.109 UTC INFO - [rg2-rn1] Obtained NioChannelThreadPoolPerf with 4 executors, 17 handlers and estimated 35200 bytes; next obtain after 203 seconds
+2026-03-18 13:33:45.592 UTC INFO - [rg3-rn1] Established 1 secondary database handles
+2026-03-18 13:33:45.593 UTC INFO - [rg3-rn1] Running secondary population
+2026-03-18 13:33:45.600 UTC INFO - [rg3-rn1] Completed populating secondary database(s)
+2026-03-18 13:33:45.667 UTC INFO - [rg3-rn1] newParameters are identical to old parameters
+2026-03-18 13:33:45.682 UTC INFO - [rg3-rn1] [PGDB-rg3-rn1] Finish scan db=PartitionGenMDrecords #scanned=0, #returned=0
+2026-03-18 13:33:45.834 UTC INFO - [rg3-rn1] Localized topology (16, 1)
+2026-03-18 13:33:45.835 UTC INFO - [rg3-rn1] Cached topology with sequence number 16
+2026-03-18 13:33:45.835 UTC INFO - [rg3-rn1] Topology incrementally updated from seq#: 10 to 16
+2026-03-18 13:33:45.840 UTC INFO - [rg3-rn1] Starting Thread[KV table maintenance,5,main]
+2026-03-18 13:33:45.841 UTC INFO - [rg3-rn1] Establishing secondary database handles, table seq#: 13
+2026-03-18 13:33:45.842 UTC INFO - [rg3-rn1] Partition update succeeded. Established 2 partition database handles, topology (16, 1). Updated partition database handles: [PARTITION-5,PARTITION-6]. 
+2026-03-18 13:33:45.844 UTC INFO - [rg3-rn1] Established 1 secondary database handles
+2026-03-18 13:33:45.846 UTC INFO - [rg3-rn1] Topology stored seq# 16
+2026-03-18 13:33:46.732 UTC INFO - [rg3-rn1] Establishing RMI connection for admin DDL
+2026-03-18 13:33:46.768 UTC INFO - [rg3-rn1] Establishing RMI connection for admin DDL
+2026-03-18 13:33:46.781 UTC INFO - [rg3-rn1] Establishing RMI connection for admin DDL
+2026-03-18 13:33:48.378 UTC INFO - [rg3-rn1] Metadata stored: TableMetadata[14, n:-, t:12, 14]
+2026-03-18 13:33:48.379 UTC INFO - [rg3-rn1] Starting Thread[KV table maintenance,5,main]
+2026-03-18 13:33:48.379 UTC INFO - [rg3-rn1] Establishing secondary database handles, table seq#: 14
+2026-03-18 13:33:48.380 UTC INFO - [rg3-rn1] Established 1 secondary database handles
+2026-03-18 13:34:00.077 UTC INFO - [rg3-rn1] Obtained DialogEndpointGroupPerf with 11 endpoints and estimated 55000 bytes; next obtain after 317 seconds
+2026-03-18 13:34:00.105 UTC INFO - [rg3-rn1] Obtained NioChannelThreadPoolPerf with 4 executors, 17 handlers and estimated 35200 bytes; next obtain after 203 seconds
+2026-03-18 13:34:36.597 UTC INFO - [admin1] SoftwareVersionUpdater: resetting interval to: 3600000 milliseconds (1 agents)
+2026-03-18 13:34:40.488 UTC INFO - [sn1] Topology acquired from RN: rg1-rn1 Topo seq#: 16
+2026-03-18 13:34:43.156 UTC INFO - [sn2] Topology acquired from RN: rg2-rn1 Topo seq#: 16
+2026-03-18 13:34:45.726 UTC INFO - [sn3] Topology acquired from RN: rg3-rn1 Topo seq#: 16
+2026-03-18 13:39:31.518 UTC INFO - [admin1] PlanStateChange [id=20 name=CreateTable users state=APPROVED at 2026-03-18 13:39:31 UTC numAttempts=0 : approval requested]
+2026-03-18 13:39:31.520 UTC INFO - [admin1] Plan 20 [CreateTable users] approved
+2026-03-18 13:39:31.522 UTC INFO - [admin1] PlanStateChange [id=20 name=CreateTable users state=RUNNING at 2026-03-18 13:39:31 UTC numAttempts=1 : Plan is starting]
+2026-03-18 13:39:31.522 UTC INFO - [admin1] Plan 20 [CreateTable users] started, 1 tasks
+2026-03-18 13:39:31.530 UTC INFO - [admin1] Plan 20 [CreateTable users] task [AddTable users] [1] started
+2026-03-18 13:39:31.536 UTC INFO - [admin1] Enabling system table writes, topo 16
+2026-03-18 13:39:31.536 UTC INFO - [admin1] Starting Thread[System table monitor,5,main]
+2026-03-18 13:39:31.537 UTC INFO - [admin1] Checking status of system tables
+2026-03-18 13:39:31.539 UTC INFO - [admin1] Verifying table system table against TableMetadata[15, n:-, t:13, 15]
+2026-03-18 13:39:31.568 UTC INFO - [admin1] Topology updated from seq#: 0 to 16
+2026-03-18 13:39:31.570 UTC INFO - [admin1] Cached topology with sequence number 16
+2026-03-18 13:39:31.586 UTC INFO - [admin1] Thread[ c-6943593705649973627 RepNodeStateUpdateThread,5,main] started
+2026-03-18 13:39:31.587 UTC INFO - [admin1] Topology update skipped. Current seq #: 16 Update seq #: 16
+2026-03-18 13:39:31.602 UTC INFO - [admin1] Establishing RMI connection for admin DDL
+2026-03-18 13:39:31.618 UTC INFO - [admin1] Establishing RMI connection for admin DDL
+2026-03-18 13:39:31.687 UTC INFO - [admin1] Verify found 13 tables, 0 namspaces, 0 regions in need of updating, 0 DELETED markers
+2026-03-18 13:39:31.904 UTC INFO - [admin1] Plan 20 [CreateTable users] broadcasting TableMetadata[15, n:-, t:13, 15] for AddTable users
+2026-03-18 13:39:31.977 UTC INFO - [admin1] Plan 20 [CreateTable users] successful broadcast to all groups of TABLE metadata seq# 15, for AddTable users, attempts=1
+2026-03-18 13:39:31.986 UTC INFO - [admin1] PlanProgress [id=20 name=CreateTable users state=RUNNING reportTime=2026-03-18 13:39:31 UTC numAttempts=1 generalTask_Total=1 generalTask_Successful=1]
+2026-03-18 13:39:31.995 UTC INFO - [admin1] Plan 20 [CreateTable users] task [AddTable users] [1] ended, state=SUCCEEDED
+2026-03-18 13:39:31.998 UTC INFO - [admin1] PlanStateChange [id=20 name=CreateTable users state=SUCCEEDED at 2026-03-18 13:39:31 UTC numAttempts=1 : Plan finished.]
+2026-03-18 13:39:32.003 UTC INFO - [admin1] Plan 20 [CreateTable users] ended, state=SUCCEEDED
+2026-03-18 13:39:32.016 UTC INFO - [admin1] Verifying table system table successful, GCseq#=1
+2026-03-18 13:39:32.016 UTC INFO - [admin1] Exit Thread[System table monitor,5,main]
+2026-03-18 13:39:31.928 UTC INFO - [rg1-rn1] Metadata stored: TableMetadata[15, n:-, t:13, 15]
+2026-03-18 13:39:31.929 UTC INFO - [rg1-rn1] Starting Thread[KV table maintenance,5,main]
+2026-03-18 13:39:31.929 UTC INFO - [rg1-rn1] Establishing secondary database handles, table seq#: 15
+2026-03-18 13:39:31.931 UTC INFO - [rg1-rn1] Established 1 secondary database handles
+2026-03-18 13:39:35.151 UTC INFO - [rg1-rn1] The next key stats scan interval begins at 2026-03-19 00:00:00.000 UTC
+2026-03-18 13:39:31.953 UTC INFO - [rg2-rn1] Metadata stored: TableMetadata[15, n:-, t:13, 15]
+2026-03-18 13:39:31.957 UTC INFO - [rg2-rn1] Starting Thread[KV table maintenance,5,main]
+2026-03-18 13:39:31.957 UTC INFO - [rg2-rn1] Establishing secondary database handles, table seq#: 15
+2026-03-18 13:39:31.959 UTC INFO - [rg2-rn1] Established 1 secondary database handles
+2026-03-18 13:39:36.989 UTC INFO - [rg2-rn1] The next key stats scan interval begins at 2026-03-19 00:00:00.000 UTC
+2026-03-18 13:39:31.973 UTC INFO - [rg3-rn1] Metadata stored: TableMetadata[15, n:-, t:13, 15]
+2026-03-18 13:39:31.976 UTC INFO - [rg3-rn1] Starting Thread[KV table maintenance,5,main]
+2026-03-18 13:39:31.976 UTC INFO - [rg3-rn1] Establishing secondary database handles, table seq#: 15
+2026-03-18 13:39:31.978 UTC INFO - [rg3-rn1] Established 1 secondary database handles
+2026-03-18 13:39:37.397 UTC INFO - [rg3-rn1] The next key stats scan interval begins at 2026-03-19 00:00:00.000 UTC
+2026-03-18 13:40:35.188 UTC INFO - [rg1-rn1] JE: Updated minimum JE group version to 6.5.0
+2026-03-18 13:40:35.273 UTC INFO - [rg1-rn1] Key stats scan took 121ms to scan 4 records
+2026-03-18 13:40:35.213 UTC INFO - [rg2-rn1] JE: Updated minimum JE group version to 6.5.0
+2026-03-18 13:40:37.121 UTC INFO - [rg2-rn1] Key stats scan took 132ms to scan 10 records
+2026-03-18 13:40:35.179 UTC INFO - [rg3-rn1] JE: Updated minimum JE group version to 6.5.0
+2026-03-18 13:40:37.513 UTC INFO - [rg3-rn1] Key stats scan took 116ms to scan 58 records

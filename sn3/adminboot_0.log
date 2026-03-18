@@ -1,0 +1,9 @@
+2026-03-18 13:33:20.798 UTC INFO [BootstrapAdmin] Starting in bootstrap mode
+2026-03-18 13:33:21.118 UTC INFO [BootstrapAdmin] Successfully created a secure proxy for commandService
+2026-03-18 13:33:21.121 UTC INFO [BootstrapAdmin] Starting commandService on sn3:5000
+2026-03-18 13:33:21.294 UTC INFO [BootstrapAdmin] commandService service port: 5063
+2026-03-18 13:33:21.308 UTC INFO [BootstrapAdmin] Successfully created a secure proxy for admin:CLIENT_ADMIN
+2026-03-18 13:33:21.309 UTC INFO [BootstrapAdmin] Starting admin:CLIENT_ADMIN on sn3:5000
+2026-03-18 13:33:21.337 UTC INFO [BootstrapAdmin] admin:CLIENT_ADMIN service port: 5063
+2026-03-18 13:33:21.345 UTC INFO [BootstrapAdmin] Admin web service is not starting up, web port: -1
+2026-03-18 13:33:21.345 UTC INFO [BootstrapAdmin] Started AdminService

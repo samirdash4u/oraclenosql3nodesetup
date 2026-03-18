@@ -1,0 +1,85 @@
+1773750386316:configure -name kvstore
+1773750405635:connect
+1773750407246:;
+1773750412269:connect admin;
+1773750422116:connect admin -host sn1 -port 5000
+1773750432025:configure -name kvstore
+1773750439741:configure -name kvstore\nplan deploy-zone -name zone1 -rf 3\nplan deploy-sn -znname zone1 -host sn1 -port 5000\nplan deploy-sn -znname zone1 -host sn2 -port 5000\nplan deploy-sn -znname zone1 -host sn3 -port 5000\n\nplan deploy-admin -sn 1\nplan deploy-topology -name topo1 -partitions 10\nplan deploy-store -name kvstore
+1773750447692:plan deploy-zone -name zone1 -rf 3
+1773750454581:plan deploy-sn -znname zone1 -host sn1 -port 5000
+1773750460493:plan deploy-sn -znname zone1 -host sn2 -port 5000
+1773750466369:show plan -id 18
+1773750470710:show plan -id 17
+1773750474500:show plan -id 19
+1773750477781:show plan -id 20
+1773750486573:plan deploy-admin -sn 1
+1773750489967:plan deploy-admin -sn 21
+1773750509372:show plan -id 21
+1773750519686:plan deploy-topology -name topo1 -partitions 10
+1773750531590:help
+1773750536792:delete
+1773750537943:;
+1773750547124:delete kv kvstore
+1773750553118:show
+1773750554316:;
+1773750559521:show admins;
+1773750567909:show per;
+1773750570186:show perf;
+1773750582204:plan deploy-store -name kvstore
+1773750593888:plan deploy-sn -name kvstore
+1773750611929:show topology;
+1773750625930:put kv -key mykey -value hello
+1773750629355:put kv -key mykey -value hello;
+1773750632951:connect admin -host sn1 -port 5000
+1773750635047:put kv -key mykey -value hello;
+1773750650404:connect store -name kvstore
+1773750661041:exit
+1773750664485:connect store -name kvstore
+1773750680620:connect admin -host sn1 -port 5000
+1773750686054:connect store -name kvstore
+1773750713096:quit
+1773750737141:show topology
+1773750746139:connect admin -host sn1 -port 5000
+1773750748764:show topology
+1773750838944:quit
+1773840563375:exit
+1773840654311:load -file configure.sql
+1773840680406:ls
+1773840681831:exit
+1773840814989:load -file configure.sql
+1773840833776:show topology
+1773840849301:connect store -host sn1 -port 5000
+1773840850725:;
+1773840880149:connect sto -host sn1 -port 5000
+1773840887695:connect store -host sn1 -port 5000 mystore
+1773840894731:connect store -host sn1 -port 5000 -name mystore
+1773840915589:put kv -key /test -value "hello"
+1773840921950:get kv -key /test
+1773840991110:put -key /test2 -value "hello2"
+1773841079032:execute "CREATE TABLE table_name (\n    column1 datatype constraints,\n    column2 datatype constraints,\n    column3 datatype constraints,\n    ...\n);"
+1773841089139:execute "CREATE TABLE table_name (\n    column1 datatype constraints,\n    column2 datatype constraints,\n    column3 datatype constraints,\n);"
+1773841115308:connect store -host sn1 -port 5000 -name mystore
+1773841122439:execute "CREATE TABLE Persons (\n    PersonID int PRIMARY KEY,\n    LastName varchar(255) NOT NULL,\n    FirstName varchar(255),\n    Address varchar(255),\n    City varchar(255)\n);\n"
+1773841165055:execute "CREATE TABLE users (\n    id INTEGER,\n    firstName STRING,\n    lastName STRING,\n    age INTEGER,\n    PRIMARY KEY (id)\n);\n"
+1773841171224:execute "CREATE TABLE users (\n    id INTEGER,\n    firstName STRING,\n    lastName STRING,\n    age INTEGER,\n    PRIMARY KEY (id)\n)\n"
+1773841183840:execute "select * from users"
+1773841191555:show tables;
+1773841199602:show parameters;
+1773841201777:show parame
+1773841203025:;
+1773841207603:show
+1773841208788:;
+1773841214587:show pools;
+1773841223682:show users;
+1773841228742:show perf;
+1773841233574:show perf \\G;
+1773841241648:show topology;
+1773841250949:show events;
+1773841253785:show admins
+1773841271039:show parameters -global
+1773841279090:show parameters -security
+1773841285213:show parameters -serv
+1773841289796:show parameters -policy
+1773841485662:show perf
+1773841489313:show metrics
+1773842194159:quit

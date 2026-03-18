@@ -1,0 +1,26 @@
+2026-03-18 13:33:35.116 UTC INFO [1] Coordinating tasks:JEBackupManagerCopyLogFile, JELogFlusherASync, JEDataEviction, JELogFlusherSync, JEINCompressor, JEINCheckpointer, JECleaner, JEVerifyBtree, JEOutputStats, JEVerifyLog, JEDataErasureMax real permits:20
+2026-03-18 13:33:35.286 UTC INFO [1] Ack expiry timer period:1000000000 ns
+2026-03-18 13:33:35.344 UTC INFO [1] Checkpoint Start.Checkpoint Id=1
+2026-03-18 13:33:35.355 UTC INFO [1] Checkpoint End. Checkpoint Id=1 success=true
+2026-03-18 13:33:35.361 UTC INFO [1] The following ConfigParam(s) in je.properties is/are deprecated and removed, hence the configuration(s) won't take any effect: je.rep.txnRollbackLimit, je.rep.preserveRecordVersion, je.rep.txnRollbackDisabled
+2026-03-18 13:33:35.372 UTC INFO [1] No server auth method
+2026-03-18 13:33:35.375 UTC INFO [1] Started ServiceDispatcher. HostPort=sn1:5010
+2026-03-18 13:33:35.376 UTC INFO [1] DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2026-03-18 13:33:35.401 UTC INFO [1] DTVLSN at start:0
+2026-03-18 13:33:35.404 UTC INFO [1] State change from DETACHED to UNKNOWN with masterId=NullNode(-1), masterTerm=0(NULL_TERM)
+2026-03-18 13:33:35.414 UTC INFO [1] Learner started
+2026-03-18 13:33:35.416 UTC INFO [1] Acceptor started
+2026-03-18 13:33:35.417 UTC INFO [1] Current group size: 0
+2026-03-18 13:33:35.417 UTC INFO [1] The very first group start up with node 1(-1)
+2026-03-18 13:33:35.424 UTC INFO [1] 1 persisted to election state file: {"promisedProposal":"00000179cf2b6c00179cf2b6c00(MIN_TERM)"}
+2026-03-18 13:33:35.425 UTC INFO [1] 1 no barrier needed, initialized promised term to 179cf2b6c00(MIN_TERM)
+2026-03-18 13:33:35.429 UTC INFO [1] Learner notified. Proposal:0000019d0126d541:e8a1a226b5dd5b00728d36c3f6e24a90:00000001[19d0126d541(2026-03-18T13:33:35.425Z)] Value: Value:sn1$$$5010$$$1$$$1
+2026-03-18 13:33:35.429 UTC INFO [1] Master changed to 1 at term 19d0126d541(2026-03-18T13:33:35.425Z), group status: empty.
+2026-03-18 13:33:35.429 UTC INFO [1] Nascent group. 1 is master by virtue of being the first node.
+2026-03-18 13:33:35.430 UTC INFO [1] State change from UNKNOWN to MASTER with masterId=1(1), masterTerm=19d0126d541(2026-03-18T13:33:35.425Z)
+2026-03-18 13:33:35.447 UTC INFO [1] Successfully added node:1(1) HostPort = sn1: 5010 [ELECTABLE]
+2026-03-18 13:33:35.449 UTC INFO [1] Node 1 started
+2026-03-18 13:33:35.450 UTC INFO [1] State change from MASTER to UNKNOWN with masterId=NullNode(-1), masterTerm=0(NULL_TERM)
+2026-03-18 13:33:35.451 UTC INFO [1] State change from UNKNOWN to MASTER with masterId=1(1), masterTerm=19d0126d541(2026-03-18T13:33:35.425Z)
+2026-03-18 13:33:35.472 UTC INFO [1] Feeder manager accepting requests.
+2026-03-18 13:33:35.474 UTC INFO [1] Joining group as master
